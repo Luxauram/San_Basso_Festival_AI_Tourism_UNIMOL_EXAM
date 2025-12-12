@@ -2,9 +2,10 @@
 
 import { Dictionary } from '@/types/i18n';
 import { motion } from 'framer-motion';
-import PrimaryButton from '@/components/ui/shared/buttons/PrimaryButton';
-import SecondaryButton from '@/components/ui/shared/buttons/SecondaryButton';
+
 import { Locale } from '@/i18n/config';
+import PrimaryButton from '@/components/ui/buttons/PrimaryButton';
+import SecondaryButton from '@/components/ui/buttons/SecondaryButton';
 
 interface HeroSectionProps {
   dict: Dictionary;

@@ -3,8 +3,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { usePathname, useRouter } from 'next/navigation';
 import { Locale, locales, localeNames } from '@/i18n/config';
-import ItalyFlag from '@/components/shared/flags/ItalyFlag';
-import USAFlag from '@/components/shared/flags/USAFlag';
+import ItalyFlag from '@/components/ui/shared/icons/flags/ItalyFlag';
+import USAFlag from '@/components/ui/shared/icons/flags/USAFlag';
 
 export default function LanguageSwitcher({
   currentLocale,

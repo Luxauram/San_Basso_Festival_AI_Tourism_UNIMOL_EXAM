@@ -3,10 +3,19 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import PrimaryButton from '@/components/ui/shared/buttons/PrimaryButton';
+
 import Marquee from 'react-fast-marquee';
 import { Locale } from '@/i18n/config';
 import { Dictionary } from '@/types/i18n';
+import PrimaryButton from '../ui/buttons/PrimaryButton';
+import FacebookIcon from '../ui/shared/icons/social-networks/FacebookIcon';
+import InstagramIcon from '../ui/shared/icons/social-networks/InstagramIcon';
+import XIcon from '../ui/shared/icons/social-networks/XIcon';
+import TermoliSponsor from '../ui/shared/icons/sponsors/TermoliSponsor';
+import MoliseSponsor from '../ui/shared/icons/sponsors/MoliseSponsor';
+import UnimolSponsor from '../ui/shared/icons/sponsors/UnimolSponsor';
+import CapracottaSponsor from '../ui/shared/icons/sponsors/CapracottaSponsor';
+import HogwartsSponsor from '../ui/shared/icons/sponsors/HogwartsSponsor';
 
 interface FooterSectionProps {
   dict: Dictionary;
@@ -18,11 +27,11 @@ export default function FooterSection({ dict, locale }: FooterSectionProps) {
   const isInView = useInView(ref, { once: true });
 
   const sponsors = [
-    { name: 'Sponsor 1', icon: '🏢' },
-    { name: 'Sponsor 2', icon: '🎯' },
-    { name: 'Sponsor 3', icon: '⚡' },
-    { name: 'Sponsor 4', icon: '🌟' },
-    { name: 'Sponsor 5', icon: '🎪' },
+    { name: 'Termoli', icon: <TermoliSponsor /> },
+    { name: 'Molise', icon: <MoliseSponsor /> },
+    { name: 'Unimol', icon: <UnimolSponsor /> },
+    { name: 'Capracotta', icon: <CapracottaSponsor /> },
+    { name: 'Hogwarts', icon: <HogwartsSponsor /> },
   ];
 
   const contactsRoute = locale === 'it' ? '/contatti' : '/contacts';
@@ -114,7 +123,7 @@ export default function FooterSection({ dict, locale }: FooterSectionProps) {
             <motion.div
               key={index}
               whileHover={{ scale: 1.1 }}
-              className="w-16 h-16 md:w-20 md:h-20 bg-white/10 rounded-lg flex items-center justify-center text-3xl md:text-4xl hover:bg-white/20 transition"
+              className="w-16 h-16 md:w-20 md:h-20  rounded-lg flex items-center justify-center text-3xl md:text-4xl  transition"
             >
               {sponsor.icon}
             </motion.div>
@@ -141,7 +150,7 @@ export default function FooterSection({ dict, locale }: FooterSectionProps) {
             rel="noopener noreferrer"
             className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition"
           >
-            <span className="text-xl">𝕏</span>
+            <XIcon />
           </motion.a>
           <motion.a
             whileHover={{ scale: 1.15, y: -3 }}
@@ -151,7 +160,7 @@ export default function FooterSection({ dict, locale }: FooterSectionProps) {
             rel="noopener noreferrer"
             className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition"
           >
-            <span className="text-xl">f</span>
+            <FacebookIcon />
           </motion.a>
           <motion.a
             whileHover={{ scale: 1.15, y: -3 }}
@@ -161,7 +170,7 @@ export default function FooterSection({ dict, locale }: FooterSectionProps) {
             rel="noopener noreferrer"
             className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition"
           >
-            <span className="text-xl">📷</span>
+            <InstagramIcon />
           </motion.a>
         </div>
       </motion.div>

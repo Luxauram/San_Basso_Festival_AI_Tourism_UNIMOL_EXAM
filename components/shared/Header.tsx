@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { Dictionary } from '@/types/i18n';
-import LanguageSwitcher from './LanguageSwitcher';
+import LanguageSwitcher from '../ui/shared/LanguageSwitcher';
 import ManifestoTicket from './ManifestoTicket';
 
 interface HeaderProps {

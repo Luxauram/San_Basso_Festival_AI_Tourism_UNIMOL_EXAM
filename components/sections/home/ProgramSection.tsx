@@ -6,15 +6,12 @@ import { useRef } from 'react';
 import { Locale } from '@/i18n/config';
 import { Dictionary } from '@/types/i18n';
 
-interface ProgrammaSectionProps {
+interface ProgramSectionProps {
   dict: Dictionary;
   locale: Locale;
 }
 
-export default function ProgrammaSection({
-  dict,
-  locale,
-}: ProgrammaSectionProps) {
+export default function ProgramSection({ dict, locale }: ProgramSectionProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 

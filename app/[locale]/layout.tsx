@@ -1,9 +1,9 @@
 import { Bebas_Neue, Montserrat } from 'next/font/google';
 import { Locale } from '@/i18n/config';
 import { getDictionary } from '@/lib/i18n';
-import Header from '@/components/ui/shared/Header';
+import Header from '@/components/shared/Header';
 import DisclaimerBanner from '@/components/shared/DisclaimerBanner';
-import Footer from '@/components/ui/shared/Footer';
+import Footer from '@/components/shared/Footer';
 
 const bebas = Bebas_Neue({
   subsets: ['latin'],

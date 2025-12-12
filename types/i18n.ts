@@ -1,6 +1,11 @@
 import { ReactNode } from 'react';
 
 export interface Dictionary {
+  reviews: {
+    title: string;
+    subtitle: string;
+    disclaimer: string;
+  };
   nav: {
     home: string;
     tradition: string;

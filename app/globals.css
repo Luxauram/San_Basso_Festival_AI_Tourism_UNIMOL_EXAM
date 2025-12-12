@@ -10,14 +10,22 @@
   display: none;
 }
 
+.overflow-x-auto::-webkit-scrollbar {
+  display: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-bebas), sans-serif;
 }
-
 
 /* ======= Snap ======= */
 .snap-container {
@@ -69,5 +77,17 @@ h1, h2, h3, h4, h5, h6 {
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+/* ======= Tailwind ======= */
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }

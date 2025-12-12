@@ -3,11 +3,12 @@
 import { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import HeroSection from '@/components/sections/home/HeroSection';
-import ProgrammaSection from '@/components/sections/home/ProgrammaSection';
-import TradizioneSection from '@/components/sections/home/TradizioneSection';
+import ProgrammaSection from '@/components/sections/home/ProgramSection';
+import TradizioneSection from '@/components/sections/home/TraditionSection';
 import IntroSequence from '@/components/sections/shared/IntroSequence';
 import { Locale } from '@/i18n/config';
 import { Dictionary } from '@/types/i18n';
+import ReviewSection from './ReviewSection';
 
 interface HomeClientProps {
   locale: Locale;
@@ -58,7 +59,7 @@ export default function HomeClient({ locale, dict }: HomeClientProps) {
       </AnimatePresence>
 
       {introComplete && (
-        <main className="snap-container">
+        <main>
           <div id="hero">
             <HeroSection dict={dict} locale={locale} />
           </div>
@@ -67,6 +68,9 @@ export default function HomeClient({ locale, dict }: HomeClientProps) {
           </div>
           <div id="programma">
             <ProgrammaSection dict={dict} locale={locale} />
+          </div>
+          <div id="reviews">
+            <ReviewSection dict={dict} locale={locale} />
           </div>
         </main>
       )}

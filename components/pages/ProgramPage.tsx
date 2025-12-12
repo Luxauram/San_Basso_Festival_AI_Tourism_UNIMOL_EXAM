@@ -4,6 +4,8 @@ import { Dictionary } from '@/types/i18n';
 import { Locale } from '@/i18n/config';
 import { ProgramDay } from '../sections/program/ProgramDay';
 import { PageHeader } from '../shared/PageHeader';
+import AccommodationsSection from '../sections/program/AccommodationsSection';
+import RestaurantsSection from '../sections/program/RestaurantsSection';
 
 interface ProgramPageProps {
   dict: Dictionary;
@@ -92,6 +94,9 @@ export default function ProgramPageComponent({ dict }: ProgramPageProps) {
           </div>
         </motion.div>
       </motion.div>
+
+      <RestaurantsSection />
+      <AccommodationsSection />
     </main>
   );
 }

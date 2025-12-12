@@ -285,5 +285,10 @@
         "content": "For information about the project or to report any issues regarding the use of content, you can contact the student developer through the project's GitHub repository."
       }
     }
+  },
+  "reviews": {
+    "title": "What Visitors Say",
+    "subtitle": "Authentic experiences from those who have experienced the San Basso Festival",
+    "disclaimer": "⭐ Over 2,000 visitors last year"
   }
 }

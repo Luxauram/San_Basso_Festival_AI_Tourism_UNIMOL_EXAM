@@ -285,5 +285,10 @@
         "content": "Per informazioni sul progetto o per segnalare eventuali problematiche relative all'uso di contenuti, è possibile contattare lo studente sviluppatore attraverso la repository GitHub del progetto."
       }
     }
+  },
+  "reviews": {
+    "title": "Cosa Dicono i Visitatori",
+    "subtitle": "Esperienze autentiche di chi ha vissuto la festa di San Basso",
+    "disclaimer": "⭐ Oltre 2000 visitatori lo scorso anno"
   }
 }
