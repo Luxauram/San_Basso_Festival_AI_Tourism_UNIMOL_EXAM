@@ -1,0 +1,112 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Locale } from '@/i18n/config';
+
+interface DisclaimerBannerProps {
+  locale: Locale;
+}
+
+export default function DisclaimerBanner({ locale }: DisclaimerBannerProps) {
+  const [isClient, setIsClient] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+
+    // Controlla localStorage solo dopo il mount sul client
+    const hasSeenDisclaimer = localStorage.getItem('hasSeenDisclaimer');
+    if (!hasSeenDisclaimer) {
+      setIsVisible(true);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    // Aggiungi/rimuovi padding al body quando il banner è visibile
+    if (isClient && isVisible) {
+      document.body.style.paddingBottom = '120px';
+    } else {
+      document.body.style.paddingBottom = '0';
+    }
+
+    // Cleanup
+    return () => {
+      document.body.style.paddingBottom = '0';
+    };
+  }, [isVisible, isClient]);
+
+  const handleClose = () => {
+    localStorage.setItem('hasSeenDisclaimer', 'true');
+    setIsVisible(false);
+  };
+
+  const text = {
+    it: {
+      title: '📚 Progetto Universitario',
+      message:
+        'Questo è un progetto didattico. Tutti i contenuti sono fittizi e generati con AI.',
+      link: 'Maggiori informazioni',
+      close: 'Ho capito',
+    },
+    en: {
+      title: '📚 University Project',
+      message:
+        'This is an educational project. All content is fictional and AI-generated.',
+      link: 'More information',
+      close: 'Got it',
+    },
+  };
+
+  // Non renderizzare nulla finché non siamo sul client
+  if (!isClient) {
+    return null;
+  }
+
+  return (
+    <AnimatePresence>
+      {isVisible && (
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: 100, opacity: 0 }}
+          transition={{ duration: 0.4, ease: 'easeOut' }}
+          className="fixed bottom-0 left-0 right-0 z-50 bg-gradient-to-r from-yellow-50 to-orange-50 border-t-2 border-yellow-400 shadow-2xl backdrop-blur-sm"
+        >
+          <div className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
+            <div className="flex items-center justify-between flex-wrap gap-3">
+              <div className="flex items-center gap-3 flex-1 min-w-0">
+                <span className="text-3xl flex-shrink-0">⚠️</span>
+                <div className="min-w-0">
+                  <p className="font-bold text-gray-900 text-sm sm:text-base flex items-center gap-2">
+                    {text[locale].title}
+                  </p>
+                  <p className="text-gray-700 text-xs sm:text-sm mt-1">
+                    {text[locale].message}
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 flex-shrink-0">
+                <a
+                  href={`/${locale}/disclaimer`}
+                  className="text-xs sm:text-sm font-medium text-purple-600 hover:text-purple-800 underline whitespace-nowrap"
+                >
+                  {text[locale].link}
+                </a>
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={handleClose}
+                  className="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold rounded-lg text-sm transition shadow-md whitespace-nowrap"
+                >
+                  {text[locale].close}
+                </motion.button>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
+}

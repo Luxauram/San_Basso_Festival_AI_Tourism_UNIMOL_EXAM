@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "home": "Home",
+    "tradition": "Tradition",
+    "program": "Program",
+    "contacts": "Contacts"
+  },
+  "hero": {
+    "title": "Village Festival",
+    "subtitle": "An unforgettable experience"
+  },
+  "tradition": {
+    "title": "A Centuries-Old Tradition",
+    "description1": "The San Basso festival is the beating heart of Termoli, a celebration rooted in the 13th century that still unites the entire community today.",
+    "description2": "Every year, on August 3rd, 4th and 5th, the city transforms into a riot of colors, music and tradition. The Patron Saint is carried in procession through the streets of the old town to the sea, in a moment of deep spirituality and popular celebration.",
+    "cta": "Discover the full story",
+    "page": {
+      "title": "The Story of San Basso",
+      "subtitle": "Centuries of tradition, faith and community",
+      "origins": {
+        "title": "The Origins",
+        "content": "Devotion to Saint Basso the Bishop has ancient roots. According to tradition, his relics arrived in Termoli in the year 1104, brought by crusaders returning from the Holy Land. From that moment, San Basso became the patron saint of the city and guardian of fishermen."
+      },
+      "legend": {
+        "title": "The Legend",
+        "content": "It is said that during a terrible storm that threatened to destroy the fishermen's boats, a luminous figure appeared and calmed the waters. The fishermen recognized San Basso in that figure, who from that day became their protector. Since then, every year, the Saint is carried in procession to the sea to bless the waters and protect those who sail them."
+      },
+      "procession": {
+        "title": "The Procession",
+        "content": "The culminating moment of the festival is the procession on August 4th. The statue of San Basso is carried on the shoulders of the faithful through the narrow streets of the old town, accompanied by the marching band and followed by thousands of people. The procession winds its way to the port, where the blessing of the sea is given, a moment of great emotion and spirituality."
+      },
+      "today": {
+        "title": "The Festival Today",
+        "content": "Today the San Basso festival is one of the most important events in Molise. It combines the religious dimension with the popular one: alongside sacred rites, concerts, shows, markets and tastings take place. It is a moment when the entire community comes together, celebrating its roots and looking to the future with hope."
+      },
+      "community": {
+        "title": "A United Community",
+        "content": "The preparation of the festival involves hundreds of volunteers: from decorating the streets, to organizing events, to logistics management. It is months of work that testifies to the strength of community bonds and the pride in keeping alive a tradition that spans the centuries."
+      }
+    }
+  },
+  "program": {
+    "title": "Program",
+    "subtitle": "Three days of celebration, tradition and fun in the heart of Termoli",
+    "day1": {
+      "date": "03.08.26",
+      "events": [
+        {
+          "time": "06.00",
+          "title": "Sea Procession - San Basso",
+          "description": "The day begins at dawn with the solemn sea procession. The statue of San Basso is loaded onto the fishing boat drawn by lot the previous evening and taken to sea for the traditional blessing of the waters. A procession of boats accompanies the Patron Saint along a scenic route along the Termoli coast, while the Cathedral bells ring in celebration. The return to port is welcomed by the marching band and the faithful waiting on the dock."
+        },
+        {
+          "time": "10.00",
+          "title": "Solemn Mass",
+          "description": "Liturgical celebration in the Cathedral presided over by the Bishop. During the service, bread and fish are blessed, symbols of Termoli's maritime tradition."
+        },
+        {
+          "time": "12.30",
+          "title": "Traditional Lunch",
+          "description": "In the old town, tables are set up for the community lunch. Termoli-style fish stew, pasta with clams and other seafood specialties prepared according to recipes handed down through generations."
+        }
+      ]
+    },
+    "day2": {
+      "date": "04.08.26",
+      "events": [
+        {
+          "time": "17.00",
+          "title": "Amusement Park Opening",
+          "description": "The amusement park opens on the seafront. Rides for all ages, cotton candy, roasted chestnuts and traditional illuminated stalls transform the waterfront into a village of lights and colors."
+        },
+        {
+          "time": "19.00",
+          "title": "Fish Festival - Street Food",
+          "description": "Food stalls along the main street. Fried fish, panzerotti, Molise arrosticini, Termoli-style scapece and ventricina. Adriatic culinary tradition meets the flavors of the Molise hinterland. Open bars with live music and traveling DJ sets."
+        },
+        {
+          "time": "21.00",
+          "title": "Live Concert - Piazza Duomo",
+          "description": "Local artists and emerging bands take the main stage. Tributes to great Italian and international bands enliven the old town until late at night."
+        },
+        {
+          "time": "23.30",
+          "title": "Grand Fireworks Display",
+          "description": "From the sea, a spectacular choreography of fireworks lights up the sky and reflects on the harbor waters. Twenty minutes of pure emotion with light and color displays accompanied by soundtrack. The most anticipated moment of the festival."
+        },
+        {
+          "time": "00.30",
+          "title": "DJ Set & After Party",
+          "description": "The night continues with the best DJs from the Adriatic scene. Electronic music, house and techno until dawn on the seafront."
+        }
+      ]
+    },
+    "day3": {
+      "date": "05.08.26",
+      "events": [
+        {
+          "time": "11.00",
+          "title": "Craft Market",
+          "description": "In the old town, the traditional market is held with ceramics, local crafts, typical products and handmade creations. Perfect opportunity to take home a piece of Termoli."
+        },
+        {
+          "time": "18.00",
+          "title": "Beach Sports Tournaments",
+          "description": "Beach volleyball, beach soccer and improvised tournaments on the sand. Swimming competitions and diving from the pier for the bravest. Award ceremonies at sunset with gadgets and local products."
+        },
+        {
+          "time": "21.00",
+          "title": "Bonfire Preparation - Beach",
+          "description": "Along the coast, traditional bonfires are set up. Groups of friends and families gather on the sand with guitars, food and drinks to celebrate the last night of San Basso's feast."
+        },
+        {
+          "time": "22.30",
+          "title": "Traditional Bonfire Lighting",
+          "description": "At dusk, dozens of bonfires are lit simultaneously all along the coast. Ancient tradition says to jump over the flames for good luck. Live acoustic music, folk dances and traditional songs accompany the night."
+        },
+        {
+          "time": "00.00",
+          "title": "Night of Bonfires - Until Dawn",
+          "description": "The party continues on the beach until dawn. The bonfires keep burning while scattered groups along the coast sing, dance and celebrate under the stars. Midnight swims for the most daring. The final farewell to the Patron Saint takes place at the first light of dawn with a collective swim in the Adriatic Sea."
+        }
+      ]
+    },
+    "cta": "See full program",
+    "info": {
+      "title": "Useful Information",
+      "where": {
+        "title": "Where",
+        "description": "Historic Center of Termoli\nPiazza Duomo and Old Town"
+      },
+      "entrance": {
+        "title": "Entrance",
+        "description": "Free for all events\nExcept paid concerts"
+      },
+      "parking": {
+        "title": "Parking",
+        "description": "Parking available\nZones B and C free"
+      }
+    }
+  },
+  "footer": {
+    "cta": {
+      "title": "You'll hear about it all year. So, you might as well be there. Get your tickets now!",
+      "button": "INFO & CONTACTS"
+    },
+    "sponsors": "OUR SPONSORS",
+    "follow": "FOLLOW US",
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms and Conditions",
+      "rights": "All rights reserved."
+    }
+  },
+  "contacts": {
+    "title": "Contacts",
+    "subtitle": "Have questions? We're here to help",
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Error sending message. Please try again later."
+    },
+    "info": {
+      "title": "Information",
+      "address": {
+        "title": "Address",
+        "value": "Piazza Duomo, 1\n86039 Termoli (CB)\nItaly"
+      },
+      "email": {
+        "title": "Email",
+        "value": "info@sanbassoevents.it"
+      },
+      "phone": {
+        "title": "Phone",
+        "value": "+39 0875 123456"
+      },
+      "social": {
+        "title": "Follow Us"
+      }
+    },
+    "map": {
+      "title": "Where We Are"
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated",
+    "sections": {
+      "intro": {
+        "title": "Introduction",
+        "content": "This Privacy Policy describes how we handle the personal data of users who visit the sanbassoevents.it website. Respect for privacy is of fundamental importance to us."
+      },
+      "dataController": {
+        "title": "Data Controller",
+        "content": "The Data Controller is San Basso Events, with registered office at Piazza Duomo 1, 86039 Termoli (CB), contactable at privacy@sanbassoevents.it"
+      },
+      "dataCollected": {
+        "title": "Data Collected",
+        "content": "Personal data collected through the site may include: name, surname, email address, phone number and any other information voluntarily provided through contact forms. We also collect navigation data through technical cookies necessary for the site to function."
+      },
+      "purpose": {
+        "title": "Purpose of Processing",
+        "content": "The data collected is used exclusively to: respond to user requests, provide information about the event, manage the organization of the San Basso festival, send communications related to the event (only with explicit consent)."
+      },
+      "rights": {
+        "title": "User Rights",
+        "content": "Users have the right to access their personal data, request rectification, deletion, limitation of processing, object to processing and request data portability. To exercise these rights, contact privacy@sanbassoevents.it"
+      },
+      "security": {
+        "title": "Security",
+        "content": "We adopt adequate technical and organizational security measures to protect personal data from unauthorized access, loss, destruction or alteration."
+      }
+    }
+  },
+  "terms": {
+    "title": "Terms and Conditions",
+    "lastUpdated": "Last updated",
+    "sections": {
+      "intro": {
+        "title": "Introduction",
+        "content": "Use of the sanbassoevents.it website implies acceptance of these Terms and Conditions. Please read them carefully before using the site."
+      },
+      "use": {
+        "title": "Use of the Site",
+        "content": "The site is intended to provide information about the San Basso Festival. Users agree to use the site lawfully and respectfully, refraining from behavior that could damage the site or other users."
+      },
+      "intellectualProperty": {
+        "title": "Intellectual Property",
+        "content": "All content on the site, including text, images, logos, graphics and code, is protected by intellectual property rights and belongs to San Basso Events or respective owners. Unauthorized reproduction is prohibited."
+      },
+      "liability": {
+        "title": "Limitation of Liability",
+        "content": "San Basso Events strives to keep the site updated and functioning, but cannot guarantee the absence of errors or interruptions. We assume no responsibility for any damages resulting from the use of the site."
+      },
+      "links": {
+        "title": "External Links",
+        "content": "The site may contain links to third-party websites. We are not responsible for the content or privacy practices of these external sites."
+      },
+      "modifications": {
+        "title": "Modifications",
+        "content": "We reserve the right to modify these Terms and Conditions at any time. Changes will be posted on this page with the date of last update indicated."
+      },
+      "law": {
+        "title": "Applicable Law",
+        "content": "These Terms and Conditions are governed by Italian law. For any dispute, the Court of Larino (CB) shall have jurisdiction."
+      }
+    }
+  },
+  "disclaimer": {
+    "title": "University Project Disclaimer",
+    "lastUpdated": "Last updated",
+    "intro": "This website was created exclusively for educational purposes as part of a university project.",
+    "sections": {
+      "purpose": {
+        "title": "Project Purpose",
+        "content": "This site was developed as an academic project for the Tourism course at the University of Molise. The goal is to demonstrate skills in web development, UI/UX design, and creating digital experiences for promoting cultural and traditional events."
+      },
+      "fictionalContent": {
+        "title": "AI-Generated Content",
+        "content": "IMPORTANT: All textual content on this site (descriptions, programs, information) was generated using artificial intelligence (Claude AI by Anthropic) and is purely fictional. Dates, times, event details, and any other information DO NOT correspond to real events and should NOT be considered as an official source of information about the San Basso Festival or actual events in Termoli."
+      },
+      "realEvent": {
+        "title": "Real Event",
+        "content": "The San Basso Festival is a real traditional event that takes place annually in Termoli (CB). For official and updated information about the real event, please consult the official channels of the Municipality of Termoli and the organizing entities."
+      },
+      "logos": {
+        "title": "Use of Logos and Trademarks",
+        "content": "The logos and trademarks of the Municipality of Termoli, Molise Region, and other public or private entities possibly present on the site are used exclusively for demonstrative and educational purposes. This project is NOT affiliated with, sponsored by, or approved by the Municipality of Termoli, Molise Region, or any other entity whose logos may be displayed. All trademarks belong to their respective owners."
+      },
+      "noCommercial": {
+        "title": "Non-Commercial Use",
+        "content": "This website has no commercial purpose and is not used for selling tickets, products, or services. No real personal data is collected and the contact form is purely demonstrative and non-functional."
+      },
+      "technology": {
+        "title": "Technology Stack",
+        "content": "The site was developed using Next.js 15, React, TypeScript, Tailwind CSS, and Framer Motion. It was designed following modern web development, accessibility, and user experience best practices."
+      },
+      "contact": {
+        "title": "Student Contact",
+        "content": "For information about the project or to report any issues regarding the use of content, you can contact the student developer through the project's GitHub repository."
+      }
+    }
+  }
+}

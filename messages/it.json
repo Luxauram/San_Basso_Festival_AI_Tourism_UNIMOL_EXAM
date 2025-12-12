@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "home": "Home",
+    "tradition": "Tradizione",
+    "program": "Programma",
+    "contacts": "Contatti"
+  },
+  "hero": {
+    "title": "Festa di Paese",
+    "subtitle": "Un'esperienza indimenticabile"
+  },
+  "tradition": {
+    "title": "Una Tradizione Secolare",
+    "description1": "La festa di San Basso è il cuore pulsante di Termoli, una celebrazione che affonda le sue radici nel XIII secolo e che ancora oggi unisce l'intera comunità.",
+    "description2": "Ogni anno, il 3, 4 e 5 agosto, la città si trasforma in un tripudio di colori, musica e tradizione. Il Santo Patrono viene portato in processione tra le vie del borgo antico fino al mare, in un momento di profonda spiritualità e festa popolare.",
+    "cta": "Scopri la storia completa",
+    "page": {
+      "title": "La Storia di San Basso",
+      "subtitle": "Secoli di tradizione, fede e comunità",
+      "origins": {
+        "title": "Le Origini",
+        "content": "La devozione a San Basso Vescovo ha radici antichissime. Secondo la tradizione, le sue reliquie giunsero a Termoli nell'anno 1104, portate da alcuni crociati di ritorno dalla Terra Santa. Da quel momento, San Basso divenne il patrono della città e custode dei pescatori."
+      },
+      "legend": {
+        "title": "La Leggenda",
+        "content": "Si narra che durante una terribile tempesta che minacciava di distruggere le barche dei pescatori, apparve una figura luminosa che calmò le acque. I pescatori riconobbero in quella figura San Basso, che da quel giorno divenne il loro protettore. Da allora, ogni anno, il Santo viene portato in processione fino al mare per benedire le acque e proteggere chi vi naviga."
+      },
+      "procession": {
+        "title": "La Processione",
+        "content": "Il momento culminante della festa è la processione del 4 agosto. La statua di San Basso viene portata a spalla dai fedeli attraverso le strette vie del borgo antico, accompagnata dalla banda musicale e seguita da migliaia di persone. Il corteo si snoda fino al porto, dove viene impartita la benedizione del mare, momento di grande emozione e spiritualità."
+      },
+      "today": {
+        "title": "La Festa Oggi",
+        "content": "Oggi la festa di San Basso è uno degli eventi più importanti del Molise. Unisce la dimensione religiosa a quella popolare: accanto ai riti sacri si svolgono concerti, spettacoli, mercatini e degustazioni. È un momento in cui l'intera comunità si ritrova, celebrando le proprie radici e guardando al futuro con speranza."
+      },
+      "community": {
+        "title": "Una Comunità Unita",
+        "content": "La preparazione della festa coinvolge centinaia di volontari: dalla decorazione delle vie, all'organizzazione degli eventi, alla gestione logistica. È un lavoro di mesi che testimonia la forza dei legami comunitari e l'orgoglio di mantenere viva una tradizione che attraversa i secoli."
+      }
+    }
+  },
+  "program": {
+    "title": "Programma",
+    "subtitle": "Tre giorni di festa, tradizione e divertimento nel cuore di Termoli",
+    "day1": {
+      "date": "03.08.26",
+      "events": [
+        {
+          "time": "06.00",
+          "title": "Processione a Mare - San Basso",
+          "description": "La giornata inizia all'alba con la solenne processione a mare. La statua di San Basso viene caricata sul motopeschereccio sorteggiato la sera precedente e portata in mare per la tradizionale benedizione delle acque. Un corteo di barche accompagna il Santo Patrono in un percorso suggestivo lungo la costa termolese, mentre le campane della Cattedrale suonano a festa. Il ritorno al porto è accolto dalla banda musicale e dai fedeli che attendono sulla banchina."
+        },
+        {
+          "time": "10.00",
+          "title": "Santa Messa Solenne",
+          "description": "Celebrazione liturgica in Cattedrale presieduta dal Vescovo. Durante la funzione vengono benedetti il pane e i pesci, simboli della tradizione marinara termolese."
+        },
+        {
+          "time": "12.30",
+          "title": "Pranzo Tradizionale",
+          "description": "Nel borgo antico vengono allestite le tavolate per il pranzo comunitario. Brodetto alla termolese, pasta con le vongole e altre specialità marinare preparate secondo le ricette tramandate da generazioni."
+        }
+      ]
+    },
+    "day2": {
+      "date": "04.08.26",
+      "events": [
+        {
+          "time": "17.00",
+          "title": "Apertura Luna Park",
+          "description": "Il luna park apre i battenti sul lungomare. Giostre per tutte le età, zucchero filato, caldarroste e le tradizionali bancarelle illuminate trasformano il waterfront in un villaggio di luci e colori."
+        },
+        {
+          "time": "19.00",
+          "title": "Sagra del Pesce - Street Food",
+          "description": "Stand gastronomici lungo tutto il corso principale. Pesce fritto, panzerotti, arrosticini molisani, scapece termolese e ventricina. La tradizione culinaria adriatica incontra i sapori dell'entroterra molisano. Bar aperti con musica live e dj set itineranti."
+        },
+        {
+          "time": "21.00",
+          "title": "Concerto Live - Piazza Duomo",
+          "description": "Sul palco principale artisti locali e band emergenti. Tributi alle grandi band italiane e internazionali animano il borgo antico fino a notte fonda."
+        },
+        {
+          "time": "23.30",
+          "title": "Gran Spettacolo Pirotecnico",
+          "description": "Dal mare, una spettacolare coreografia di fuochi d'artificio illumina il cielo e si riflette sulle acque del porto. Venti minuti di emozioni pure con giochi di luce e colore accompagnati da colonna sonora. Il momento più atteso della festa."
+        },
+        {
+          "time": "00.30",
+          "title": "Dj Set & After Party",
+          "description": "La notte continua con i migliori dj della scena adriatica. Musica elettronica, house e techno fino all'alba sul lungomare."
+        }
+      ]
+    },
+    "day3": {
+      "date": "05.08.26",
+      "events": [
+        {
+          "time": "11.00",
+          "title": "Mercatino dell'Artigianato",
+          "description": "Nel borgo antico si tiene il tradizionale mercatino con ceramiche, manufatti locali, prodotti tipici e creazioni artigianali. Occasione perfetta per portare a casa un pezzo di Termoli."
+        },
+        {
+          "time": "18.00",
+          "title": "Tornei Sportivi sulla Spiaggia",
+          "description": "Beach volley, beach soccer e tornei improvvisati sulla sabbia. Gare di nuoto e tuffi dal pontile per i più coraggiosi. Premiazioni al tramonto con gadget e prodotti locali."
+        },
+        {
+          "time": "21.00",
+          "title": "Preparazione Falò - Spiaggia",
+          "description": "Lungo il litorale vengono allestiti i tradizionali falò. Gruppi di amici e famiglie si riuniscono sulla sabbia con chitarre, cibo e bevande per celebrare l'ultima notte della festa di San Basso."
+        },
+        {
+          "time": "22.30",
+          "title": "Accensione Falò Tradizionali",
+          "description": "All'imbrunire vengono accesi simultaneamente decine di falò lungo tutta la costa. L'antica tradizione vuole che si salti sopra le fiamme per un buon auspicio. Musica dal vivo acustica, balli popolari e canti tradizionali accompagnano la notte."
+        },
+        {
+          "time": "00.00",
+          "title": "Notte dei Falò - Until Dawn",
+          "description": "La festa prosegue sulla spiaggia fino all'alba. I falò continuano a bruciare mentre gruppi sparsi lungo la costa cantano, ballano e festeggiano sotto le stelle. Bagni notturni di mezzanotte per i più temerari. Il saluto finale al Santo Patrono avviene alle prime luci dell'alba con un ultimo bagno collettivo nel mare Adriatico."
+        }
+      ]
+    },
+    "cta": "Vedi programma completo",
+    "info": {
+      "title": "Informazioni Utili",
+      "where": {
+        "title": "Dove",
+        "description": "Centro Storico di Termoli\nPiazza Duomo e Borgo Antico"
+      },
+      "entrance": {
+        "title": "Ingresso",
+        "description": "Gratuito per tutti gli eventi\nEccetto concerti a pagamento"
+      },
+      "parking": {
+        "title": "Parcheggio",
+        "description": "Parcheggi disponibili\nZone B e C gratuite"
+      }
+    }
+  },
+  "footer": {
+    "cta": {
+      "title": "Ne sentirai parlare tutto l'anno. Quindi, tanto vale esserci. Prendi i tuoi biglietti ora!",
+      "button": "INFO & CONTATTI"
+    },
+    "sponsors": "I NOSTRI SPONSOR",
+    "follow": "SEGUICI SU",
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Termini e Condizioni",
+      "rights": "Tutti i diritti riservati."
+    }
+  },
+  "contacts": {
+    "title": "Contatti",
+    "subtitle": "Hai domande? Siamo qui per aiutarti",
+    "form": {
+      "name": "Nome e Cognome",
+      "email": "Email",
+      "subject": "Oggetto",
+      "message": "Messaggio",
+      "send": "Invia Messaggio",
+      "sending": "Invio in corso...",
+      "success": "Messaggio inviato con successo!",
+      "error": "Errore nell'invio. Riprova più tardi."
+    },
+    "info": {
+      "title": "Informazioni",
+      "address": {
+        "title": "Indirizzo",
+        "value": "Piazza Duomo, 1\n86039 Termoli (CB)\nItalia"
+      },
+      "email": {
+        "title": "Email",
+        "value": "info@sanbassoevents.it"
+      },
+      "phone": {
+        "title": "Telefono",
+        "value": "+39 0875 123456"
+      },
+      "social": {
+        "title": "Seguici"
+      }
+    },
+    "map": {
+      "title": "Dove Siamo"
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Ultimo aggiornamento",
+    "sections": {
+      "intro": {
+        "title": "Introduzione",
+        "content": "La presente Privacy Policy descrive le modalità di trattamento dei dati personali degli utenti che visitano il sito web sanbassoevents.it. Il rispetto della privacy è di fondamentale importanza per noi."
+      },
+      "dataController": {
+        "title": "Titolare del Trattamento",
+        "content": "Il Titolare del Trattamento dei dati è San Basso Events, con sede legale in Piazza Duomo 1, 86039 Termoli (CB), contattabile all'indirizzo email privacy@sanbassoevents.it"
+      },
+      "dataCollected": {
+        "title": "Dati Raccolti",
+        "content": "I dati personali raccolti attraverso il sito possono includere: nome, cognome, indirizzo email, numero di telefono e qualsiasi altra informazione fornita volontariamente attraverso i form di contatto. Raccogliamo inoltre dati di navigazione attraverso cookie tecnici necessari al funzionamento del sito."
+      },
+      "purpose": {
+        "title": "Finalità del Trattamento",
+        "content": "I dati raccolti vengono utilizzati esclusivamente per: rispondere alle richieste degli utenti, fornire informazioni sull'evento, gestire l'organizzazione della festa di San Basso, inviare comunicazioni relative all'evento (solo previo consenso esplicito)."
+      },
+      "rights": {
+        "title": "Diritti dell'Utente",
+        "content": "Gli utenti hanno il diritto di accedere ai propri dati personali, richiederne la rettifica, la cancellazione, la limitazione del trattamento, opporsi al trattamento e richiedere la portabilità dei dati. Per esercitare questi diritti, contattare privacy@sanbassoevents.it"
+      },
+      "security": {
+        "title": "Sicurezza",
+        "content": "Adottiamo misure di sicurezza tecniche e organizzative adeguate per proteggere i dati personali da accessi non autorizzati, perdita, distruzione o alterazione."
+      }
+    }
+  },
+  "terms": {
+    "title": "Termini e Condizioni",
+    "lastUpdated": "Ultimo aggiornamento",
+    "sections": {
+      "intro": {
+        "title": "Introduzione",
+        "content": "L'utilizzo del sito web sanbassoevents.it implica l'accettazione dei presenti Termini e Condizioni. Si prega di leggerli attentamente prima di utilizzare il sito."
+      },
+      "use": {
+        "title": "Utilizzo del Sito",
+        "content": "Il sito è destinato a fornire informazioni sulla Festa di San Basso. Gli utenti si impegnano a utilizzare il sito in modo lecito e rispettoso, astenendosi da comportamenti che potrebbero danneggiare il sito o altri utenti."
+      },
+      "intellectualProperty": {
+        "title": "Proprietà Intellettuale",
+        "content": "Tutti i contenuti presenti sul sito, inclusi testi, immagini, loghi, grafica e codice, sono protetti da diritti di proprietà intellettuale e appartengono a San Basso Events o ai rispettivi proprietari. È vietata la riproduzione non autorizzata."
+      },
+      "liability": {
+        "title": "Limitazione di Responsabilità",
+        "content": "San Basso Events si impegna a mantenere il sito aggiornato e funzionante, ma non può garantire l'assenza di errori o interruzioni. Non ci assumiamo responsabilità per eventuali danni derivanti dall'utilizzo del sito."
+      },
+      "links": {
+        "title": "Link Esterni",
+        "content": "Il sito può contenere link a siti web di terze parti. Non siamo responsabili del contenuto o delle pratiche di privacy di questi siti esterni."
+      },
+      "modifications": {
+        "title": "Modifiche",
+        "content": "Ci riserviamo il diritto di modificare i presenti Termini e Condizioni in qualsiasi momento. Le modifiche saranno pubblicate su questa pagina con l'indicazione della data di ultimo aggiornamento."
+      },
+      "law": {
+        "title": "Legge Applicabile",
+        "content": "I presenti Termini e Condizioni sono regolati dalla legge italiana. Per qualsiasi controversia sarà competente il Foro di Larino (CB)."
+      }
+    }
+  },
+  "disclaimer": {
+    "title": "Disclaimer Progetto Universitario",
+    "lastUpdated": "Ultimo aggiornamento",
+    "intro": "Questo sito web è stato realizzato esclusivamente a scopo didattico nell'ambito di un progetto universitario.",
+    "sections": {
+      "purpose": {
+        "title": "Scopo del Progetto",
+        "content": "Questo sito è stato sviluppato come progetto accademico per il corso di Turismo presso l'Università degli Studi del Molise. L'obiettivo è dimostrare competenze nello sviluppo web, nel design UI/UX e nella creazione di esperienze digitali per la promozione di eventi culturali e tradizionali."
+      },
+      "fictionalContent": {
+        "title": "Contenuti Generati con AI",
+        "content": "IMPORTANTE: Tutti i contenuti testuali presenti in questo sito (descrizioni, programmi, informazioni) sono stati generati utilizzando intelligenza artificiale (Claude AI di Anthropic) e sono puramente fittizi. Le date, gli orari, i dettagli degli eventi e qualsiasi altra informazione NON corrispondono a eventi reali e NON devono essere considerati come fonte ufficiale di informazioni sulla Festa di San Basso o su eventi effettivi a Termoli."
+      },
+      "realEvent": {
+        "title": "Evento Reale",
+        "content": "La Festa di San Basso è un evento reale e tradizionale che si svolge annualmente a Termoli (CB). Per informazioni ufficiali e aggiornate sull'evento reale, si prega di consultare i canali ufficiali del Comune di Termoli e degli enti organizzatori."
+      },
+      "logos": {
+        "title": "Utilizzo di Loghi e Marchi",
+        "content": "I loghi e i marchi del Comune di Termoli, della Regione Molise e di altri enti pubblici o privati eventualmente presenti sul sito sono utilizzati esclusivamente a scopo dimostrativo e didattico. Questo progetto NON è affiliato, sponsorizzato o approvato dal Comune di Termoli, dalla Regione Molise o da qualsiasi altro ente i cui loghi potrebbero essere visualizzati. Tutti i marchi appartengono ai rispettivi proprietari."
+      },
+      "noCommercial": {
+        "title": "Uso Non Commerciale",
+        "content": "Questo sito web non ha alcuno scopo commerciale e non viene utilizzato per la vendita di biglietti, prodotti o servizi. Non vengono raccolti dati personali reali e il form di contatto è puramente dimostrativo e non funzionale."
+      },
+      "technology": {
+        "title": "Stack Tecnologico",
+        "content": "Il sito è stato sviluppato utilizzando Next.js 15, React, TypeScript, Tailwind CSS e Framer Motion. È stato progettato seguendo le best practice moderne di sviluppo web, accessibilità e user experience."
+      },
+      "contact": {
+        "title": "Contatti Studente",
+        "content": "Per informazioni sul progetto o per segnalare eventuali problematiche relative all'uso di contenuti, è possibile contattare lo studente sviluppatore attraverso la repository GitHub del progetto."
+      }
+    }
+  }
+}

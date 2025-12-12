@@ -1,26 +1,68 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ======= Global ======= */
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+*::-webkit-scrollbar {
+  display: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  scroll-behavior: smooth;
+}
+
+/* ======= Snap ======= */
+.snap-container {
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden !important;
+  overflow-y: scroll;
+  height: 100vh;
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.snap-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.snap-section {
+  scroll-snap-align: start;
+  min-height: 100vh;
+}
+
+/* ======= Marquee ======= */
+.marquee-container {
+  overflow: hidden !important;
+  width: 100%;
+}
+
+.marquee-left {
+  animation: marquee-left 20s linear infinite;
+}
+
+.marquee-right {
+  animation: marquee-right 20s linear infinite;
+}
+
+/* ======= Animations ======= */
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
