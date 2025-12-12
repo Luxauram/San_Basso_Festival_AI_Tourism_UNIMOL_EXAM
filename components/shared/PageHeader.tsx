@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export function PageHeader({ title }: { title: string }) {
   return (
-    <div className="relative bg-black text-white py-12 md:py-20 px-4 overflow-hidden">
+    <div className="relative text-black py-12 md:py-20 px-4 overflow-hidden">
       <motion.div
         className="max-w-7xl mx-auto text-center"
         initial={{ opacity: 0, y: 50 }}

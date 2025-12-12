@@ -4,6 +4,7 @@ import { LegalPage } from '@/types/i18n';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { PageHeader } from '../shared/PageHeader';
 
 interface LegalPageComponentProps {
   data: LegalPage;
@@ -46,9 +47,8 @@ export default function LegalPageComponent({ data }: LegalPageComponentProps) {
           animate={{ opacity: 1, y: 0 }}
           className="bg-white rounded-2xl shadow-lg p-8 md:p-12"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-            {data.title}
-          </h1>
+          <PageHeader title={data.title} />
+
           <p className="text-gray-500 mb-8 pb-8 border-b">
             {data.lastUpdated}: 07/12/2025
           </p>
