@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { PageHeader } from '../shared/PageHeader';
+import Container from '../shared/Container';
 
 interface LegalPageComponentProps {
   data: LegalPage;
@@ -52,7 +53,7 @@ export default function LegalPageComponent({ data }: LegalPageComponentProps) {
           <p className="text-gray-500 mb-8 pb-8 border-b">
             {data.lastUpdated}: 07/12/2025
           </p>
-
+        <Container>
           <div className="space-y-8">
             {sections.map((section, index) => (
               <Section
@@ -63,6 +64,7 @@ export default function LegalPageComponent({ data }: LegalPageComponentProps) {
               />
             ))}
           </div>
+          </Container>
 
           <motion.div
             initial={{ opacity: 0 }}
@@ -83,5 +85,6 @@ export default function LegalPageComponent({ data }: LegalPageComponentProps) {
         </motion.div>
       </div>
     </main>
+
   );
 }
