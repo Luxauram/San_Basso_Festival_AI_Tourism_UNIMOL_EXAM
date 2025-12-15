@@ -4,6 +4,7 @@ import { getDictionary } from '@/lib/i18n';
 import Header from '@/components/shared/Header';
 import DisclaimerBanner from '@/components/shared/DisclaimerBanner';
 import Footer from '@/components/shared/Footer';
+import AnimatedMenu from '@/components/shared/AnimatedMenu';
 
 const bebas = Bebas_Neue({
   subsets: ['latin'],
@@ -29,7 +30,8 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${bebas.variable} ${montserrat.variable}`}>
       <body className={montserrat.className}>
-        <Header locale={locale} dict={dict} />
+        {/* <Header locale={locale} dict={dict} /> */}
+        <AnimatedMenu locale={locale} dict={dict} />
         <DisclaimerBanner locale={locale} />
         {children}
         <Footer dict={dict} locale={locale} />

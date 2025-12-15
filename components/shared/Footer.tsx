@@ -3,19 +3,12 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-
 import Marquee from 'react-fast-marquee';
 import { Locale } from '@/i18n/config';
 import { Dictionary } from '@/types/i18n';
-import PrimaryButton from '../ui/buttons/PrimaryButton';
-import FacebookIcon from '../ui/shared/icons/social-networks/FacebookIcon';
-import InstagramIcon from '../ui/shared/icons/social-networks/InstagramIcon';
-import XIcon from '../ui/shared/icons/social-networks/XIcon';
-import TermoliSponsor from '../ui/shared/icons/sponsors/TermoliSponsor';
-import MoliseSponsor from '../ui/shared/icons/sponsors/MoliseSponsor';
-import UnimolSponsor from '../ui/shared/icons/sponsors/UnimolSponsor';
-import CapracottaSponsor from '../ui/shared/icons/sponsors/CapracottaSponsor';
-import HogwartsSponsor from '../ui/shared/icons/sponsors/HogwartsSponsor';
+import SocialNetworks from '../ui/shared/icons/social-networks/SocialNetworks';
+import Sponsors from '../ui/shared/icons/sponsors/Sponsors';
+import CountdownSection from '../sections/home/CountdownSection';
 
 interface FooterSectionProps {
   dict: Dictionary;
@@ -26,36 +19,14 @@ export default function FooterSection({ dict, locale }: FooterSectionProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const sponsors = [
-    { name: 'Termoli', icon: <TermoliSponsor /> },
-    { name: 'Molise', icon: <MoliseSponsor /> },
-    { name: 'Unimol', icon: <UnimolSponsor /> },
-    { name: 'Capracotta', icon: <CapracottaSponsor /> },
-    { name: 'Hogwarts', icon: <HogwartsSponsor /> },
-  ];
-
-  const contactsRoute = locale === 'it' ? '/contatti' : '/contacts';
-
   return (
     <section
       id="footer"
       ref={ref}
       className="snap-section flex flex-col justify-between bg-black text-white overflow-hidden py-12 px-4"
     >
-      {/* CTA Section */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={isInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.6 }}
-        className="text-center max-w-4xl mx-auto mb-8"
-      >
-        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight">
-          {dict.footer.cta.title}
-        </h2>
-        <PrimaryButton href={`/${locale}${contactsRoute}`}>
-          {dict.footer.cta.button}
-        </PrimaryButton>
-      </motion.div>
+      {/* Countdown Section */}
+      <CountdownSection dict={dict} locale={locale} />
 
       {/* Marquee Section */}
       <div className="my-12 space-y-4 marquee-container">
@@ -118,17 +89,7 @@ export default function FooterSection({ dict, locale }: FooterSectionProps) {
         <h3 className="text-sm md:text-base font-semibold tracking-widest mb-6 text-gray-400">
           {dict.footer.sponsors}
         </h3>
-        <div className="flex justify-center items-center gap-8 md:gap-12 flex-wrap">
-          {sponsors.map((sponsor, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ scale: 1.1 }}
-              className="w-16 h-16 md:w-20 md:h-20  rounded-lg flex items-center justify-center text-3xl md:text-4xl  transition"
-            >
-              {sponsor.icon}
-            </motion.div>
-          ))}
-        </div>
+        <Sponsors />
       </motion.div>
 
       {/* Social Section */}
@@ -141,39 +102,9 @@ export default function FooterSection({ dict, locale }: FooterSectionProps) {
         <h3 className="text-sm md:text-base font-semibold tracking-widest mb-4 text-gray-400">
           {dict.footer.follow}
         </h3>
-        <div className="flex justify-center items-center gap-4">
-          <motion.a
-            whileHover={{ scale: 1.15, y: -3 }}
-            whileTap={{ scale: 0.95 }}
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition"
-          >
-            <XIcon />
-          </motion.a>
-          <motion.a
-            whileHover={{ scale: 1.15, y: -3 }}
-            whileTap={{ scale: 0.95 }}
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition"
-          >
-            <FacebookIcon />
-          </motion.a>
-          <motion.a
-            whileHover={{ scale: 1.15, y: -3 }}
-            whileTap={{ scale: 0.95 }}
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition"
-          >
-            <InstagramIcon />
-          </motion.a>
-        </div>
+        <SocialNetworks />
       </motion.div>
+
       {/* Copyright e Link Legali */}
       <motion.div
         initial={{ opacity: 0 }}

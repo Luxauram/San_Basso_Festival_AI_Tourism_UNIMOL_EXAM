@@ -4,6 +4,7 @@
 * {
   scrollbar-width: none;
   -ms-overflow-style: none;
+  box-sizing: border-box;
 }
 
 *::-webkit-scrollbar {
