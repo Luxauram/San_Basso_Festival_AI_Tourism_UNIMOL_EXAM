@@ -1,10 +1,9 @@
 import { Bebas_Neue, Montserrat } from 'next/font/google';
 import { Locale } from '@/i18n/config';
 import { getDictionary } from '@/lib/i18n';
-import Header from '@/components/shared/Header';
 import DisclaimerBanner from '@/components/shared/DisclaimerBanner';
 import Footer from '@/components/shared/Footer';
-import AnimatedMenu from '@/components/shared/AnimatedMenu';
+import Navbar from '@/components/shared/Navbar';
 
 const bebas = Bebas_Neue({
   subsets: ['latin'],
@@ -30,8 +29,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${bebas.variable} ${montserrat.variable}`}>
       <body className={montserrat.className}>
-        {/* <Header locale={locale} dict={dict} /> */}
-        <AnimatedMenu locale={locale} dict={dict} />
+        <Navbar locale={locale} dict={dict} />
         <DisclaimerBanner locale={locale} />
         {children}
         <Footer dict={dict} locale={locale} />

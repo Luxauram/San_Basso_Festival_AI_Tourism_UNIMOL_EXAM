@@ -6,10 +6,7 @@ import HogwartsSponsor from './HogwartsSponsor';
 import MoliseSponsor from './MoliseSponsor';
 import TermoliSponsor from './TermoliSponsor';
 import UnimolSponsor from './UnimolSponsor';
-
-interface SponsorsProps {
-  className?: string;
-}
+import { SponsorsProps } from '@/types';
 
 export default function Sponsors({ className = '' }: SponsorsProps) {
   const sponsors = [

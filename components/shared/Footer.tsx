@@ -4,18 +4,12 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import Marquee from 'react-fast-marquee';
-import { Locale } from '@/i18n/config';
-import { Dictionary } from '@/types/i18n';
 import SocialNetworks from '../ui/shared/icons/social-networks/SocialNetworks';
 import Sponsors from '../ui/shared/icons/sponsors/Sponsors';
 import CountdownSection from '../sections/home/CountdownSection';
+import { DictAndLocaleProps } from '@/types';
 
-interface FooterSectionProps {
-  dict: Dictionary;
-  locale: Locale;
-}
-
-export default function FooterSection({ dict, locale }: FooterSectionProps) {
+export default function FooterSection({ dict, locale }: DictAndLocaleProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -25,12 +19,11 @@ export default function FooterSection({ dict, locale }: FooterSectionProps) {
       ref={ref}
       className="snap-section flex flex-col justify-between bg-black text-white overflow-hidden py-12 px-4"
     >
-      {/* Countdown Section */}
       <CountdownSection dict={dict} locale={locale} />
 
       {/* Marquee Section */}
       <div className="my-12 space-y-4 marquee-container">
-        {/* Primo Marquee - Destra a Sinistra */}
+        {/* ======= Marquee Termoli Events ======= */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
@@ -49,17 +42,15 @@ export default function FooterSection({ dict, locale }: FooterSectionProps) {
           </Marquee>
         </motion.div>
 
-        {/* Testo centrale */}
+        {/* ======= Linea ======= */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ delay: 0.5 }}
-          className="text-center text-xl md:text-3xl font-light py-2"
-        >
-          per
-        </motion.div>
+          initial={{ opacity: 0, scaleX: 0 }}
+          animate={isInView ? { opacity: 1, scaleX: 1 } : {}}
+          transition={{ delay: 0.5, duration: 0.8, ease: [0.6, 0, 0.4, 1] }}
+          className="w-3/4 sm:w-2/3 md:w-1/2 lg:w-2/5 max-w-2xl h-px bg-gradient-to-r from-transparent via-white/40 to-transparent mx-auto"
+        />
 
-        {/* Secondo Marquee - Sinistra a Destra */}
+        {/* ======= Marquee San Basso Festival ======= */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
@@ -79,7 +70,7 @@ export default function FooterSection({ dict, locale }: FooterSectionProps) {
         </motion.div>
       </div>
 
-      {/* Sponsors Section */}
+      {/* ======= Sponsors ======= */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -92,7 +83,7 @@ export default function FooterSection({ dict, locale }: FooterSectionProps) {
         <Sponsors />
       </motion.div>
 
-      {/* Social Section */}
+      {/* ======= Social ======= */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -105,7 +96,7 @@ export default function FooterSection({ dict, locale }: FooterSectionProps) {
         <SocialNetworks />
       </motion.div>
 
-      {/* Copyright e Link Legali */}
+      {/* ======= Copyright & Legals ======= */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 1 } : {}}

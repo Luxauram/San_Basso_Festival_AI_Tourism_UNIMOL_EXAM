@@ -1,18 +1,12 @@
-import { ReactNode } from 'react';
+import { ContainerProps } from '@/types';
 
-interface ContainerProps {
-  children: ReactNode;
-  className?: string;
-  as?: 'main' | 'section' | 'div';
-}
-
-export default function Container({ 
-  children, 
+export default function Container({
+  children,
   className = '',
-  as: Component = 'main'
+  as: Component = 'main',
 }: ContainerProps) {
   return (
-    <Component 
+    <Component
       className={`container mx-auto lg:px-0 md:px-6 flex flex-col items-center justify-center ${className}`}
     >
       {children}

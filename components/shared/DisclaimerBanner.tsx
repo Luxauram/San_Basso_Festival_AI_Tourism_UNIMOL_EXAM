@@ -2,20 +2,15 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Locale } from '@/i18n/config';
+import { DictAndLocaleProps } from '@/types';
 
-interface DisclaimerBannerProps {
-  locale: Locale;
-}
-
-export default function DisclaimerBanner({ locale }: DisclaimerBannerProps) {
+export default function DisclaimerBanner({ locale }: DictAndLocaleProps) {
   const [isClient, setIsClient] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
 
-    // Controlla localStorage solo dopo il mount sul client
     const hasSeenDisclaimer = localStorage.getItem('hasSeenDisclaimer');
     if (!hasSeenDisclaimer) {
       setIsVisible(true);
@@ -24,14 +19,13 @@ export default function DisclaimerBanner({ locale }: DisclaimerBannerProps) {
   }, []);
 
   useEffect(() => {
-    // Aggiungi/rimuovi padding al body quando il banner è visibile
     if (isClient && isVisible) {
       document.body.style.paddingBottom = '120px';
     } else {
       document.body.style.paddingBottom = '0';
     }
 
-    // Cleanup
+    // ======= Cleanup =======
     return () => {
       document.body.style.paddingBottom = '0';
     };
@@ -59,7 +53,6 @@ export default function DisclaimerBanner({ locale }: DisclaimerBannerProps) {
     },
   };
 
-  // Non renderizzare nulla finché non siamo sul client
   if (!isClient) {
     return null;
   }

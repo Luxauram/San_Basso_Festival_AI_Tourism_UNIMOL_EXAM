@@ -5,52 +5,25 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Locale } from '@/i18n/config';
-import { Dictionary } from '@/types/i18n';
+import { NavbarProps } from '@/types/navigation';
+import { getRoutes, getMenuLinks } from '@/data/navigation';
+import { DEFAULT_MENU_IMAGE } from '@/data/images-url';
 import LanguageSwitcher from '../ui/shared/LanguageSwitcher';
 import ManifestoTicket from './ManifestoTicket';
 import SocialNetworks from '../ui/shared/icons/social-networks/SocialNetworks';
 import { MenuButton } from '../ui/buttons/MenuButton';
 
-interface AnimatedMenuProps {
-  locale: Locale;
-  dict: Dictionary;
-}
-
-export default function AnimatedMenu({ locale, dict }: AnimatedMenuProps) {
+export default function Navbar({ locale, dict }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
-  const [currentImage, setCurrentImage] = useState('/menu/home.jpeg');
+  const [currentImage, setCurrentImage] = useState(DEFAULT_MENU_IMAGE);
   const [imageHistory, setImageHistory] = useState<string[]>([
-    '/menu/home.jpeg',
+    DEFAULT_MENU_IMAGE,
   ]);
   const pathname = usePathname();
 
-  const routes = {
-    home: `/${locale}`,
-    tradition: `/${locale}/tradizione`,
-    program: `/${locale}/programma`,
-    contacts: `/${locale}/contatti`,
-  };
-
-  const menuLinks = [
-    { label: dict.nav.home, href: routes.home, image: '/menu/home.jpeg' },
-    {
-      label: dict.nav.tradition,
-      href: routes.tradition,
-      image: '/menu/tradizione.jpeg',
-    },
-    {
-      label: dict.nav.program,
-      href: routes.program,
-      image: '/menu/programma.jpeg',
-    },
-    {
-      label: dict.nav.contacts,
-      href: routes.contacts,
-      image: '/menu/contatti.jpeg',
-    },
-  ];
+  const routes = getRoutes(locale);
+  const menuLinks = getMenuLinks(locale, dict);
 
   const isActive = (path: string) => pathname === path;
 
@@ -62,8 +35,8 @@ export default function AnimatedMenu({ locale, dict }: AnimatedMenuProps) {
     setTimeout(() => {
       setIsAnimating(false);
       if (isOpen) {
-        setImageHistory(['/menu/home.jpeg']);
-        setCurrentImage('/menu/home.jpeg');
+        setImageHistory([DEFAULT_MENU_IMAGE]);
+        setCurrentImage(DEFAULT_MENU_IMAGE);
       }
     }, 1250);
   };
@@ -118,7 +91,7 @@ export default function AnimatedMenu({ locale, dict }: AnimatedMenuProps) {
             lineProps={{ strokeLinecap: 'round' }}
             transition={{ type: 'spring', stiffness: 260, damping: 20 }}
             width={24}
-            height={64}
+            height={35}
           />
         </div>
       </nav>

@@ -1,6 +1,6 @@
 'use client';
 
-import { ButtonProps } from '@/types/ui';
+import { ButtonProps } from '@/types';
 import { motion } from 'framer-motion';
 
 export default function PrimaryButton({

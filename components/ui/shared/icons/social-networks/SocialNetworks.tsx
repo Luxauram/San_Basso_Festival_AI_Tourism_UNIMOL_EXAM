@@ -5,10 +5,7 @@ import XIcon from './XIcon';
 import FacebookIcon from './FacebookIcon';
 import InstagramIcon from './InstagramIcon';
 import YoutubeIcon from './YoutubeIcon';
-
-interface SocialNetworksProps {
-  className?: string;
-}
+import { SocialNetworksProps } from '@/types';
 
 export default function SocialNetworks({
   className = '',

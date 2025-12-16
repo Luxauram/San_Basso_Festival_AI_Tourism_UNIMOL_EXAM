@@ -1,14 +1,5 @@
-import { motion, Transition, SVGMotionProps } from 'framer-motion';
-
-interface Props extends Omit<SVGMotionProps<SVGSVGElement>, 'transition'> {
-  isOpen?: boolean;
-  color?: string;
-  strokeWidth?: string | number;
-  transition?: Transition | null;
-  lineProps?: Omit<SVGMotionProps<SVGLineElement>, 'variants'> | null;
-  width?: number;
-  height?: number;
-}
+import { MenuButtonProps } from '@/types';
+import { motion } from 'framer-motion';
 
 const MenuButton = ({
   isOpen = false,
@@ -19,7 +10,7 @@ const MenuButton = ({
   transition = null,
   lineProps = null,
   ...props
-}: Props) => {
+}: MenuButtonProps) => {
   const variant = isOpen ? 'opened' : 'closed';
   const top = {
     closed: {

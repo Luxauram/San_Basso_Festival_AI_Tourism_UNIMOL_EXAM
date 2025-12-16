@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import type { ButtonProps } from '@/types/ui';
+import type { ButtonProps } from '@/types';
 
 export default function SecondaryButton({
   children,
