@@ -1,22 +1,16 @@
 'use client';
 
 import { motion } from 'framer-motion';
-
-interface SecondaryButtonProps {
-  children: React.ReactNode;
-  onClick?: () => void;
-  href?: string;
-  className?: string;
-}
+import type { ButtonProps } from '@/types/ui';
 
 export default function SecondaryButton({
   children,
   onClick,
   href,
   className = '',
-}: SecondaryButtonProps) {
+}: ButtonProps) {
   const baseClasses =
-    'px-8 py-4 bg-yellow-400 text-black font-bold text-lg rounded-lg hover:bg-yellow-300 transition-colors uppercase tracking-wide';
+    'px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 bg-transparent border-2 border-yellow-400 text-yellow-400 font-bold text-sm sm:text-base md:text-lg rounded-lg hover:bg-yellow-400 hover:text-black transition-colors uppercase tracking-wide';
 
   if (href) {
     return (

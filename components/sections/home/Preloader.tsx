@@ -9,12 +9,6 @@ interface PreloaderProps {
 
 export default function Preloader({ onComplete }: PreloaderProps) {
   const [step, setStep] = useState(0);
-  const [isMobile] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return window.innerWidth <= 1000;
-    }
-    return false;
-  });
 
   useEffect(() => {
     const sequence = async () => {
@@ -57,7 +51,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
       }}
       transition={{ duration: 0.5 }}
     >
-      {/* Layer principale - schermo nero completo con testo centrato */}
+      {/* Layer principale - schermo nero superiore */}
       <motion.div
         className="fixed inset-0 bg-[#0a0a0a] flex items-center justify-center"
         initial={{ clipPath: 'inset(0% 0% 0% 0%)' }}
@@ -76,35 +70,33 @@ export default function Preloader({ onComplete }: PreloaderProps) {
       >
         {/* "Termoli Events" al centro assoluto */}
         <motion.div
-          className="text-white uppercase font-semibold text-center absolute"
-          style={{
-            fontSize: isMobile ? '2.5rem' : '6rem',
-            lineHeight: 1,
-          }}
+          className="text-white uppercase font-semibold text-center absolute px-4"
           initial={{ opacity: 0 }}
           animate={{
             opacity: step >= 1 && step < 2 ? 1 : 0,
           }}
           transition={{ duration: 1, ease: customEase }}
         >
-          {introText.split('').map((char, index) => (
-            <motion.span
-              key={index}
-              className="inline-block"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{
-                opacity: step >= 1 && step < 2 ? 1 : 0,
-                y: step >= 1 && step < 2 ? 0 : 30,
-              }}
-              transition={{
-                duration: 1,
-                delay: index * 0.05,
-                ease: customEase,
-              }}
-            >
-              {char === ' ' ? '\u00A0' : char}
-            </motion.span>
-          ))}
+          <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-none block">
+            {introText.split('').map((char, index) => (
+              <motion.span
+                key={index}
+                className="inline-block"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{
+                  opacity: step >= 1 && step < 2 ? 1 : 0,
+                  y: step >= 1 && step < 2 ? 0 : 30,
+                }}
+                transition={{
+                  duration: 1,
+                  delay: index * 0.05,
+                  ease: customEase,
+                }}
+              >
+                {char === ' ' ? '\u00A0' : char}
+              </motion.span>
+            ))}
+          </span>
         </motion.div>
       </motion.div>
 
@@ -126,11 +118,12 @@ export default function Preloader({ onComplete }: PreloaderProps) {
         }}
       />
 
-      {/* "San Basso" - FUORI dai layer con clip, ma sopra tutto */}
+      {/* "San Basso" - Container separato che segue il layer superiore */}
       <motion.div
-        className="fixed top-0 left-0 right-0 flex items-end justify-center pointer-events-none"
-        style={{
-          height: step >= 2 && step < 4 ? '48vh' : '0vh',
+        className="fixed top-0 left-0 right-0 overflow-hidden pointer-events-none"
+        initial={{ height: '100vh' }}
+        animate={{
+          height: step < 2 ? '100vh' : step < 4 ? '48vh' : '0vh',
         }}
         transition={{
           duration: step >= 4 ? 2 : 1.2,
@@ -138,11 +131,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
         }}
       >
         <motion.div
-          className="text-white uppercase font-black text-center pb-8"
-          style={{
-            fontSize: isMobile ? '3rem' : '7rem',
-            lineHeight: 1,
-          }}
+          className="absolute bottom-4 sm:bottom-6 md:bottom-8 text-white uppercase font-black text-center w-full"
           initial={{ opacity: 0, y: 40 }}
           animate={{
             opacity: step >= 3 ? 1 : 0,
@@ -153,15 +142,18 @@ export default function Preloader({ onComplete }: PreloaderProps) {
             ease: customEase,
           }}
         >
-          San Basso
+          <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+            San Basso
+          </span>
         </motion.div>
       </motion.div>
 
-      {/* "Festival" - FUORI dai layer con clip, ma sopra tutto */}
+      {/* "Festival" - Container separato che segue il layer inferiore */}
       <motion.div
-        className="fixed bottom-0 left-0 right-0 flex items-start justify-center pointer-events-none"
-        style={{
-          height: step >= 2 && step < 4 ? '52vh' : '0vh',
+        className="fixed bottom-0 left-0 right-0 overflow-hidden pointer-events-none"
+        initial={{ height: '0vh' }}
+        animate={{
+          height: step < 2 ? '0vh' : step < 4 ? '52vh' : '0vh',
         }}
         transition={{
           duration: step >= 4 ? 2 : 1.2,
@@ -169,11 +161,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
         }}
       >
         <motion.div
-          className="text-white uppercase font-black text-center pt-8"
-          style={{
-            fontSize: isMobile ? '3rem' : '7rem',
-            lineHeight: 1,
-          }}
+          className="absolute top-4 sm:top-6 md:top-8 text-white uppercase font-black text-center w-full"
           initial={{ opacity: 0, y: -40 }}
           animate={{
             opacity: step >= 3 ? 1 : 0,
@@ -184,10 +172,11 @@ export default function Preloader({ onComplete }: PreloaderProps) {
             ease: customEase,
           }}
         >
-          Festival
+          <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+            Festival
+          </span>
         </motion.div>
       </motion.div>
-
       {/* Video/Contenuto sotto - fade in graduale che inizia prima */}
       <motion.div
         className="fixed inset-0"
