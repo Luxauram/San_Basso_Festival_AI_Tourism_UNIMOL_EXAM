@@ -3,71 +3,142 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Locale } from '@/i18n/config';
-import { Dictionary } from '@/types/i18n';
+import { TextGenerateEffect } from '@/components/ui/text-generate-effect';
+import { DictAndLocaleProps } from '@/types';
+import SecondaryButton from '@/components/ui/buttons/SecondaryButton';
 
-interface TradizioneSectionProps {
-  dict: Dictionary;
-  locale: Locale;
-}
+const words1 = `Terminal is a strategic joint venture, not a typical startup. Backed by leading logistics operators such as Prologis, Ryder, Lineage, and NFI, and supported by venture capital firm 8VC, we were designed to solve major industry pain points and establish the category standard.`;
 
-export default function TradizioneSection({
-  dict,
-  locale,
-}: TradizioneSectionProps) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-100px' });
+const words2 = `Our strategic investors contributed critical insights and became anchor product design partners, ensuring we're rapidly solving the industries biggest challenges in yard logistics. We combine deep industry expertise with cutting-edge technology to transform the supply chain.`;
 
-  const traditionRoute = locale === 'it' ? '/tradizione' : '/tradition';
+export default function TraditionSection({ dict, locale }: DictAndLocaleProps) {
+  const section1Ref = useRef(null);
+  const section2Ref = useRef(null);
+  const section1InView = useInView(section1Ref, { once: true, amount: 0.3 });
+  const section2InView = useInView(section2Ref, { once: true, amount: 0.3 });
+  const contactsRoute = locale === 'it' ? '/contatti' : '/contacts';
 
   return (
-    <section
-      ref={ref}
-      className="snap-section flex items-center justify-center bg-gradient-to-br from-amber-50 to-orange-100 relative overflow-hidden"
-    >
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 text-9xl">⚓</div>
-        <div className="absolute bottom-20 right-10 text-9xl">🌊</div>
-      </div>
-
-      <div className="max-w-5xl px-8 py-16 relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-        >
-          <motion.h2
-            className="text-5xl md:text-6xl font-bold mb-8 text-gray-900"
-            initial={{ opacity: 0, x: -50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ delay: 0.2 }}
-          >
-            {dict.tradition.title}
-          </motion.h2>
-
+    <div className="w-full bg-white-custom">
+      {/* Sezione 1: Testo a sinistra, Immagine a destra */}
+      <section
+        ref={section1Ref}
+        className="w-full min-h-screen flex items-center px-6 md:px-12 lg:px-20 py-20"
+      >
+        <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
+          {/* Testo */}
           <motion.div
-            className="space-y-6 text-lg md:text-xl text-gray-700 leading-relaxed"
-            initial={{ opacity: 0 }}
-            animate={isInView ? { opacity: 1 } : {}}
-            transition={{ delay: 0.4 }}
+            className="flex-1"
+            initial={{ opacity: 0, x: -50 }}
+            animate={section1InView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
           >
-            <p>{dict.tradition.description1}</p>
-            <p>{dict.tradition.description2}</p>
+            <div className="mb-4">
+              <span className="text-sm text-gray-400 uppercase tracking-wider">
+                #Tradizione
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-black-custom">
+              Built by the industry, for the industry
+            </h2>
+            <div className="text-lg md:text-xl text-gray-600 leading-relaxed">
+              {section1InView && <TextGenerateEffect words={words1} />}
+            </div>
+          </motion.div>
 
+          {/* Immagine con maschera */}
+          <motion.div
+            className="flex-1 w-full"
+            initial={{ opacity: 0, x: 50 }}
+            animate={section1InView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
+          >
             <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="mt-8 inline-block"
+              className="w-full h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden relative"
+              style={{
+                clipPath: 'polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%)',
+              }}
+              whileHover={{
+                clipPath: 'polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%)',
+                transition: { duration: 0.5 },
+              }}
             >
-              <a
-                href={`/${locale}${traditionRoute}`}
-                className="text-purple-600 font-semibold text-xl hover:text-purple-800 transition flex items-center gap-2"
-              >
-                {dict.tradition.cta} →
-              </a>
+              <motion.img
+                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=80"
+                alt="Logistics"
+                className="w-full h-full object-cover"
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.6 }}
+              />
             </motion.div>
           </motion.div>
-        </motion.div>
-      </div>
-    </section>
+        </div>
+      </section>
+
+      {/* Sezione 2: Immagine a sinistra, Testo a destra */}
+      <section
+        ref={section2Ref}
+        className="w-full min-h-screen flex items-center px-6 md:px-12 lg:px-20 py-20 bg-white-custom"
+      >
+        <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
+          {/* Immagine con maschera */}
+          <motion.div
+            className="flex-1 w-full lg:order-1"
+            initial={{ opacity: 0, x: -50 }}
+            animate={section2InView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
+          >
+            <motion.div
+              className="w-full h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden relative"
+              style={{
+                clipPath: 'polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 15%)',
+              }}
+              whileHover={{
+                clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0)',
+                transition: { duration: 0.5 },
+              }}
+            >
+              <motion.img
+                src="https://images.unsplash.com/photo-1605732562742-3023a888e56e?w=1200&q=80"
+                alt="Technology"
+                className="w-full h-full object-cover"
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.6 }}
+              />
+            </motion.div>
+          </motion.div>
+
+          {/* Testo */}
+          <motion.div
+            className="flex-1 lg:order-2"
+            initial={{ opacity: 0, x: 50 }}
+            animate={section2InView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+          >
+            <div className="mb-4">
+              <span className="text-sm text-gray-400 uppercase tracking-wider">
+                #Tradizione
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-black-custom">
+              Strategic partnerships, proven results
+            </h2>
+            <div className="text-lg md:text-xl text-gray-600 leading-relaxed">
+              {section2InView && <TextGenerateEffect words={words2} />}
+            </div>
+            <motion.div
+              className="mt-8 flex md:justify-end justify-center"
+              initial={{ opacity: 0, x: 50 }}
+              animate={section2InView ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.8, ease: 'easeOut' }}
+            >
+              <SecondaryButton href={`/${locale}${contactsRoute}`}>
+                {dict.footer.cta.button}
+              </SecondaryButton>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+    </div>
   );
 }

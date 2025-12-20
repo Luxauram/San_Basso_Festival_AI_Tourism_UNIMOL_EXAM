@@ -1,17 +1,13 @@
 'use client';
 
-import { Dictionary } from '@/types/i18n';
 import { motion } from 'framer-motion';
 import { Toaster } from 'react-hot-toast';
 import Maps from '../sections/contacts/Maps';
 import Info from '../sections/contacts/Info';
 import ContactForm from '../sections/contacts/ContactForm';
+import { DictAndLocaleProps } from '@/types';
 
-interface ContactsPageProps {
-  dict: Dictionary;
-}
-
-export default function ContactsPageComponent({ dict }: ContactsPageProps) {
+export default function ContactsPageComponent({ dict }: DictAndLocaleProps) {
   return (
     <>
       <Toaster />

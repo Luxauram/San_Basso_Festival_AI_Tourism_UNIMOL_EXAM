@@ -3,18 +3,15 @@
 import { useState } from 'react';
 import HeroSection from '@/components/sections/home/HeroSection';
 import ProgrammaSection from '@/components/sections/home/ProgramSection';
-import TradizioneSection from '@/components/sections/home/TraditionSection';
-import { Locale } from '@/i18n/config';
-import { Dictionary } from '@/types/i18n';
+import TraditionSection from '@/components/sections/home/TraditionSection';
 import ReviewSection from './ReviewSection';
 import Preloader from './Preloader';
+import { HeroParallax } from '@/components/ui/hero-parallax';
+import { PARALLAX_ITEMS } from '@/data/parallax-home-items';
+import { DictAndLocaleProps } from '@/types';
+import OpeningIntroText from './OpeningIntroText';
 
-interface HomeClientProps {
-  locale: Locale;
-  dict: Dictionary;
-}
-
-export default function HomeClient({ locale, dict }: HomeClientProps) {
+export default function HomeClient({ locale, dict }: DictAndLocaleProps) {
   const [preloaderComplete, setPreloaderComplete] = useState(false);
 
   return (
@@ -31,11 +28,21 @@ export default function HomeClient({ locale, dict }: HomeClientProps) {
 
       {preloaderComplete && (
         <>
+          <div id="intro-text">
+            <OpeningIntroText />
+          </div>
           <div id="tradizione">
-            <TradizioneSection dict={dict} locale={locale} />
+            <TraditionSection dict={dict} locale={locale} />
           </div>
           <div id="programma">
             <ProgrammaSection dict={dict} locale={locale} />
+          </div>
+          <div id="parallax">
+            <HeroParallax
+              dict={dict}
+              locale={locale}
+              products={PARALLAX_ITEMS}
+            />
           </div>
           <div id="reviews">
             <ReviewSection dict={dict} locale={locale} />

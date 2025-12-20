@@ -3,20 +3,14 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Locale } from '@/i18n/config';
-import { Dictionary } from '@/types/i18n';
 import { reviews } from '@/lib/mock-reviews';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import ScrollPromptSemicircle from '@/components/shared/ScrollPromptSemicircle';
 import { arrowDownIcon } from '@/components/ui/shared/icons/ArrowDownIcon';
+import { DictAndLocaleProps } from '@/types';
 
-interface ReviewSectionProps {
-  dict: Dictionary;
-  locale: Locale;
-}
-
-export default function ReviewSection({ dict, locale }: ReviewSectionProps) {
+export default function ReviewSection({ dict, locale }: DictAndLocaleProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 

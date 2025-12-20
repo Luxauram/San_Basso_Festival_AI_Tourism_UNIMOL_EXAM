@@ -76,6 +76,86 @@ h6 {
   }
 }
 
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* ======= Tailwind - Heading & Paragraphs ======= */
+h1 {
+  @apply text-4xl font-bold text-gray-900 leading-tight mb-6;
+}
+
+h2 {
+  @apply text-2xl md:text-4xl lg:text-5xl font-bold leading-snug mb-5;
+}
+
+h3 {
+  @apply text-xl md:text-3xl lg:text-4xl font-semibold leading-snug tracking-widest mb-4;
+}
+
+h4 {
+  @apply text-xl font-medium text-gray-700 leading-normal mb-3;
+}
+
+h5 {
+  @apply text-lg font-medium text-gray-700 leading-normal mb-2;
+}
+
+h6 {
+  @apply text-base font-medium text-gray-600 leading-normal mb-2;
+}
+
+p {
+  @apply text-base text-gray-700 leading-relaxed mb-4;
+}
+
+/* ======= Tailwind - Custom Classes ======= */
+.bg-black-custom {
+  @apply bg-zinc-950;
+}
+
+.bg-white-custom {
+  @apply bg-stone-100;
+}
+
+.bg-primary-custom {
+  @apply bg-[#5DB6CD];
+}
+
+.border-primary-custom {
+  @apply border-[#5DB6CD];
+}
+
+.bg-secondary-custom {
+  @apply bg-[#E35A04];
+}
+
+.border-secondary-custom {
+  @apply border-[#E35A04];
+}
+
+.bg-accent-custom {
+  @apply bg-[#F9A63E];
+}
+
+.border-accent-custom {
+  @apply border-[#F9A63E];
+}
+
+.text-black-custom {
+  @apply text-black;
+}
+
+.text-white-custom {
+  @apply text-white;
+}
+
+/* ======= Tailwind - Acernity ======= */
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -184,13 +264,4 @@ h6 {
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
-}
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
 }

@@ -1,17 +1,11 @@
 'use client';
 
+import { DictAndLocaleProps } from '@/types';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Locale } from '@/i18n/config';
-import { Dictionary } from '@/types/i18n';
 
-interface ProgramSectionProps {
-  dict: Dictionary;
-  locale: Locale;
-}
-
-export default function ProgramSection({ dict, locale }: ProgramSectionProps) {
+export default function ProgramSection({ dict, locale }: DictAndLocaleProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 

@@ -1,19 +1,13 @@
 'use client';
 
-import { Dictionary } from '@/types/i18n';
 import { motion } from 'framer-motion';
-import { Locale } from '@/i18n/config';
 import PrimaryButton from '@/components/ui/buttons/PrimaryButton';
 import SecondaryButton from '@/components/ui/buttons/SecondaryButton';
 import ScrollPromptSemicircle from '@/components/shared/ScrollPromptSemicircle';
 import { arrowDownIcon } from '@/components/ui/shared/icons/ArrowDownIcon';
+import { DictAndLocaleProps } from '@/types';
 
-interface HeroSectionProps {
-  dict: Dictionary;
-  locale: Locale;
-}
-
-export default function HeroSection({ dict, locale }: HeroSectionProps) {
+export default function HeroSection({ dict, locale }: DictAndLocaleProps) {
   const contactsRoute = locale === 'it' ? '/contatti' : '/contacts';
 
   return (

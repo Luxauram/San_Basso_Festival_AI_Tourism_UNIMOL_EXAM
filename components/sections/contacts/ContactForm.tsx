@@ -1,15 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Dictionary } from '@/types/i18n';
 import { useState } from 'react';
 import toast from 'react-hot-toast';
+import { DictAndLocaleProps } from '@/types';
 
-interface ContactFormProps {
-  dict: Dictionary;
-}
-
-export default function ContactForm({ dict }: ContactFormProps) {
+export default function ContactForm({ dict }: DictAndLocaleProps) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',

@@ -1,14 +1,10 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Dictionary } from '@/types/i18n';
 import SocialNetworks from '@/components/ui/shared/icons/social-networks/SocialNetworks';
+import { DictAndLocaleProps } from '@/types';
 
-interface InfoProps {
-  dict: Dictionary;
-}
-
-export default function Info({ dict }: InfoProps) {
+export default function Info({ dict }: DictAndLocaleProps) {
   return (
     <motion.div
       initial={{ opacity: 0, x: 50 }}
