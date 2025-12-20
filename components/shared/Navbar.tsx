@@ -65,9 +65,9 @@ export default function Navbar({ locale, dict }: NavbarProps) {
   return (
     <>
       {/* Navigation */}
-      <nav className="fixed w-full px-10 py-10 flex justify-between items-center z-50">
+      <nav className="fixed w-full px-10 py-10 flex justify-between items-center z-[150]">
         {/* Logo */}
-        <Link href={routes.home} className="z-50">
+        <Link href={routes.home} className="z-[160]">
           <Image
             src="/logo.png"
             alt="San Basso Festival"
@@ -78,12 +78,12 @@ export default function Navbar({ locale, dict }: NavbarProps) {
         </Link>
 
         {/* Center - Manifesto Ticket */}
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50">
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[160]">
           <ManifestoTicket locale={locale} />
         </div>
 
         {/* Menu Toggle Button */}
-        <div className="z-50 cursor-pointer" onClick={toggleMenu}>
+        <div className="z-[160] cursor-pointer" onClick={toggleMenu}>
           <MenuButton
             isOpen={isOpen}
             strokeWidth="8"
@@ -98,7 +98,7 @@ export default function Navbar({ locale, dict }: NavbarProps) {
 
       {/* Menu Overlay */}
       <motion.div
-        className="fixed w-screen h-screen bg-[#0f0f0f] z-40"
+        className="fixed w-screen h-screen bg-[#0f0f0f] z-[140]"
         initial={{ clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' }}
         animate={
           isOpen

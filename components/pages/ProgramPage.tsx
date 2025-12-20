@@ -6,6 +6,7 @@ import { ProgramDay } from '../sections/program/ProgramDay';
 import { PageHeader } from '../shared/PageHeader';
 import AccommodationsSection from '../sections/program/AccommodationsSection';
 import RestaurantsSection from '../sections/program/RestaurantsSection';
+import { SmoothScrollIntro } from '../sections/program/SmoothScrollIntro';
 
 interface ProgramPageProps {
   dict: Dictionary;
@@ -14,8 +15,10 @@ interface ProgramPageProps {
 
 export default function ProgramPageComponent({ dict }: ProgramPageProps) {
   return (
-    <main className="min-h-screen bg-black text-white">
-      <PageHeader title={dict.program.title} />
+    <main className="bg-zinc-950">
+      <PageHeader title={dict.program.title} subtitle={dict.program.title} />
+
+      <SmoothScrollIntro />
 
       <motion.div
         className="max-w-7xl mx-auto px-4 py-16"

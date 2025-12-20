@@ -8,6 +8,8 @@ import { Dictionary } from '@/types/i18n';
 import { reviews } from '@/lib/mock-reviews';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
+import ScrollPromptSemicircle from '@/components/shared/ScrollPromptSemicircle';
+import { arrowDownIcon } from '@/components/ui/shared/icons/ArrowDownIcon';
 
 interface ReviewSectionProps {
   dict: Dictionary;
@@ -48,7 +50,7 @@ export default function ReviewSection({ dict, locale }: ReviewSectionProps) {
   return (
     <section
       ref={ref}
-      className="snap-section flex items-center justify-center bg-gradient-to-br from-blue-900 to-purple-900 text-white overflow-hidden"
+      className="flex items-center justify-center bg-gradient-to-br from-blue-900 to-purple-900 text-white overflow-hidden pt-8 pb-48"
     >
       <div className="w-full px-4 sm:px-8 py-16">
         <motion.h2
@@ -121,6 +123,14 @@ export default function ReviewSection({ dict, locale }: ReviewSectionProps) {
           <p className="text-gray-300 text-sm">{dict.reviews.disclaimer}</p>
         </motion.div>
       </div>
+
+      {/* ======= Scroll to Explore ======= */}
+      <ScrollPromptSemicircle
+        text={dict.footer.cta.button}
+        bgColor="bg-zinc-950"
+        textColor="text-white"
+        icon={arrowDownIcon}
+      />
     </section>
   );
 }

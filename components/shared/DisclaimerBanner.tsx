@@ -65,7 +65,7 @@ export default function DisclaimerBanner({ locale }: DictAndLocaleProps) {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 100, opacity: 0 }}
           transition={{ duration: 0.4, ease: 'easeOut' }}
-          className="fixed bottom-0 left-0 right-0 z-50 bg-gradient-to-r from-yellow-50 to-orange-50 border-t-2 border-yellow-400 shadow-2xl backdrop-blur-sm"
+          className="fixed bottom-0 left-0 right-0 z-[100] bg-gradient-to-r from-yellow-50 to-orange-50 border-t-2 border-yellow-400 shadow-2xl backdrop-blur-sm"
         >
           <div className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between flex-wrap gap-3">

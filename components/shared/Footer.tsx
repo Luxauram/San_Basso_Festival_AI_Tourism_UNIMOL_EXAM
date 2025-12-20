@@ -8,16 +8,17 @@ import SocialNetworks from '../ui/shared/icons/social-networks/SocialNetworks';
 import Sponsors from '../ui/shared/icons/sponsors/Sponsors';
 import CountdownSection from '../sections/home/CountdownSection';
 import { DictAndLocaleProps } from '@/types';
+import { BackgroundBeams } from '../ui/background-beams';
 
 export default function FooterSection({ dict, locale }: DictAndLocaleProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section
+    <footer
       id="footer"
       ref={ref}
-      className="snap-section flex flex-col justify-between bg-black text-white overflow-hidden py-12 px-4"
+      className="flex flex-col justify-between bg-neutral-950 overflow-hidden py-12 px-4 antialiased relative h-full"
     >
       <CountdownSection dict={dict} locale={locale} />
 
@@ -30,13 +31,13 @@ export default function FooterSection({ dict, locale }: DictAndLocaleProps) {
           transition={{ delay: 0.3 }}
         >
           <Marquee speed={80} gradient={false} direction="left">
-            <span className="text-6xl md:text-8xl lg:text-9xl font-bold text-white/10 mx-8">
+            <span className="text-6xl md:text-8xl lg:text-9xl font-bold text-white/70 mx-8">
               TERMOLI EVENTS
             </span>
-            <span className="text-6xl md:text-8xl lg:text-9xl font-bold text-white/10 mx-8">
+            <span className="text-6xl md:text-8xl lg:text-9xl font-bold text-white/70 mx-8">
               TERMOLI EVENTS
             </span>
-            <span className="text-6xl md:text-8xl lg:text-9xl font-bold text-white/10 mx-8">
+            <span className="text-6xl md:text-8xl lg:text-9xl font-bold text-white/70 mx-8">
               TERMOLI EVENTS
             </span>
           </Marquee>
@@ -47,7 +48,7 @@ export default function FooterSection({ dict, locale }: DictAndLocaleProps) {
           initial={{ opacity: 0, scaleX: 0 }}
           animate={isInView ? { opacity: 1, scaleX: 1 } : {}}
           transition={{ delay: 0.5, duration: 0.8, ease: [0.6, 0, 0.4, 1] }}
-          className="w-3/4 sm:w-2/3 md:w-1/2 lg:w-2/5 max-w-2xl h-px bg-gradient-to-r from-transparent via-white/40 to-transparent mx-auto"
+          className="w-3/4 sm:w-2/3 md:w-1/2 lg:w-2/5 max-w-2xl h-px bg-linear-to-r from-transparent via-white/40 to-transparent mx-auto"
         />
 
         {/* ======= Marquee San Basso Festival ======= */}
@@ -57,13 +58,13 @@ export default function FooterSection({ dict, locale }: DictAndLocaleProps) {
           transition={{ delay: 0.7 }}
         >
           <Marquee speed={80} gradient={false} direction="right">
-            <span className="text-6xl md:text-8xl lg:text-9xl font-bold text-white/10 mx-8">
+            <span className="text-6xl md:text-8xl lg:text-9xl font-bold text-white/70 mx-8">
               SAN BASSO FESTIVAL
             </span>
-            <span className="text-6xl md:text-8xl lg:text-9xl font-bold text-white/10 mx-8">
+            <span className="text-6xl md:text-8xl lg:text-9xl font-bold text-white/70 mx-8">
               SAN BASSO FESTIVAL
             </span>
-            <span className="text-6xl md:text-8xl lg:text-9xl font-bold text-white/10 mx-8">
+            <span className="text-6xl md:text-8xl lg:text-9xl font-bold text-white/70 mx-8">
               SAN BASSO FESTIVAL
             </span>
           </Marquee>
@@ -129,6 +130,8 @@ export default function FooterSection({ dict, locale }: DictAndLocaleProps) {
           © 2025 San Basso Events. {dict.footer.legal.rights}
         </p>
       </motion.div>
-    </section>
+
+      <BackgroundBeams />
+    </footer>
   );
 }

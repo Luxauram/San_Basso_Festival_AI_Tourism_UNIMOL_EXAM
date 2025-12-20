@@ -5,6 +5,7 @@ import { useInView } from 'framer-motion';
 import { useRef, useState, useEffect } from 'react';
 import PrimaryButton from '@/components/ui/buttons/PrimaryButton';
 import { DictAndLocaleProps, TimeLeftProps } from '@/types';
+import { BackgroundBeams } from '@/components/ui/background-beams';
 
 export default function CountdownSection({ dict, locale }: DictAndLocaleProps) {
   const ref = useRef(null);
@@ -59,7 +60,7 @@ export default function CountdownSection({ dict, locale }: DictAndLocaleProps) {
   return (
     <section
       ref={ref}
-      className="snap-section relative flex items-center justify-center bg-black text-white py-20 px-4 overflow-hidden"
+      className="snap-section relative flex items-center justify-center text-white py-20 px-4 overflow-hidden"
     >
       {/* Radial gradient background */}
       <div className="absolute inset-0 bg-gradient-radial from-blue-900/20 via-transparent to-transparent" />

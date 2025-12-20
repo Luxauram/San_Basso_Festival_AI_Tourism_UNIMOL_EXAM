@@ -30,7 +30,7 @@ export default async function LocaleLayout({
     <html lang={locale} className={`${bebas.variable} ${montserrat.variable}`}>
       <body className={montserrat.className}>
         <Navbar locale={locale} dict={dict} />
-        <DisclaimerBanner locale={locale} />
+        <DisclaimerBanner locale={locale} dict={dict} />
         {children}
         <Footer dict={dict} locale={locale} />
       </body>
