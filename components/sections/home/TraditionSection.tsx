@@ -23,7 +23,7 @@ export default function TraditionSection({ dict, locale }: DictAndLocaleProps) {
       {/* Sezione 1: Testo a sinistra, Immagine a destra */}
       <section
         ref={section1Ref}
-        className="w-full min-h-screen flex items-center px-6 md:px-12 lg:px-20 py-20"
+        className="w-full flex items-center px-6 md:px-12 lg:px-20 py-20 "
       >
         <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
           {/* Testo */}
@@ -78,7 +78,7 @@ export default function TraditionSection({ dict, locale }: DictAndLocaleProps) {
       {/* Sezione 2: Immagine a sinistra, Testo a destra */}
       <section
         ref={section2Ref}
-        className="w-full min-h-screen flex items-center px-6 md:px-12 lg:px-20 py-20 bg-white-custom"
+        className="w-full flex items-center px-6 md:px-12 lg:px-20 py-20 bg-white-custom"
       >
         <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
           {/* Immagine con maschera */}

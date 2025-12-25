@@ -6,6 +6,13 @@ import {
   useTransform,
 } from 'framer-motion';
 import { useRef } from 'react';
+import {
+  SCROLL_INTRO_IMAGE_1,
+  SCROLL_INTRO_IMAGE_2,
+  SCROLL_INTRO_IMAGE_3,
+  SCROLL_INTRO_IMAGE_4,
+  SCROLL_INTRO_IMAGE_5,
+} from '@/data';
 
 export const SmoothScrollIntro = () => {
   return (
@@ -68,7 +75,7 @@ const CenterImage = () => {
         clipPath,
         backgroundSize,
         opacity,
-        backgroundImage: "url('/scroll-intro/scroll-intro-1.jpg')",
+        backgroundImage: `url(${SCROLL_INTRO_IMAGE_1})`,
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
       }}
@@ -80,28 +87,28 @@ const ParallaxImages = () => {
   return (
     <div className="mx-auto max-w-5xl px-4 pt-[200px]">
       <ParallaxImg
-        src="/scroll-intro/scroll-intro-2.jpg"
+        src={SCROLL_INTRO_IMAGE_2}
         alt="And example of a space launch"
         start={-200}
         end={200}
         className="w-1/3"
       />
       <ParallaxImg
-        src="/scroll-intro/scroll-intro-3.jpg"
+        src={SCROLL_INTRO_IMAGE_3}
         alt="An example of a space launch"
         start={200}
         end={-250}
         className="mx-auto w-2/3"
       />
       <ParallaxImg
-        src="/scroll-intro/scroll-intro-4.jpg"
+        src={SCROLL_INTRO_IMAGE_4}
         alt="Orbiting satellite"
         start={-200}
         end={200}
         className="ml-auto w-1/3"
       />
       <ParallaxImg
-        src="/scroll-intro/scroll-intro-5.jpg"
+        src={SCROLL_INTRO_IMAGE_5}
         alt="Orbiting satellite"
         start={0}
         end={-500}
