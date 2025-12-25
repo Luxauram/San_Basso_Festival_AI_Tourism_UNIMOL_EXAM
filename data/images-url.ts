@@ -2,10 +2,10 @@
 export const MAIN_LOGO_IMAGE = '/logo.png';
 
 // ======= Menu URLs =======
-export const DEFAULT_MENU_IMAGE = '/menu/home.jpeg';
-export const CONTACTS_MENU_IMAGE = '/menu/contatti.jpeg';
-export const PROGRAM_MENU_IMAGE = '/menu/programma.jpeg';
-export const TRADITION_MENU_IMAGE = '/menu/tradizione.jpeg';
+export const DEFAULT_MENU_IMAGE = '/menu/home.webp';
+export const CONTACTS_MENU_IMAGE = '/menu/contatti.webp';
+export const PROGRAM_MENU_IMAGE = '/menu/programma.webp';
+export const TRADITION_MENU_IMAGE = '/menu/tradizione.webp';
 
 // ======= Scroll Intro URLs =======
 export const SCROLL_INTRO_IMAGE_1 = '/scroll-intro/scroll-intro-1.webp';
@@ -56,6 +56,12 @@ export const PARALLAX_RIGHT_BOAT_UP_TRADITION_IMAGE =
   '/parallax-tradition/right-boat-up.png';
 export const PARALLAX_BOTTOM_BOAT_TRADITION_IMAGE =
   '/parallax-tradition/bottom-boat.png';
+export const PARALLAX_RIGHT_PORT_TRADITION_IMAGE =
+  '/parallax-tradition/right-port.png';
+export const PARALLAX_CENTER_FIREWORKS_TRADITION_IMAGE =
+  '/parallax-tradition/center-fireworks.png';
+export const PARALLAX_LEFT_CHURCH_TRADITION_IMAGE =
+  '/parallax-tradition/left-church.png';
 
 // ======= Sponsor URLs =======
 export const CAPRACOTTA_SPONSOR_IMAGE =

@@ -95,7 +95,7 @@ _(Alcuni prompt sono stati lievemente modificati per creare un'esperienza più r
 
 15. **Il Selfie con il Trabucco:** Due amici si fanno un selfie con uno storico Trabucco di Termoli sullo sfondo, mentre le prime luci della sera e della festa iniziano ad accendersi. Unisce il simbolo della città all'atmosfera festiva.
 
-- ![AI Generated Img](/public/parallax-home/parallax-5.webp)
+- ![AI Generated Img](/public/parallax-home/parallax-15.webp)
 
 ## Video Generation (ChatGPT / Gemini)
 

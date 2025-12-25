@@ -88,7 +88,7 @@ export default function Section3({ isActive }: { isActive: boolean }) {
       <motion.div
         className="absolute top-[calc(-5vh)] md:top-[calc(0vh)] lg:top-[calc(5vh)] xl:top-[calc(8vh)] left-[calc(-15vw)] md:left-[calc(-12vw)] lg:left-[calc(-10vw)] xl:left-[calc(-8vw)] z-8 w-[calc(110vw)] h-[calc(90vh)] md:w-[calc(90vw)] md:h-[calc(75vh)] lg:w-[calc(75vw)] lg:h-[calc(65vh)] xl:w-[calc(65vw)] xl:h-[calc(55vh)] pointer-events-none"
         initial={{ x: -200, opacity: 0 }}
-        animate={isActive ? { x: 0, opacity: 0.8 } : { x: -200, opacity: 0 }}
+        animate={isActive ? { x: 0, opacity: 1 } : { x: -200, opacity: 0 }}
         transition={{
           duration: 1.6,
           delay: 1.6,
@@ -108,7 +108,7 @@ export default function Section3({ isActive }: { isActive: boolean }) {
       <motion.div
         className="absolute bottom-[calc(20vh)] md:bottom-[calc(22vh)] lg:bottom-[calc(25vh)] xl:bottom-[calc(28vh)] left-[calc(-8vw)] md:left-[calc(-6vw)] lg:left-[calc(-5vw)] xl:left-[calc(-4vw)] z-9 w-[calc(50vw)] h-[calc(45vh)] md:w-[calc(45vw)] md:h-[calc(40vh)] lg:w-[calc(40vw)] lg:h-[calc(35vh)] xl:w-[calc(35vw)] xl:h-[calc(32vh)] pointer-events-none"
         initial={{ x: -200, opacity: 0 }}
-        animate={isActive ? { x: 0, opacity: 0.9 } : { x: -200, opacity: 0 }}
+        animate={isActive ? { x: 0, opacity: 1 } : { x: -200, opacity: 0 }}
         transition={{
           duration: 1.6,
           delay: 1.8,
@@ -124,11 +124,11 @@ export default function Section3({ isActive }: { isActive: boolean }) {
         />
       </motion.div>
 
-      {/* Boat Right Up - DESTRA ALTO */}
+      {/* Boat Right Up */}
       <motion.div
         className="absolute top-[calc(8vh)] md:top-[calc(10vh)] lg:top-[calc(12vh)] xl:top-[calc(15vh)] right-[calc(-85vw)] md:right-[calc(-75vw)] lg:right-[calc(-65vw)] xl:right-[calc(-55vw)] z-8 w-[calc(210vw)] h-[calc(100vh)] md:w-[calc(180vw)] md:h-[calc(85vh)] lg:w-[calc(150vw)] lg:h-[calc(75vh)] xl:w-[calc(130vw)] xl:h-[calc(65vh)] pointer-events-none"
         initial={{ x: 200, opacity: 0 }}
-        animate={isActive ? { x: 0, opacity: 0.8 } : { x: 200, opacity: 0 }}
+        animate={isActive ? { x: 0, opacity: 1 } : { x: 200, opacity: 0 }}
         transition={{
           duration: 1.6,
           delay: 2,
@@ -148,7 +148,7 @@ export default function Section3({ isActive }: { isActive: boolean }) {
       <motion.div
         className="absolute top-[calc(28vh)] md:top-[calc(30vh)] lg:top-[calc(32vh)] xl:top-[calc(35vh)] right-[calc(-95vw)] md:right-[calc(-85vw)] lg:right-[calc(-75vw)] xl:right-[calc(-65vw)] z-8 w-[calc(220vw)] h-[calc(105vh)] md:w-[calc(190vw)] md:h-[calc(90vh)] lg:w-[calc(160vw)] lg:h-[calc(80vh)] xl:w-[calc(140vw)] xl:h-[calc(70vh)] pointer-events-none"
         initial={{ x: 200, opacity: 0 }}
-        animate={isActive ? { x: 0, opacity: 0.9 } : { x: 200, opacity: 0 }}
+        animate={isActive ? { x: 0, opacity: 1 } : { x: 200, opacity: 0 }}
         transition={{
           duration: 1.6,
           delay: 2.2,
