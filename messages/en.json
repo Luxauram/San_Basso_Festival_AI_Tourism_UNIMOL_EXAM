@@ -126,22 +126,7 @@
         }
       ]
     },
-    "cta": "See full program",
-    "info": {
-      "title": "Useful Information",
-      "where": {
-        "title": "Where",
-        "description": "Historic Center of Termoli\nPiazza Duomo and Old Town"
-      },
-      "entrance": {
-        "title": "Entrance",
-        "description": "Free for all events\nExcept paid concerts"
-      },
-      "parking": {
-        "title": "Parking",
-        "description": "Parking available\nZones B and C free"
-      }
-    }
+    "cta": "See full program"
   },
   "footer": {
     "cta": {

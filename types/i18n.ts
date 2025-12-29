@@ -86,12 +86,6 @@ export interface Dictionary {
     day2: ProgramDayProps;
     day3: ProgramDayProps;
     cta: string;
-    info: {
-      title: string;
-      where: InfoItem;
-      entrance: InfoItem;
-      parking: InfoItem;
-    };
   };
   contacts: {
     title: string;

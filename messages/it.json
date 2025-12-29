@@ -178,22 +178,7 @@
         }
       ]
     },
-    "cta": "Vedi programma completo",
-    "info": {
-      "title": "Informazioni Utili",
-      "where": {
-        "title": "Dove",
-        "description": "Centro Storico di Termoli\nPiazza Duomo e Borgo Antico"
-      },
-      "entrance": {
-        "title": "Ingresso",
-        "description": "Gratuito per tutti gli eventi\nEccetto concerti a pagamento"
-      },
-      "parking": {
-        "title": "Parcheggio",
-        "description": "Parcheggi disponibili\nZone B e C gratuite"
-      }
-    }
+    "cta": "Vedi programma completo"
   },
   "contacts": {
     "title": "Contatti",
