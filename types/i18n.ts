@@ -1,6 +1,5 @@
-import { ReactNode } from 'react';
-
 export interface Dictionary {
+  // ======= Nav =======
   nav: {
     home: string;
     tradition: string;
@@ -8,6 +7,7 @@ export interface Dictionary {
     contacts: string;
     flyer: string;
   };
+  // ======= Footer =======
   footer: {
     cta: {
       title: string;
@@ -25,6 +25,7 @@ export interface Dictionary {
       rights: string;
     };
   };
+  // ======= Home =======
   home: {
     hero: {
       title: string;
@@ -87,10 +88,12 @@ export interface Dictionary {
     day3: ProgramDayProps;
     cta: string;
   };
+  // ======= Contacts =======
   contacts: {
     title: string;
     subtitle: string;
     form: {
+      title: string;
       name: string;
       email: string;
       subject: string;
@@ -111,6 +114,7 @@ export interface Dictionary {
     };
     map: {
       title: string;
+      port: string;
     };
   };
   privacy: LegalPage;
@@ -153,7 +157,6 @@ interface Event {
 }
 
 export interface InfoItem {
-  value: ReactNode;
   title: string;
   description: string;
 }

@@ -12,62 +12,54 @@ export default function Info({ dict }: DictAndLocaleProps) {
       transition={{ delay: 0.4 }}
       className="bg-white rounded-2xl shadow-xl p-8 h-full flex flex-col"
     >
-      <div className="flex-grow">
-        <h3 className="text-2xl font-bold mb-6 text-gray-900">
+      <div className="grow">
+        <h3 className="text-2xl font-bold mb-6 text-black-custom">
           {dict.contacts.info.title}
         </h3>
 
+        {/* ======= Indirizzo ======= */}
         <div className="space-y-6">
           <div className="flex items-start gap-4">
-            <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-              <span className="text-2xl">📍</span>
-            </div>
             <div>
               <h4 className="font-semibold text-lg mb-1">
                 {dict.contacts.info.address.title}
               </h4>
-              <p className="text-gray-600 whitespace-pre-line">
-                {dict.contacts.info.address.value}
+              <p className="text-black-custom whitespace-pre-line">
+                {dict.contacts.info.address.description}
               </p>
             </div>
           </div>
 
+          {/* ======= Email ======= */}
           <div className="flex items-start gap-4">
-            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-              <span className="text-2xl">📧</span>
-            </div>
             <div>
               <h4 className="font-semibold text-lg mb-1">
                 {dict.contacts.info.email.title}
               </h4>
               <a
-                href={`mailto:${dict.contacts.info.email.value}`}
+                href={`mailto:${dict.contacts.info.email.description}`}
                 className="text-blue-600 hover:underline"
               >
-                {dict.contacts.info.email.value}
+                {dict.contacts.info.email.description}
               </a>
             </div>
           </div>
 
+          {/* ======= Telefono ======= */}
           <div className="flex items-start gap-4">
-            <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-              <span className="text-2xl">📱</span>
-            </div>
             <div>
               <h4 className="font-semibold text-lg mb-1">
                 {dict.contacts.info.phone.title}
               </h4>
-              <a
-                href={`tel:${dict.contacts.info.phone.value}`}
-                className="text-blue-600 hover:underline"
-              >
-                {dict.contacts.info.phone.value}
-              </a>
+              <p className="text-blue-600 hover:underline">
+                {dict.contacts.info.phone.description}
+              </p>
             </div>
           </div>
         </div>
       </div>
 
+      {/* ======= Social ======= */}
       <div className="mt-8 pt-8 border-t">
         <h4 className="font-semibold text-lg mb-4">
           {dict.contacts.info.social.title}

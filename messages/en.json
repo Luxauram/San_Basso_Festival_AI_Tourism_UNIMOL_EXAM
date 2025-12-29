@@ -6,9 +6,61 @@
     "contacts": "Contacts",
     "flyer": "Download Flyer"
   },
-  "hero": {
-    "title": "Village Festival",
-    "subtitle": "An unforgettable experience"
+  "footer": {
+    "cta": {
+      "title": "Be present for the tradition, they are only missing",
+      "days": "Days",
+      "hours": "Hours",
+      "min": "Minutes",
+      "sec": "Second",
+      "button": "INFO & CONTACTS"
+    },
+    "sponsors": "OUR SPONSORS",
+    "follow": "FOLLOW US",
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms and Conditions",
+      "rights": "All rights reserved."
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "San Basso",
+      "subtitle": "Festival",
+      "button1": "Discover the Program",
+      "button2": "Watch the Trailer",
+      "scroll": "Learn More"
+    },
+    "tradition": {
+      "pretitle": "Our Roots",
+      "title": "900 Years of Tradition. A Night You'll Never Forget.",
+      "description": "Since 1104, every year on August 4th, Termoli comes to a halt. The bells ring at dawn, the sea fills with boats, and thousands of people pour into the streets to celebrate San Basso, the patron saint of fishermen and sailors. It's not just a religious holiday. It's a time when an entire community comes together, celebrates its roots, and creates memories that last a lifetime.",
+      "titlepic1": "The procession that will give you shivers",
+      "descriptionpic1": "At 6 a.m., when the sky is still pink, the statue of San Basso is loaded onto a fishing boat and taken out to sea. Dozens of boats follow it in procession, while thousands of people watch in silence from the shore. When the Saint blesses the waters, all that can be heard is the sound of the waves and the bells. It's a moment of pure emotion that sinks into you and never leaves. Even non-believers are enchanted by this ancient dance between faith, sea, and community.",
+      "titlepic2": "Where the sacred meets the craziest celebration of the summer",
+      "descriptionpic2": "After the procession, Termoli explodes. The old town becomes a labyrinth of lights, music, and the aroma of fried fish. The alleys fill with people dancing until dawn, the bars stay open all night, and fireworks light up the sky for twenty minutes over the harbor. The fish festival continues for three days, with stands serving the best Adriatic specialties. And on the night of the 5th, traditional bonfires are lit on the beach: groups of friends and families sing, dance, and celebrate until dawn, with their feet in the sand and their hearts full of joy.",
+      "cta": "Discover the full story"
+    },
+    "program": {
+      "pretitle": "August 3-4-5",
+      "title": "72 hours that will change your summer",
+      "description": "Three days, hundreds of events, thousands of people. Processions at dawn, concerts until dawn, fish festivals, fireworks by the sea, DJ sets, bonfires on the beach. Termoli doesn't sleep for three nights. And you won't want to miss a single second of it.",
+      "titlepic1": "From the sacred to the profane in the blink of an eye",
+      "descriptionpic1": "August 3rd begins with the procession to the sea at dawn: a moment of silence and spirituality that will leave you breathless. Then the city wakes up, and the real party begins. Concerts in Piazza Duomo with local artists and tribute bands, the fish festival that fills the streets with irresistible aromas, the amusement park on the seafront for families. And at 11:30 pm, the most beautiful fireworks display on the Adriatic: twenty minutes of fireworks that start from the sea and illuminate the entire town. After midnight, the DJs take over and the music doesn't stop until dawn.",
+      "titlepic2": "Bonfires, the beach, and the last magical night",
+      "descriptionpic2": "August 5th is the most special day. During the day, there are beach volleyball tournaments, the village craft market, and the energy is still high. But the magic explodes in the evening: at 10:30 pm, dozens of bonfires are lit along the coast. It's an ancient tradition, jumping over the flames for good luck. Guitars emerge from backpacks, people sing folk songs, they dance on the sand, and dive into the sea at night. And at dawn on August 6th, when the last bonfire goes out and the sun rises over the Adriatic, we bid farewell to San Basso with a final collective swim. It's the perfect way to end three days you'll never forget.",
+      "cta": "See full program"
+    },
+    "parallax": {
+      "title": "Your Memories",
+      "subtitle": "Thousands of people. Thousands of stories. One unforgettable celebration."
+    },
+    "reviews": {
+      "title": "What Visitors Say",
+      "subtitle": "Authentic experiences from those who have experienced the San Basso Festival",
+      "disclaimer": "Over 2,000 visitors last year",
+      "scroll": "Keep scrolling"
+    }
   },
   "tradition": {
     "title": "A Centuries-Old Tradition",
@@ -127,19 +179,6 @@
       ]
     },
     "cta": "See full program"
-  },
-  "footer": {
-    "cta": {
-      "title": "You'll hear about it all year. So, you might as well be there. Get your tickets now!",
-      "button": "INFO & CONTACTS"
-    },
-    "sponsors": "OUR SPONSORS",
-    "follow": "FOLLOW US",
-    "legal": {
-      "privacy": "Privacy Policy",
-      "terms": "Terms and Conditions",
-      "rights": "All rights reserved."
-    }
   },
   "contacts": {
     "title": "Contacts",
@@ -280,10 +319,5 @@
         "content": "For information about the project or to report any issues regarding the use of content, you can contact the student developer through the project's GitHub repository."
       }
     }
-  },
-  "reviews": {
-    "title": "What Visitors Say",
-    "subtitle": "Authentic experiences from those who have experienced the San Basso Festival",
-    "disclaimer": "⭐ Over 2,000 visitors last year"
   }
 }

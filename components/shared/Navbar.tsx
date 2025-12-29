@@ -91,7 +91,7 @@ export default function Navbar({ locale, dict }: NavbarProps) {
           <MenuButton
             isOpen={isOpen}
             strokeWidth="8"
-            color="#ff6666"
+            color="#e71a07"
             lineProps={{ strokeLinecap: 'round' }}
             transition={{ type: 'spring', stiffness: 260, damping: 20 }}
             width={20}

@@ -18,10 +18,7 @@ export default function ContactForm({ dict }: DictAndLocaleProps) {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simula invio (sostituirai con una vera API)
     await new Promise((resolve) => setTimeout(resolve, 1500));
-
-    // Simula successo (95% successo, 5% errore per demo)
     const success = Math.random() > 0.05;
 
     if (success) {
@@ -68,6 +65,9 @@ export default function ContactForm({ dict }: DictAndLocaleProps) {
       transition={{ delay: 0.3 }}
       className="bg-white rounded-2xl shadow-xl p-8 h-full"
     >
+      <h3 className="text-2xl font-bold mb-6 text-gray-900">
+        {dict.contacts.form.title}
+      </h3>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
           <label
@@ -146,7 +146,7 @@ export default function ContactForm({ dict }: DictAndLocaleProps) {
           whileTap={{ scale: 0.98 }}
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold py-4 rounded-lg hover:from-purple-700 hover:to-blue-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full bg-primary-custom text-white font-semibold py-4 rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isSubmitting ? dict.contacts.form.sending : dict.contacts.form.send}
         </motion.button>

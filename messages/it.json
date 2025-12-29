@@ -42,7 +42,7 @@
       "cta": "Scopri la storia completa"
     },
     "program": {
-      "pretitle": "3-4-5 Agosto 2026",
+      "pretitle": "3-4-5 Agosto",
       "title": "72 ore che ti cambiano l'estate",
       "description": "Tre giorni, centinaia di eventi, migliaia di persone. Processioni all'alba, concerti fino all'alba, sagre di pesce, fuochi d'artificio sul mare, dj set, falò sulla spiaggia. Termoli non dorme per tre notti. E tu non vorrai perdertene neanche un secondo.",
       "titlepic1": "Dal sacro al profano in un battito di ciglia",
@@ -184,6 +184,7 @@
     "title": "Contatti",
     "subtitle": "Hai domande? Siamo qui per aiutarti",
     "form": {
+      "title": "Contattaci",
       "name": "Nome e Cognome",
       "email": "Email",
       "subject": "Oggetto",
@@ -197,22 +198,23 @@
       "title": "Informazioni",
       "address": {
         "title": "Indirizzo",
-        "value": "Piazza Duomo, 1\n86039 Termoli (CB)\nItalia"
+        "description": "Piazza Duomo, 1\n86039 Termoli (CB)\nItalia"
       },
       "email": {
         "title": "Email",
-        "value": "info@sanbassoevents.it"
+        "description": "info@sanbassoevents.it"
       },
       "phone": {
         "title": "Telefono",
-        "value": "+39 0875 123456"
+        "description": "+39 0875 123456"
       },
       "social": {
         "title": "Seguici"
       }
     },
     "map": {
-      "title": "Dove Siamo"
+      "title": "Dove Siamo",
+      "port": "📍 Porto di Termoli"
     }
   },
   "privacy": {
