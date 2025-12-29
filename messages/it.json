@@ -294,6 +294,12 @@
     }
   },
   "disclaimer": {
+    "banner": {
+      "title": "📚 Progetto Universitario",
+      "message": "Questo è un progetto didattico. Tutti i contenuti sono fittizi e generati con AI.",
+      "link": "Maggiori informazioni",
+      "close": "Ho capito"
+    },
     "title": "Disclaimer Progetto Universitario",
     "lastUpdated": "Ultimo aggiornamento",
     "intro": "Questo sito web è stato realizzato esclusivamente a scopo didattico nell'ambito di un progetto universitario.",

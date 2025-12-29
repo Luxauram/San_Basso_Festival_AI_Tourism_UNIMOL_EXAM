@@ -121,7 +121,20 @@ export interface Dictionary {
   };
   privacy: LegalPage;
   terms: LegalPage;
-  disclaimer: LegalPage;
+  disclaimer: {
+    banner: {
+      title: string;
+      message: string;
+      link: string;
+      close: string;
+    };
+    title: string;
+    subtitle: string;
+    lastUpdated: string;
+    sections: {
+      [key: string]: ContentSection;
+    };
+  };
 }
 
 export interface LegalPage {

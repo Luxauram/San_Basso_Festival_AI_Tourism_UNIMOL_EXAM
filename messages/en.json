@@ -253,6 +253,12 @@
     }
   },
   "disclaimer": {
+    "banner": {
+      "title": "📚 University Project",
+      "message": "This is an educational project. All content is fictional and AI-generated.",
+      "link": "More information",
+      "close": "Got it"
+    },
     "title": "University Project Disclaimer",
     "lastUpdated": "Last updated",
     "intro": "This website was created exclusively for educational purposes as part of a university project.",
