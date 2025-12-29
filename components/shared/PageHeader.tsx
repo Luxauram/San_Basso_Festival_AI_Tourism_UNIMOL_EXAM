@@ -1,13 +1,7 @@
 'use client';
 
+import { PageHeaderProps } from '@/types/components';
 import { HeroImage } from '../ui/shared/HeroImage';
-
-interface PageHeaderProps {
-  title: string;
-  subtitle?: string;
-  imageUrl: string;
-  height?: string;
-}
 
 export function PageHeader({
   title,

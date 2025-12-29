@@ -48,3 +48,28 @@ export interface Accommodation {
   amenities: string[];
   distanceFromCenter: string;
 }
+
+export interface PageHeaderProps {
+  title: string;
+  subtitle?: string;
+  imageUrl: string;
+  height?: string;
+}
+
+export interface HeroImageProps {
+  imageUrl: string;
+  title: string;
+  subtitle?: string;
+  children?: ReactNode;
+  height?: string;
+  overlayOpacity?: number;
+}
+
+export interface MapsProps {
+  title: string;
+  embedUrl: string;
+  height?: string;
+  className?: string;
+  pinTitle?: string;
+  pinHref?: string;
+}
