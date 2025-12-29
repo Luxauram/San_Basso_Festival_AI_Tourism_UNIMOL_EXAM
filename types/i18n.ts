@@ -147,7 +147,7 @@ export interface LegalPage {
 }
 
 export interface ProgramDayProps {
-  index?: number;
+  index: number;
   date: string;
   events: Event[];
 }
