@@ -7,7 +7,7 @@ import Navbar from '@/components/shared/Navbar';
 
 const bebas = Bebas_Neue({
   subsets: ['latin'],
-  weight: '400', // unico peso disponibile
+  weight: '400',
   variable: '--font-bebas',
 });
 
@@ -21,18 +21,18 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: Locale }>;
+  params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const dict = await getDictionary(locale);
+  const dict = await getDictionary(locale as Locale);
 
   return (
     <html lang={locale} className={`${bebas.variable} ${montserrat.variable}`}>
       <body className={montserrat.className}>
-        <Navbar locale={locale} dict={dict} />
-        <DisclaimerBanner locale={locale} dict={dict} />
+        <Navbar locale={locale as Locale} dict={dict} />
+        <DisclaimerBanner locale={locale as Locale} dict={dict} />
         {children}
-        <Footer dict={dict} locale={locale} />
+        <Footer dict={dict} locale={locale as Locale} />
       </body>
     </html>
   );
