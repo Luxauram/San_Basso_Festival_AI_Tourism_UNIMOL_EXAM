@@ -219,6 +219,7 @@
   },
   "privacy": {
     "title": "Privacy Policy",
+    "subtitle": "da rivedere Privacy Policy",
     "lastUpdated": "Last updated",
     "sections": {
       "intro": {
@@ -249,6 +250,7 @@
   },
   "terms": {
     "title": "Terms and Conditions",
+    "subtitle": "da rivedere Termini e Condizioni",
     "lastUpdated": "Last updated",
     "sections": {
       "intro": {
