@@ -96,6 +96,7 @@
     "title": "Programma",
     "subtitle": "Tre giorni di festa, tradizione e divertimento nel cuore di Termoli",
     "day1": {
+      "index": 0,
       "date": "03.08.26",
       "events": [
         {
@@ -116,6 +117,7 @@
       ]
     },
     "day2": {
+      "index": 1,
       "date": "04.08.26",
       "events": [
         {
@@ -146,6 +148,7 @@
       ]
     },
     "day3": {
+      "index": 2,
       "date": "05.08.26",
       "events": [
         {

@@ -44,6 +44,7 @@
     "title": "Program",
     "subtitle": "Three days of celebration, tradition and fun in the heart of Termoli",
     "day1": {
+      "index": 0,
       "date": "03.08.26",
       "events": [
         {
@@ -64,6 +65,7 @@
       ]
     },
     "day2": {
+      "index": 1,
       "date": "04.08.26",
       "events": [
         {
@@ -94,6 +96,7 @@
       ]
     },
     "day3": {
+      "index": 2,
       "date": "05.08.26",
       "events": [
         {
