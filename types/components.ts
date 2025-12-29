@@ -19,3 +19,32 @@ export interface TimeLeftProps {
   minutes: number;
   seconds: number;
 }
+
+export interface Restaurant {
+  id: number;
+  name: string;
+  cuisine: string;
+  description: string;
+  address: string;
+  phone: string;
+  website?: string;
+  rating: number;
+  priceLevel: string;
+  image: string;
+  specialties: string[];
+}
+
+export interface Accommodation {
+  id: number;
+  name: string;
+  type: string;
+  description: string;
+  address: string;
+  phone: string;
+  website?: string;
+  rating: number;
+  priceRange: string;
+  image: string;
+  amenities: string[];
+  distanceFromCenter: string;
+}

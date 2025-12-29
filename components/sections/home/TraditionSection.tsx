@@ -6,10 +6,7 @@ import { useRef } from 'react';
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect';
 import { DictAndLocaleProps } from '@/types';
 import SecondaryButton from '@/components/ui/buttons/SecondaryButton';
-
-const words1 = `Terminal is a strategic joint venture, not a typical startup. Backed by leading logistics operators such as Prologis, Ryder, Lineage, and NFI, and supported by venture capital firm 8VC, we were designed to solve major industry pain points and establish the category standard.`;
-
-const words2 = `Our strategic investors contributed critical insights and became anchor product design partners, ensuring we're rapidly solving the industries biggest challenges in yard logistics. We combine deep industry expertise with cutting-edge technology to transform the supply chain.`;
+import { TRADITION_HOME_IMAGE_1, TRADITION_HOME_IMAGE_2 } from '@/data';
 
 export default function TraditionSection({ dict, locale }: DictAndLocaleProps) {
   const section1Ref = useRef(null);
@@ -35,14 +32,18 @@ export default function TraditionSection({ dict, locale }: DictAndLocaleProps) {
           >
             <div className="mb-4">
               <span className="text-sm text-gray-400 uppercase tracking-wider">
-                #Tradizione
+                {dict.home.tradition.pretitle}
               </span>
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-black-custom">
-              Built by the industry, for the industry
+              {dict.home.tradition.titlepic1}
             </h2>
             <div className="text-lg md:text-xl text-gray-600 leading-relaxed">
-              {section1InView && <TextGenerateEffect words={words1} />}
+              {section1InView && (
+                <TextGenerateEffect
+                  words={dict.home.tradition.descriptionpic1}
+                />
+              )}
             </div>
           </motion.div>
 
@@ -64,7 +65,7 @@ export default function TraditionSection({ dict, locale }: DictAndLocaleProps) {
               }}
             >
               <motion.img
-                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=80"
+                src={TRADITION_HOME_IMAGE_1}
                 alt="Logistics"
                 className="w-full h-full object-cover"
                 whileHover={{ scale: 1.1 }}
@@ -99,7 +100,7 @@ export default function TraditionSection({ dict, locale }: DictAndLocaleProps) {
               }}
             >
               <motion.img
-                src="https://images.unsplash.com/photo-1605732562742-3023a888e56e?w=1200&q=80"
+                src={TRADITION_HOME_IMAGE_2}
                 alt="Technology"
                 className="w-full h-full object-cover"
                 whileHover={{ scale: 1.1 }}
@@ -117,14 +118,18 @@ export default function TraditionSection({ dict, locale }: DictAndLocaleProps) {
           >
             <div className="mb-4">
               <span className="text-sm text-gray-400 uppercase tracking-wider">
-                #Tradizione
+                {dict.home.tradition.pretitle}
               </span>
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-black-custom">
-              Strategic partnerships, proven results
+              {dict.home.tradition.titlepic2}
             </h2>
             <div className="text-lg md:text-xl text-gray-600 leading-relaxed">
-              {section2InView && <TextGenerateEffect words={words2} />}
+              {section2InView && (
+                <TextGenerateEffect
+                  words={dict.home.tradition.descriptionpic2}
+                />
+              )}
             </div>
             <motion.div
               className="mt-8 flex md:justify-end justify-center"
@@ -133,7 +138,7 @@ export default function TraditionSection({ dict, locale }: DictAndLocaleProps) {
               transition={{ duration: 0.8, ease: 'easeOut' }}
             >
               <SecondaryButton href={`/${locale}${contactsRoute}`}>
-                {dict.footer.cta.button}
+                {dict.home.tradition.cta}
               </SecondaryButton>
             </motion.div>
           </motion.div>

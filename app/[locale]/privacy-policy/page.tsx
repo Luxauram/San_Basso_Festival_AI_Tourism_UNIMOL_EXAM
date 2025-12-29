@@ -10,5 +10,5 @@ export default async function PrivacyPage({
   const { locale } = await params;
   const dict = await getDictionary(locale);
 
-  return <LegalPageComponent data={dict.privacy} />;
+  return <LegalPageComponent data={dict.privacy} pageType="privacy" />;
 }

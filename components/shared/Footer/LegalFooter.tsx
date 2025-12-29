@@ -15,7 +15,7 @@ export function LegalFooter({ isInView, locale, dict }: LegalFooterProps) {
       initial={{ opacity: 0 }}
       animate={isInView ? { opacity: 1 } : {}}
       transition={{ delay: 1.3 }}
-      className="mt-12 pt-8 border-t border-white/10 text-center space-y-2"
+      className="mt-12 pt-8 border-t border-white/10 text-center space-y-2 z-10"
     >
       <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-400 mb-4">
         <a

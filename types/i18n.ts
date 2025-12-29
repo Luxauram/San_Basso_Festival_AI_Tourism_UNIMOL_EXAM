@@ -1,20 +1,68 @@
 import { ReactNode } from 'react';
 
 export interface Dictionary {
-  reviews: {
-    title: string;
-    subtitle: string;
-    disclaimer: string;
-  };
   nav: {
     home: string;
     tradition: string;
     program: string;
     contacts: string;
+    flyer: string;
   };
-  hero: {
-    title: string;
-    subtitle: string;
+  footer: {
+    cta: {
+      title: string;
+      days: string;
+      hours: string;
+      min: string;
+      sec: string;
+      button: string;
+    };
+    sponsors: string;
+    follow: string;
+    legal: {
+      privacy: string;
+      terms: string;
+      rights: string;
+    };
+  };
+  home: {
+    hero: {
+      title: string;
+      subtitle: string;
+      button1: string;
+      button2: string;
+      scroll: string;
+    };
+    tradition: {
+      pretitle: string;
+      title: string;
+      description: string;
+      titlepic1: string;
+      descriptionpic1: string;
+      titlepic2: string;
+      descriptionpic2: string;
+      cta: string;
+    };
+    program: {
+      pretitle: string;
+      title: string;
+      description: string;
+      titlepic1: string;
+      descriptionpic1: string;
+      titlepic2: string;
+      descriptionpic2: string;
+      cta: string;
+    };
+    parallax: {
+      title: string;
+      subtitle: string;
+    };
+    reviews: {
+      title: string;
+      subtitle: string;
+      disclaimer: string;
+      scroll: string;
+    };
   };
   tradition: {
     title: string;
@@ -43,19 +91,6 @@ export interface Dictionary {
       where: InfoItem;
       entrance: InfoItem;
       parking: InfoItem;
-    };
-  };
-  footer: {
-    cta: {
-      title: string;
-      button: string;
-    };
-    sponsors: string;
-    follow: string;
-    legal: {
-      privacy: string;
-      terms: string;
-      rights: string;
     };
   };
   contacts: {
@@ -91,6 +126,7 @@ export interface Dictionary {
 
 export interface LegalPage {
   title: string;
+  subtitle: string;
   lastUpdated: string;
   sections: {
     [key: string]: ContentSection;

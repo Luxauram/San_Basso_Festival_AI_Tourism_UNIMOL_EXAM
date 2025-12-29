@@ -6,10 +6,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { NavbarProps } from '@/types/navigation';
-import { getRoutes, getMenuLinks } from '@/data/navigation';
-import { DEFAULT_MENU_IMAGE } from '@/data/images-url';
+import {
+  getRoutes,
+  getMenuLinks,
+  DEFAULT_MENU_IMAGE,
+  MAIN_LOGO_IMAGE,
+} from '@/data';
 import LanguageSwitcher from '../ui/shared/LanguageSwitcher';
-import ManifestoTicket from './ManifestoTicket';
+import FlyerCTA from './FlyerCTA';
 import SocialNetworks from '../ui/shared/icons/social-networks/SocialNetworks';
 import { MenuButton } from '../ui/buttons/MenuButton';
 
@@ -64,41 +68,42 @@ export default function Navbar({ locale, dict }: NavbarProps) {
 
   return (
     <>
-      {/* Navigation */}
-      <nav className="fixed w-full px-10 py-10 flex justify-between items-center z-[150]">
-        {/* Logo */}
-        <Link href={routes.home} className="z-[160]">
+      {/* ======= Navbar ======= */}
+      <nav className="fixed w-full px-4 sm:px-6 md:px-10 pt-3 sm:pt-4 flex justify-between items-center z-150">
+        {/* ======= Logo =======  */}
+        <Link href={routes.home} className="z-160">
           <Image
-            src="/logo.png"
+            src={MAIN_LOGO_IMAGE}
             alt="San Basso Festival"
             width={100}
             height={100}
-            className="w-12 h-12 object-contain"
+            className="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 object-contain"
           />
         </Link>
 
-        {/* Center - Manifesto Ticket */}
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[160]">
-          <ManifestoTicket locale={locale} />
+        {/* ======= Donwload Poster ======= */}
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-160">
+          <FlyerCTA locale={locale} dict={dict} />
         </div>
 
-        {/* Menu Toggle Button */}
-        <div className="z-[160] cursor-pointer" onClick={toggleMenu}>
+        {/* ======= Hamburger Menu ======= */}
+        <div className="z-160 cursor-pointer" onClick={toggleMenu}>
           <MenuButton
             isOpen={isOpen}
             strokeWidth="8"
             color="#ff6666"
             lineProps={{ strokeLinecap: 'round' }}
             transition={{ type: 'spring', stiffness: 260, damping: 20 }}
-            width={24}
-            height={35}
+            width={20}
+            height={28}
+            className="sm:w-[22px] sm:h-[32px] md:w-[24px] md:h-[35px]"
           />
         </div>
       </nav>
 
-      {/* Menu Overlay */}
+      {/* ======= Menu Overlay =======  */}
       <motion.div
-        className="fixed w-screen h-screen bg-[#0f0f0f] z-[140]"
+        className="fixed w-screen h-screen bg-[#0f0f0f] z-140"
         initial={{ clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' }}
         animate={
           isOpen
@@ -117,11 +122,11 @@ export default function Navbar({ locale, dict }: NavbarProps) {
           }
           transition={{ duration: 1.25, ease: [0.76, 0, 0.24, 1] }}
         >
-          {/* Menu Items */}
+          {/* ======= Menu Items ======= */}
           <div className="w-full px-10 flex gap-10">
-            {/* Image Preview Column */}
-            <div className="hidden lg:flex flex-[3] justify-center items-center">
-              <div className="relative w-[45%] aspect-[3/4] overflow-hidden">
+            {/* ======= Left Image ======= */}
+            <div className="hidden lg:flex flex-3 justify-center items-center">
+              <div className="relative w-[45%] aspect-3/4 overflow-hidden">
                 <AnimatePresence mode="sync">
                   {imageHistory.map((img, index) => (
                     <motion.div
@@ -143,9 +148,9 @@ export default function Navbar({ locale, dict }: NavbarProps) {
               </div>
             </div>
 
-            {/* Links Column */}
-            <div className="flex-[2] py-10 flex flex-col gap-10">
-              {/* Menu Links */}
+            {/* ======= Links Column ======= */}
+            <div className="flex-2 py-10 flex flex-col gap-10">
+              {/* ======= Links ======= */}
               <div className="flex flex-col gap-2 mb-4">
                 {menuLinks.map((link, index) => (
                   <div key={index} className="overflow-hidden pb-1.5">
@@ -178,13 +183,14 @@ export default function Navbar({ locale, dict }: NavbarProps) {
             </div>
           </div>
 
-          {/* Menu Footer */}
+          {/* ======= Footer ======= */}
           <div className="absolute bottom-0 w-full px-10 py-10 flex gap-10">
             <div className="flex-[3]">
+              {/* ======= Language Switcher ======= */}
               <LanguageSwitcher currentLocale={locale} />
             </div>
             <div className="flex-[2] flex justify-between">
-              {/* Social Links */}
+              {/* ======= Social ======= */}
               <SocialNetworks className="justify-start" />
             </div>
           </div>

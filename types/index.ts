@@ -16,4 +16,6 @@ export type {
   ContainerProps,
   DictAndLocaleProps,
   TimeLeftProps,
+  Restaurant,
+  Accommodation,
 } from './components';

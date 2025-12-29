@@ -1,5 +1,9 @@
+// ======= San Basso Flyer =======
+export const SAN_BASSO_FLYER = '/san-basso-flyer.png';
+
 // ======= Logo URL =======
 export const MAIN_LOGO_IMAGE = '/logo.png';
+export const HERO_LOGO_IMAGE = '/hero-logo.png';
 
 // ======= Menu URLs =======
 export const DEFAULT_MENU_IMAGE = '/menu/home.webp';
@@ -7,12 +11,32 @@ export const CONTACTS_MENU_IMAGE = '/menu/contatti.webp';
 export const PROGRAM_MENU_IMAGE = '/menu/programma.webp';
 export const TRADITION_MENU_IMAGE = '/menu/tradizione.webp';
 
+// ======= Hero URLs =======
+export const HERO_HOME_IMAGE = '/hero/hero-logo.png';
+export const HERO_CONTACT_IMAGE = '/hero/contact-hero.webp';
+export const HERO_DISCLAIMER_IMAGE = '/hero/disclaimer-hero.webp';
+export const HERO_PRIVACY_IMAGE = '/hero/privacy-hero.webp';
+export const HERO_PROGRAM_IMAGE = '/hero/program-hero.webp';
+export const HERO_TERMS_IMAGE = '/hero/terms-hero.webp';
+
 // ======= Scroll Intro URLs =======
 export const SCROLL_INTRO_IMAGE_1 = '/scroll-intro/scroll-intro-1.webp';
 export const SCROLL_INTRO_IMAGE_2 = '/scroll-intro/scroll-intro-2.webp';
 export const SCROLL_INTRO_IMAGE_3 = '/scroll-intro/scroll-intro-3.webp';
 export const SCROLL_INTRO_IMAGE_4 = '/scroll-intro/scroll-intro-4.webp';
 export const SCROLL_INTRO_IMAGE_5 = '/scroll-intro/scroll-intro-5.webp';
+
+// ======= Tradition Home URLs =======
+export const TRADITION_HOME_IMAGE_1 =
+  '/tradition-program-home/tradition-home-1.webp';
+export const TRADITION_HOME_IMAGE_2 =
+  '/tradition-program-home/tradition-home-2.webp';
+
+// ======= Program Home URLs =======
+export const PROGRAM_HOME_IMAGE_1 =
+  '/tradition-program-home/program-home-1.webp';
+export const PROGRAM_HOME_IMAGE_2 =
+  '/tradition-program-home/program-home-2.webp';
 
 // ======= Parallax Home URLs =======
 export const PARALLAX_HOME_IMAGE_1 = '/parallax-home/parallax-1.webp';

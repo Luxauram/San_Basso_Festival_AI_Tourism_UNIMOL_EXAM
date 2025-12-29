@@ -15,3 +15,7 @@ export const DEV_MAIL = 'qBxYR@example.com';
 export const DEV_WEBSITE = 'qBxYR@example.com';
 export const DEV_GITHUB = 'qBxYR@example.com';
 export const DEV_LINKEDIN = 'qBxYR@example.com';
+
+// ======= Vimeo Urls =======
+export const VIMEO_CLASSIC_URL = 'https://vimeo.com/video/1149715315';
+export const VIMEO_PLAYER_URL = 'https://player.vimeo.com/video/1149715315';

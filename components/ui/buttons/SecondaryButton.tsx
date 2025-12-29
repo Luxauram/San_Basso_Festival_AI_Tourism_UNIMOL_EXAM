@@ -8,17 +8,37 @@ export default function SecondaryButton({
   onClick,
   href,
   className = '',
+  target,
+  rel,
+  ...props
 }: ButtonProps) {
-  const baseClasses =
-    'px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 bg-transparent border-2 border-yellow-400 text-yellow-400 font-bold text-sm sm:text-base md:text-lg rounded-lg hover:bg-yellow-400 hover:text-black transition-colors uppercase tracking-wide';
+  const baseClasses = `px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 bg-transparent border-2 border-secondary-custom text-secondary-custom font-bold text-sm sm:text-base md:text-lg rounded-lg uppercase tracking-wide shadow-lg shadow-secondary-custom/20 ${className}`;
+
+  const hoverStyles = {
+    backgroundColor: '#e0a229',
+    color: '#ffffff',
+    scale: 1.05,
+    boxShadow:
+      '0 20px 25px -5px rgba(224, 162, 41, 0.3), 0 10px 10px -5px rgba(224, 162, 41, 0.2)',
+  };
+
+  const tapStyles = {
+    scale: 0.95,
+    boxShadow:
+      '0 4px 6px -1px rgba(224, 162, 41, 0.1), 0 2px 4px -1px rgba(224, 162, 41, 0.06)',
+  };
 
   if (href) {
     return (
       <motion.a
         href={href}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        className={`${baseClasses} ${className} inline-block`}
+        target={target}
+        rel={rel}
+        {...props}
+        whileHover={hoverStyles}
+        whileTap={tapStyles}
+        transition={{ duration: 0.2, ease: 'easeOut' }}
+        className={`${baseClasses} inline-block`}
       >
         {children}
       </motion.a>
@@ -28,9 +48,10 @@ export default function SecondaryButton({
   return (
     <motion.button
       onClick={onClick}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-      className={`${baseClasses} ${className}`}
+      whileHover={hoverStyles}
+      whileTap={tapStyles}
+      transition={{ duration: 0.2, ease: 'easeOut' }}
+      className={baseClasses}
     >
       {children}
     </motion.button>

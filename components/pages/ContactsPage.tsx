@@ -1,37 +1,27 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { Toaster } from 'react-hot-toast';
 import Maps from '../sections/contacts/Maps';
 import Info from '../sections/contacts/Info';
 import ContactForm from '../sections/contacts/ContactForm';
 import { DictAndLocaleProps } from '@/types';
+import { PageHeader } from '../shared/PageHeader';
+import { HERO_CONTACT_IMAGE } from '@/data';
 
 export default function ContactsPageComponent({ dict }: DictAndLocaleProps) {
   return (
     <>
       <Toaster />
-      <main className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 pt-24 pb-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Header */}
-          <div className="text-center mb-16">
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent"
-            >
-              {dict.contacts.title}
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-              className="text-xl text-gray-600"
-            >
-              {dict.contacts.subtitle}
-            </motion.p>
-          </div>
+      <main className="min-h-screen bg-white-custom">
+        {/* Hero Header */}
+        <PageHeader
+          title={dict.contacts.title}
+          subtitle={dict.contacts.subtitle}
+          imageUrl={HERO_CONTACT_IMAGE}
+        />
 
+        {/* Content */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="space-y-12">
             {/* Form e Info - Grid su schermi grandi, singola colonna su mobile */}
             <div className="grid md:grid-cols-2 gap-12 md:items-start">

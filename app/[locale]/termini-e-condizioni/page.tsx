@@ -10,5 +10,5 @@ export default async function TermsPage({
   const { locale } = await params;
   const dict = await getDictionary(locale);
 
-  return <LegalPageComponent data={dict.terms} />;
+  return <LegalPageComponent data={dict.terms} pageType="terms" />;
 }

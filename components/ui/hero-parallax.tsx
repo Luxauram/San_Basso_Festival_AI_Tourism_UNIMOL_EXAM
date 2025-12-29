@@ -60,13 +60,13 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[300vh] md:h-[250vh] lg:h-[200vh] py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[300vh] md:h-[250vh] lg:h-[200vh] py-80 pb-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] bg-white-custom"
     >
       {/* Header */}
       <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
-        <h2 className="text-white-custom">{dict.contacts.info.title}</h2>
-        <p className="max-w-2xl text-base md:text-xl mt-8 text-white-custom">
-          {dict.contacts.info.title}
+        <h2 className="text-black-custom">{dict.home.parallax.title}</h2>
+        <p className="max-w-2xl text-base md:text-xl mt-8 text-black-custom">
+          {dict.home.parallax.subtitle}
         </p>
       </div>
 

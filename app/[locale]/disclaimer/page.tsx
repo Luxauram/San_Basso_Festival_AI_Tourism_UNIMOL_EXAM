@@ -10,5 +10,5 @@ export default async function DisclaimerPage({
   const { locale } = await params;
   const dict = await getDictionary(locale);
 
-  return <LegalPageComponent data={dict.disclaimer} />;
+  return <LegalPageComponent data={dict.disclaimer} pageType="disclaimer" />;
 }

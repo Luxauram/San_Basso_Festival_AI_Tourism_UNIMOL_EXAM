@@ -119,40 +119,60 @@ p {
   @apply bg-zinc-950;
 }
 
-.bg-white-custom {
-  @apply bg-stone-100;
-}
-
-.bg-primary-custom {
-  @apply bg-[#5DB6CD];
-}
-
-.border-primary-custom {
-  @apply border-[#5DB6CD];
-}
-
-.bg-secondary-custom {
-  @apply bg-[#E35A04];
-}
-
-.border-secondary-custom {
-  @apply border-[#E35A04];
-}
-
-.bg-accent-custom {
-  @apply bg-[#F9A63E];
-}
-
-.border-accent-custom {
-  @apply border-[#F9A63E];
+.border-black-custom {
+  @apply border-zinc-950;
 }
 
 .text-black-custom {
   @apply text-black;
 }
 
+.bg-white-custom {
+  @apply bg-stone-100;
+}
+
+.border-white-custom {
+  @apply border-stone-100;
+}
+
 .text-white-custom {
   @apply text-white;
+}
+
+.bg-primary-custom {
+  @apply bg-[#e71a07];
+}
+
+.border-primary-custom {
+  @apply border-[#e71a07];
+}
+
+.text-primary-custom {
+  @apply text-[#e71a07];
+}
+
+.bg-secondary-custom {
+  @apply bg-[#d68e0d];
+}
+
+.border-secondary-custom {
+  @apply border-[#d68e0d];
+}
+
+.text-secondary-custom {
+  @apply text-[#d68e0d];
+}
+
+.bg-accent-custom {
+  @apply bg-[#e0a229];
+}
+
+.border-accent-custom {
+  @apply border-[#e0a229];
+}
+
+.text-accent-custom {
+  @apply text-[#e0a229];
 }
 
 /* ======= Tailwind - Acernity ======= */

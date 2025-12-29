@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import Section1 from './parallax-sections/Section1';
 import Section2 from './parallax-sections/Section2';
 import Section3 from './parallax-sections/Section3';
 import Section4 from './parallax-sections/Section4';
+import Section5 from './parallax-sections/Section5';
 
 export default function ParallaxScroll() {
   const [currentSection, setCurrentSection] = useState(0);
@@ -102,6 +103,7 @@ export default function ParallaxScroll() {
         <Section2 isActive={currentSection === 1} />
         <Section3 isActive={currentSection === 2} />
         <Section4 isActive={currentSection === 3} />
+        <Section5 isActive={currentSection === 4} />
       </motion.div>
     </>
   );

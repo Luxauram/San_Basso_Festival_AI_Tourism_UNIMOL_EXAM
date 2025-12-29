@@ -161,8 +161,8 @@ DEVELOPMENT – Tradition and community (≈12 s)
 8. Statue (first appearance) → 1.5 s
 9. Hand in the water → 1.0 s
 10. Boat departing → 1.5 s
-11. Daytime procession → 2.0 s
-12. Glances of the crowd → 1.0 s
+11. Daytime procession → 1.5 s
+12. Glances of the crowd → 1.5 s
 
 DAY TRANSITION → NIGHT (≈5 s)
 
@@ -183,27 +183,13 @@ TOTAL: ~30 secondi
 
 ### AI Voice Generation
 
-Background voice was generated with
-
-[Gemini](https://gemini.google.com/)
-
-using this prompt
-
-```md
-TODO PROMPT
-```
+Background voice was NOT generated, it's actually mine. :)
 
 ### Background Music Generation
 
 Background music was generated with
 
 [SunoAI](https://suno.com/)
-
-using this prompt
-
-```md
-TODO PROMPT
-```
 
 ### Scene Prompts
 
@@ -361,7 +347,7 @@ TODO PROMPT
 - Final Frame:
   - `More people, shared emotion.`
 - Video Prompt:
-  - `Slow lateral movement, human warmth.`
+  - `Slow and smooth lateral camera movement connecting the first frame to the last frame. The subject remains still and unchanged. Soft natural lighting, warm tones, subtle human warmth conveyed through light and color. Cinematic, realistic motion, no distortions.`
 
 #### Scene 13
 

@@ -3,11 +3,64 @@
     "home": "Home",
     "tradition": "Tradizione",
     "program": "Programma",
-    "contacts": "Contatti"
+    "contacts": "Contatti",
+    "flyer": "Scarica Locandina"
   },
-  "hero": {
-    "title": "Festa di Paese",
-    "subtitle": "Un'esperienza indimenticabile"
+  "footer": {
+    "cta": {
+      "title": "Sii presente per la tradizione, mancano soltano",
+      "days": "Giorni",
+      "hours": "Ore",
+      "min": "Minuti",
+      "sec": "Secondi",
+      "button": "INFO & CONTATTI"
+    },
+    "sponsors": "I NOSTRI SPONSOR",
+    "follow": "SEGUICI SU",
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Termini e Condizioni",
+      "rights": "Tutti i diritti riservati."
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "San Basso",
+      "subtitle": "Festival",
+      "button1": "Scopri il Programma",
+      "button2": "Guarda il Trailer",
+      "scroll": "Scopri di più"
+    },
+    "tradition": {
+      "pretitle": "Le Nostre Radici",
+      "title": "900 anni di tradizione. Una notte che non dimenticherai mai.",
+      "description": "Dal 1104, ogni anno il 4 agosto, Termoli si ferma. Le campane suonano all'alba, il mare si riempie di barche, e migliaia di persone si riversano nelle strade per celebrare San Basso, il patrono che protegge pescatori e marinai. Non è solo una festa religiosa. È il momento in cui un'intera comunità si ritrova, celebra le proprie radici e crea ricordi che durano una vita.",
+      "titlepic1": "La processione che ti farà venire i brividi",
+      "descriptionpic1": "Alle 6 del mattino, quando il cielo è ancora rosa, la statua di San Basso viene caricata su un peschereccio e portata in mare aperto. Decine di barche la seguono in processione, mentre dalla riva migliaia di persone guardano in silenzio. Quando il Santo benedice le acque, si sente solo il suono delle onde e delle campane. È un momento di pura emozione che ti entra dentro e non ti lascia più. Anche chi non è credente resta incantato da questa danza antica tra fede, mare e comunità.",
+      "titlepic2": "Dove il sacro incontra la festa più pazza dell'estate",
+      "descriptionpic2": "Dopo la processione, Termoli esplode. Il borgo antico diventa un labirinto di luci, musica e profumi di pesce fritto. I vicoli si riempiono di gente che balla fino all'alba, i bar restano aperti tutta la notte, e sul porto vanno in scena fuochi d'artificio che illuminano il cielo per venti minuti. La sagra del pesce va avanti per tre giorni, con stand che servono le migliori specialità adriatiche. E la notte del 5, sulla spiaggia, si accendono i falò tradizionali: gruppi di amici e famiglie che cantano, ballano e celebrano fino all'alba, con i piedi nella sabbia e il cuore pieno di gioia.",
+      "cta": "Scopri la storia completa"
+    },
+    "program": {
+      "pretitle": "3-4-5 Agosto 2026",
+      "title": "72 ore che ti cambiano l'estate",
+      "description": "Tre giorni, centinaia di eventi, migliaia di persone. Processioni all'alba, concerti fino all'alba, sagre di pesce, fuochi d'artificio sul mare, dj set, falò sulla spiaggia. Termoli non dorme per tre notti. E tu non vorrai perdertene neanche un secondo.",
+      "titlepic1": "Dal sacro al profano in un battito di ciglia",
+      "descriptionpic1": "Il 3 agosto inizia tutto con la processione a mare all'alba: un momento di silenzio e spiritualità che ti lascia senza fiato. Poi la città si sveglia, e inizia la festa vera. Concerti in Piazza Duomo con artisti locali e band tribute, la sagra del pesce che riempie le strade di profumi irresistibili, il luna park sul lungomare per le famiglie. E alle 23:30, lo spettacolo pirotecnico più bello dell'Adriatico: venti minuti di fuochi che partono dal mare e illuminano tutto il borgo. Dopo mezzanotte, i dj prendono il controllo e la musica non si ferma fino all'alba.",
+      "titlepic2": "Falò, spiaggia e l'ultima notte magica",
+      "descriptionpic2": "Il 5 agosto è il giorno più speciale. Durante il giorno ci sono tornei di beach volley, il mercatino dell'artigianato nel borgo e l'energia ancora alta. Ma la magia esplode la sera: alle 22:30 vengono accesi decine di falò lungo tutta la costa. È una tradizione antica, quella di saltare sopra le fiamme per buon auspicio. Le chitarre escono dagli zaini, la gente canta canzoni popolari, si balla sulla sabbia, ci si tuffa nel mare di notte. E all'alba del 6 agosto, quando l'ultimo falò si spegne e il sole sorge sull'Adriatico, si saluta San Basso con un ultimo bagno collettivo. È il modo perfetto per chiudere tre giorni che non dimenticherai mai.",
+      "cta": "Vedi programma completo"
+    },
+    "parallax": {
+      "title": "I Vostri Ricordi",
+      "subtitle": "Migliaia di persone. Migliaia di storie. Una sola festa indimenticabile."
+    },
+    "reviews": {
+      "title": "Cosa Dicono i Visitatori",
+      "subtitle": "Esperienze autentiche di chi ha vissuto la festa di San Basso",
+      "disclaimer": "Oltre 2000 visitatori lo scorso anno",
+      "scroll": "Continua a scorrere"
+    }
   },
   "tradition": {
     "title": "Una Tradizione Secolare",
@@ -139,19 +192,6 @@
       }
     }
   },
-  "footer": {
-    "cta": {
-      "title": "Ne sentirai parlare tutto l'anno. Quindi, tanto vale esserci. Prendi i tuoi biglietti ora!",
-      "button": "INFO & CONTATTI"
-    },
-    "sponsors": "I NOSTRI SPONSOR",
-    "follow": "SEGUICI SU",
-    "legal": {
-      "privacy": "Privacy Policy",
-      "terms": "Termini e Condizioni",
-      "rights": "Tutti i diritti riservati."
-    }
-  },
   "contacts": {
     "title": "Contatti",
     "subtitle": "Hai domande? Siamo qui per aiutarti",
@@ -189,6 +229,7 @@
   },
   "privacy": {
     "title": "Privacy Policy",
+    "subtitle": "da rivedere Privacy Policy",
     "lastUpdated": "Ultimo aggiornamento",
     "sections": {
       "intro": {
@@ -219,6 +260,7 @@
   },
   "terms": {
     "title": "Termini e Condizioni",
+    "subtitle": "da rivedere Termini e Condizioni",
     "lastUpdated": "Ultimo aggiornamento",
     "sections": {
       "intro": {
@@ -285,10 +327,5 @@
         "content": "Per informazioni sul progetto o per segnalare eventuali problematiche relative all'uso di contenuti, è possibile contattare lo studente sviluppatore attraverso la repository GitHub del progetto."
       }
     }
-  },
-  "reviews": {
-    "title": "Cosa Dicono i Visitatori",
-    "subtitle": "Esperienze autentiche di chi ha vissuto la festa di San Basso",
-    "disclaimer": "⭐ Oltre 2000 visitatori lo scorso anno"
   }
 }

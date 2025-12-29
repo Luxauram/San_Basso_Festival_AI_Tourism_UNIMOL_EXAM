@@ -6,6 +6,8 @@ import SecondaryButton from '@/components/ui/buttons/SecondaryButton';
 import ScrollPromptSemicircle from '@/components/shared/ScrollPromptSemicircle';
 import { arrowDownIcon } from '@/components/ui/shared/icons/ArrowDownIcon';
 import { DictAndLocaleProps } from '@/types';
+import Image from 'next/image';
+import { HERO_LOGO_IMAGE, VIMEO_CLASSIC_URL, VIMEO_PLAYER_URL } from '@/data';
 
 export default function HeroSection({ dict, locale }: DictAndLocaleProps) {
   const contactsRoute = locale === 'it' ? '/contatti' : '/contacts';
@@ -15,7 +17,7 @@ export default function HeroSection({ dict, locale }: DictAndLocaleProps) {
       {/* Video Background */}
       <div className="absolute inset-0 z-0 w-full h-full overflow-hidden">
         <iframe
-          src="https://player.vimeo.com/video/753580183?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+          src={`${VIMEO_PLAYER_URL}?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1`}
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
           style={{
             width: '100vw',
@@ -29,44 +31,52 @@ export default function HeroSection({ dict, locale }: DictAndLocaleProps) {
       </div>
 
       {/* Overlay scuro per migliorare leggibilità */}
-      <div className="absolute inset-0 bg-black/30 z-[1]" />
+      <div className="absolute inset-0 bg-black/50 z-1" />
 
-      {/* Contenuto Hero */}
+      {/* Hero */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center px-4">
-        {/* Testo con effetto sottrai */}
-        <motion.h1
+        {/* Logo */}
+        <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-7xl md:text-9xl font-bold uppercase text-white text-center leading-tight"
+          className="relative w-[40vh] h-[40vh] sm:w-[45vh] sm:h-[45vh] md:w-[50vh] md:h-[50vh] lg:w-[55vh] lg:h-[55vh] xl:w-[60vh] xl:h-[60vh] -mt-40 sm:-mt-48 md:-mt-56 lg:-mt-64 xl:-mt-72"
           style={{ mixBlendMode: 'difference' }}
         >
-          SAN BASSO
-          <br />
-          FESTIVAL
-        </motion.h1>
+          <Image
+            src={HERO_LOGO_IMAGE}
+            alt="Logo"
+            fill
+            priority
+            className="object-contain"
+          />
+        </motion.div>
 
         {/* Bottoni */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex gap-4 flex-wrap justify-center"
+          className="flex gap-4 flex-wrap justify-center -mt-20 sm:-mt-24 md:-mt-28 lg:-mt-32 xl:-mt-36 z-10"
         >
           <PrimaryButton href={`/${locale}${contactsRoute}`}>
-            {dict.footer.cta.button}
+            {dict.home.hero.button1}
           </PrimaryButton>
-          <SecondaryButton href={`/${locale}${contactsRoute}`}>
-            {dict.footer.cta.button}
+          <SecondaryButton
+            href={VIMEO_CLASSIC_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {dict.home.hero.button2}
           </SecondaryButton>
         </motion.div>
       </div>
 
       {/* ======= Scroll to Explore ======= */}
       <ScrollPromptSemicircle
-        text={dict.footer.cta.button}
-        bgColor="bg-white"
-        textColor="text-black"
+        text={dict.home.hero.scroll}
+        bgColor="bg-white-custom"
+        textColor="text-black-custom"
         icon={arrowDownIcon}
       />
     </section>

@@ -18,81 +18,63 @@ import {
 
 export const PARALLAX_ITEMS = [
   {
-    title: 'Moonbeam',
-    link: 'https://gomoonbeam.com',
+    title: '#ProcessioneAMare #Sunrise #UnforgettableMoments',
     thumbnail: PARALLAX_HOME_IMAGE_1,
   },
   {
-    title: 'Cursor',
-    link: 'https://cursor.so',
+    title: '#FuegosArtificiales #MagicalNight #Termoli',
     thumbnail: PARALLAX_HOME_IMAGE_2,
   },
   {
-    title: 'Rogue',
-    link: 'https://userogue.com',
+    title: '#AltStadt #ItalianHeritage #HiddenGem',
     thumbnail: PARALLAX_HOME_IMAGE_3,
   },
-
   {
-    title: 'Editorially',
-    link: 'https://editorially.org',
+    title: '#SanBasso #Devoción #AmazingExperience',
     thumbnail: PARALLAX_HOME_IMAGE_4,
   },
   {
-    title: 'Editrix AI',
-    link: 'https://editrix.ai',
+    title: '#ItalianFood #Meeresfrüchte #Délicieux',
     thumbnail: PARALLAX_HOME_IMAGE_5,
   },
   {
-    title: 'Pixel Perfect',
-    link: 'https://app.pixelperfect.quest',
+    title: '#Procession #NuitMagique #Tradizione',
     thumbnail: PARALLAX_HOME_IMAGE_6,
   },
-
   {
-    title: 'Algochurn',
-    link: 'https://algochurn.com',
+    title: '#Feux #BeachBonfire #NotteIndimenticabile',
     thumbnail: PARALLAX_HOME_IMAGE_7,
   },
   {
-    title: 'Aceternity UI',
-    link: 'https://ui.aceternity.com',
+    title: '#Diversão #FunFair #FestaDiPaese',
     thumbnail: PARALLAX_HOME_IMAGE_8,
   },
   {
-    title: 'Tailwind Master Kit',
-    link: 'https://tailwindmasterkit.com',
+    title: '#LiveMusic #ConcertEnPleinAir #PiazzaDuomo',
     thumbnail: PARALLAX_HOME_IMAGE_9,
   },
   {
-    title: 'SmartBridge',
-    link: 'https://smartbridgetech.com',
+    title: '#AdriatischesMeer #BlueSea #Paradiso',
     thumbnail: PARALLAX_HOME_IMAGE_10,
   },
   {
-    title: 'Renderwork Studio',
-    link: 'https://renderwork.studio',
+    title: '#Música #LocalTradition #Comunità',
     thumbnail: PARALLAX_HOME_IMAGE_11,
   },
-
   {
-    title: 'Creme Digital',
-    link: 'https://cremedigital.com',
+    title: '#FestivalVibes #NocheDeFiesta #Inolvidable',
     thumbnail: PARALLAX_HOME_IMAGE_12,
   },
   {
-    title: 'Golden Bells Academy',
-    link: 'https://goldenbellsacademy.com',
+    title: '#Cathédrale #HistoricCenter #BorgoAntico',
     thumbnail: PARALLAX_HOME_IMAGE_13,
   },
   {
-    title: 'Invoker Labs',
-    link: 'https://invoker.lol',
+    title: '#Tradition #Patrimônio #CulturaItaliana',
     thumbnail: PARALLAX_HOME_IMAGE_14,
   },
   {
-    title: 'E Free Invoice',
-    link: 'https://efreeinvoice.com',
+    title: '#Fischer #SeaBenediction #TradicioneMarinara',
     thumbnail: PARALLAX_HOME_IMAGE_15,
   },
 ];

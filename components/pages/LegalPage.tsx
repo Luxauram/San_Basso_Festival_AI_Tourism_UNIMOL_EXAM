@@ -6,9 +6,11 @@ import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { PageHeader } from '../shared/PageHeader';
 import Container from '../shared/Container';
+import { HERO_TERMS_IMAGE, HERO_PRIVACY_IMAGE } from '@/data';
 
 interface LegalPageComponentProps {
   data: LegalPage;
+  pageType: 'privacy' | 'terms' | 'disclaimer';
 }
 
 function Section({
@@ -37,23 +39,36 @@ function Section({
   );
 }
 
-export default function LegalPageComponent({ data }: LegalPageComponentProps) {
+export default function LegalPageComponent({
+  data,
+  pageType,
+}: LegalPageComponentProps) {
   const sections = Object.values(data.sections);
 
+  // Determina immagine in base al tipo di pagina
+  const heroImage =
+    pageType === 'privacy' ? HERO_PRIVACY_IMAGE : HERO_TERMS_IMAGE;
+
   return (
-    <main className="min-h-screen bg-gray-50 pt-24 pb-16">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <main className="min-h-screen bg-gray-50">
+      {/* Full-width Header Section */}
+      <PageHeader
+        title={data.title}
+        subtitle={data.subtitle}
+        imageUrl={heroImage}
+      />
+
+      {/* Content Section */}
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="bg-white rounded-2xl shadow-lg p-8 md:p-12"
         >
-          <PageHeader title={data.title} />
-
           <p className="text-gray-500 mb-8 pb-8 border-b">
             {data.lastUpdated}: 07/12/2025
           </p>
-        <Container>
+
           <div className="space-y-8">
             {sections.map((section, index) => (
               <Section
@@ -64,7 +79,6 @@ export default function LegalPageComponent({ data }: LegalPageComponentProps) {
               />
             ))}
           </div>
-          </Container>
 
           <motion.div
             initial={{ opacity: 0 }}
@@ -85,6 +99,5 @@ export default function LegalPageComponent({ data }: LegalPageComponentProps) {
         </motion.div>
       </div>
     </main>
-
   );
 }
