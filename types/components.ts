@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import { Locale } from '@/i18n/config';
-import { Dictionary } from '@/types/i18n';
+import { Dictionary, LegalPage } from '@/types/i18n';
 
 export interface ContainerProps {
   children: ReactNode;
@@ -72,4 +72,9 @@ export interface MapsProps {
   className?: string;
   pinTitle?: string;
   pinHref?: string;
+}
+
+export interface LegalPageComponentProps {
+  data: LegalPage;
+  pageType: 'privacy' | 'terms' | 'disclaimer';
 }
