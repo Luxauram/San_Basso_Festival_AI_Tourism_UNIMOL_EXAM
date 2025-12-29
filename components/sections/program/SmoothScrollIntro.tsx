@@ -1,4 +1,4 @@
-import { ReactLenis } from 'lenis/dist/lenis-react';
+import { ReactLenis } from 'lenis/react';
 import {
   motion,
   useMotionTemplate,
@@ -20,10 +20,7 @@ export const SmoothScrollIntro = () => {
       <ReactLenis
         root
         options={{
-          // Learn more -> https://github.com/darkroomengineering/lenis?tab=readme-ov-file#instance-settings
           lerp: 0.05,
-          //   infinite: true,
-          //   syncTouch: true,
         }}
       >
         <Hero />
@@ -41,10 +38,8 @@ const Hero = () => {
       className="relative w-full"
     >
       <CenterImage />
-
       <ParallaxImages />
-
-      <div className="absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-b from-zinc-950/0 to-zinc-950" />
+      <div className="absolute bottom-0 left-0 right-0 h-96 bg-linear-to-b from-zinc-950/0 to-zinc-950" />
     </div>
   );
 };
@@ -85,7 +80,7 @@ const CenterImage = () => {
 
 const ParallaxImages = () => {
   return (
-    <div className="mx-auto max-w-5xl px-4 pt-[200px]">
+    <div className="mx-auto max-w-5xl px-4 pt-50">
       <ParallaxImg
         src={SCROLL_INTRO_IMAGE_2}
         alt="And example of a space launch"
@@ -118,8 +113,16 @@ const ParallaxImages = () => {
   );
 };
 
-const ParallaxImg = ({ className, alt, src, start, end }) => {
-  const ref = useRef(null);
+interface ParallaxImgProps {
+  className: string;
+  alt: string;
+  src: string;
+  start: number;
+  end: number;
+}
+
+const ParallaxImg = ({ className, alt, src, start, end }: ParallaxImgProps) => {
+  const ref = useRef<HTMLImageElement>(null);
 
   const { scrollYProgress } = useScroll({
     target: ref,
