@@ -213,7 +213,8 @@
       }
     },
     "map": {
-      "title": "Where We Are"
+      "title": "Where We Are",
+      "port": "📍 Termoli's Port"
     }
   },
   "privacy": {
