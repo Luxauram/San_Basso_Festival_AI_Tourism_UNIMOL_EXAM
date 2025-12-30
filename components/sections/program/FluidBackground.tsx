@@ -146,7 +146,7 @@ void main() {
 
 export function FluidBackground() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const rendererRef = useRef<THREE.WebGLRenderer>();
+  const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
   const cleanupRef = useRef<(() => void) | null>(null);
 
   useEffect(() => {
