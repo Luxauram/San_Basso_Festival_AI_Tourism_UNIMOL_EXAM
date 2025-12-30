@@ -9,18 +9,36 @@ import Section5 from './parallax-sections/Section5';
 export default function ParallaxScroll() {
   const [currentSection, setCurrentSection] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
+  const [hasExited, setHasExited] = useState(false);
   const fullpageControls = useAnimation();
 
   useEffect(() => {
+    // Se siamo usciti dal parallax, non gestiamo più gli eventi
+    if (hasExited) return;
+
     const handleWheel = (e: WheelEvent) => {
+      const direction = e.deltaY > 0 ? 'down' : 'up';
+
+      // Se siamo all'ultima sezione e l'utente scrolla giù, esci dal parallax
+      if (currentSection === 4 && direction === 'down') {
+        setHasExited(true);
+        return;
+      }
+
+      // Se siamo alla prima sezione e l'utente scrolla su, permetti lo scroll normale
+      if (currentSection === 0 && direction === 'up') {
+        return;
+      }
+
       e.preventDefault();
 
       if (isScrolling) return;
 
-      const direction = e.deltaY > 0 ? 'down' : 'up';
       const nextSection =
         direction === 'down'
-          ? Math.min(currentSection + 1, 3)
+          ? Math.min(currentSection + 1, 4)
           : Math.max(currentSection - 1, 0);
 
       if (nextSection !== currentSection) {
@@ -28,9 +46,103 @@ export default function ParallaxScroll() {
       }
     };
 
+    const handleTouchStart = (e: TouchEvent) => {
+      setTouchStart(e.touches[0].clientY);
+      setTouchEnd(e.touches[0].clientY);
+    };
+
+    const handleTouchMove = (e: TouchEvent) => {
+      setTouchEnd(e.touches[0].clientY);
+    };
+
+    const handleTouchEnd = () => {
+      if (isScrolling) return;
+
+      const swipeDistance = touchStart - touchEnd;
+      const minSwipeDistance = 50;
+
+      if (Math.abs(swipeDistance) > minSwipeDistance) {
+        const direction = swipeDistance > 0 ? 'down' : 'up';
+
+        // Se siamo all'ultima sezione e l'utente swipa giù, esci dal parallax
+        if (currentSection === 4 && direction === 'down') {
+          setHasExited(true);
+          return;
+        }
+
+        // Se siamo alla prima sezione e l'utente swipa su, permetti lo scroll normale
+        if (currentSection === 0 && direction === 'up') {
+          return;
+        }
+
+        const nextSection =
+          direction === 'down'
+            ? Math.min(currentSection + 1, 4)
+            : Math.max(currentSection - 1, 0);
+
+        if (nextSection !== currentSection) {
+          scrollToSection(nextSection);
+        }
+      }
+    };
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      let nextSection = currentSection;
+      let shouldPreventDefault = false;
+
+      switch (e.key) {
+        case 'ArrowDown':
+        case 'PageDown':
+        case ' ':
+          nextSection = Math.min(currentSection + 1, 4);
+          // Se siamo all'ultima sezione, esci dal parallax
+          if (currentSection === 4) {
+            setHasExited(true);
+            return;
+          }
+          shouldPreventDefault = true;
+          break;
+        case 'ArrowUp':
+        case 'PageUp':
+          nextSection = Math.max(currentSection - 1, 0);
+          // Non bloccare se siamo alla prima sezione
+          shouldPreventDefault = currentSection > 0;
+          break;
+        case 'Home':
+          nextSection = 0;
+          shouldPreventDefault = true;
+          break;
+        case 'End':
+          nextSection = 4;
+          shouldPreventDefault = true;
+          break;
+      }
+
+      if (shouldPreventDefault) {
+        e.preventDefault();
+      }
+
+      if (isScrolling) return;
+
+      if (nextSection !== currentSection) {
+        scrollToSection(nextSection);
+      }
+    };
+
     window.addEventListener('wheel', handleWheel, { passive: false });
-    return () => window.removeEventListener('wheel', handleWheel);
-  }, [currentSection, isScrolling]);
+    window.addEventListener('touchstart', handleTouchStart, { passive: true });
+    window.addEventListener('touchmove', handleTouchMove, { passive: true });
+    window.addEventListener('touchend', handleTouchEnd, { passive: true });
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('wheel', handleWheel);
+      window.removeEventListener('touchstart', handleTouchStart);
+      window.removeEventListener('touchmove', handleTouchMove);
+      window.removeEventListener('touchend', handleTouchEnd);
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [currentSection, isScrolling, touchStart, touchEnd, hasExited]);
 
   const scrollToSection = async (sectionIndex: number) => {
     setIsScrolling(true);
@@ -50,8 +162,15 @@ export default function ParallaxScroll() {
   };
 
   return (
-    <>
-      {/* Scroll/Arrow Section */}
+    <div
+      className={`fixed inset-0 transition-opacity duration-500 z-50 ${
+        hasExited ? 'opacity-0 pointer-events-none' : 'opacity-100'
+      }`}
+    >
+      {/* Sfondo per coprire il contenuto sotto */}
+      <div className="absolute inset-0 bg-black -z-10" />
+
+      {/* Scroll/Arrow Section - LEFT */}
       <motion.div
         className="fixed top-1/2 -translate-y-1/2 left-4 sm:left-6 md:left-8 lg:left-12 xl:left-16 z-[100] flex flex-col items-center gap-2 sm:gap-3 md:gap-4 text-white-custom text-sm sm:text-base md:text-lg lg:text-xl font-semibold tracking-[0.3em]"
         animate={{
@@ -105,6 +224,6 @@ export default function ParallaxScroll() {
         <Section4 isActive={currentSection === 3} />
         <Section5 isActive={currentSection === 4} />
       </motion.div>
-    </>
+    </div>
   );
 }
