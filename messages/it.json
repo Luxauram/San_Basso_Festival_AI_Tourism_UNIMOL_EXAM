@@ -8,7 +8,7 @@
   },
   "footer": {
     "cta": {
-      "title": "Sii presente per la tradizione, mancano soltano",
+      "title": "Sii presente per la tradizione, mancano soltanto",
       "days": "Giorni",
       "hours": "Ore",
       "min": "Minuti",
@@ -250,8 +250,8 @@
       ]
     },
     "accommodation": {
-      "title": "Dove Mangiare",
-      "subtitle": "I migliori ristoranti selezionati per voi",
+      "title": "Dove Alloggiare",
+      "subtitle": "I migliori alloggi selezionati per voi",
       "accomodations": [
         {
           "id": 1,

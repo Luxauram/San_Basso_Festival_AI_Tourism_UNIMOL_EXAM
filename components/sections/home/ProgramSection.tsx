@@ -17,37 +17,15 @@ export default function ProgramSection({ dict, locale }: DictAndLocaleProps) {
 
   return (
     <div className="w-full bg-white-custom">
-      {/* Sezione 1: Testo a sinistra, Immagine a destra */}
+      {/* Sezione 1: Immagine prima su mobile, testo dopo */}
       <section
         ref={section3Ref}
-        className="w-full flex items-center px-6 md:px-12 lg:px-20 py-20 "
+        className="w-full flex items-center px-6 md:px-12 lg:px-20 py-20"
       >
         <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
-          {/* Testo */}
+          {/* Immagine con maschera - prima su mobile */}
           <motion.div
-            className="flex-1"
-            initial={{ opacity: 0, x: -50 }}
-            animate={section3InView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
-          >
-            <div className="mb-4">
-              <span className="text-sm text-gray-400 uppercase tracking-wider">
-                {dict.home.program.pretitle}
-              </span>
-            </div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-black-custom">
-              {dict.home.program.titlepic1}
-            </h2>
-            <div className="text-lg md:text-xl text-gray-600 leading-relaxed">
-              {section3InView && (
-                <TextGenerateEffect words={dict.home.program.descriptionpic1} />
-              )}
-            </div>
-          </motion.div>
-
-          {/* Immagine con maschera */}
-          <motion.div
-            className="flex-1 w-full"
+            className="flex-1 w-full order-1 lg:order-2"
             initial={{ opacity: 0, x: 50 }}
             animate={section3InView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
@@ -71,18 +49,44 @@ export default function ProgramSection({ dict, locale }: DictAndLocaleProps) {
               />
             </motion.div>
           </motion.div>
+
+          {/* Testo - secondo su mobile */}
+          <motion.div
+            className="flex-1 order-2 lg:order-1"
+            initial={{ opacity: 0, x: -50 }}
+            animate={section3InView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+          >
+            <div className="mb-4">
+              <span className="text-sm text-gray-400 uppercase tracking-wider">
+                {dict.home.program.pretitle}
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-black-custom">
+              {dict.home.program.titlepic1}
+            </h2>
+            <div className="text-lg md:text-xl text-gray-600 leading-relaxed">
+              {section3InView && (
+                <TextGenerateEffect
+                  words={dict.home.program.descriptionpic1}
+                  duration={0.3}
+                  staggerDelay={0.05}
+                />
+              )}
+            </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* Sezione 2: Immagine a sinistra, Testo a destra */}
+      {/* Sezione 2: Immagine prima su mobile, testo dopo */}
       <section
         ref={section4Ref}
         className="w-full flex items-center px-6 md:px-12 lg:px-20 py-20 bg-white-custom"
       >
         <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
-          {/* Immagine con maschera */}
+          {/* Immagine con maschera - prima su mobile */}
           <motion.div
-            className="flex-1 w-full lg:order-1"
+            className="flex-1 w-full order-1"
             initial={{ opacity: 0, x: -50 }}
             animate={section4InView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
@@ -107,9 +111,9 @@ export default function ProgramSection({ dict, locale }: DictAndLocaleProps) {
             </motion.div>
           </motion.div>
 
-          {/* Testo */}
+          {/* Testo - secondo su mobile */}
           <motion.div
-            className="flex-1 lg:order-2"
+            className="flex-1 order-2"
             initial={{ opacity: 0, x: 50 }}
             animate={section4InView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -124,7 +128,11 @@ export default function ProgramSection({ dict, locale }: DictAndLocaleProps) {
             </h2>
             <div className="text-lg md:text-xl text-gray-600 leading-relaxed">
               {section4InView && (
-                <TextGenerateEffect words={dict.home.program.descriptionpic2} />
+                <TextGenerateEffect
+                  words={dict.home.program.descriptionpic2}
+                  duration={0.3}
+                  staggerDelay={0.05}
+                />
               )}
             </div>
             <motion.div

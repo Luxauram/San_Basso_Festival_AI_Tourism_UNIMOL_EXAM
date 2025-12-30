@@ -1,5 +1,5 @@
 // ======= San Basso Flyer =======
-export const SAN_BASSO_FLYER = '/san-basso-flyer.png';
+export const SAN_BASSO_FLYER = '/san-basso-flyer.pdf';
 
 // ======= Logo URL =======
 export const MAIN_LOGO_IMAGE = '/logo.png';

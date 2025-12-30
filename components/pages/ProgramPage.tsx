@@ -9,6 +9,7 @@ import RestaurantsSection from '../sections/program/RestaurantsSection';
 import { SmoothScrollIntro } from '../sections/program/SmoothScrollIntro';
 import { HERO_PROGRAM_IMAGE } from '@/data';
 import OpeningIntroAdvices from '../sections/program/OpeningIntroAdvices';
+import { FluidBackground } from '../sections/program/FluidBackground';
 
 interface ProgramPageProps {
   dict: Dictionary;
@@ -32,35 +33,40 @@ export default function ProgramPageComponent({
         {/* ======= Parallax ======= */}
         <SmoothScrollIntro />
 
-        {/* ======= Program Days Section ======= */}
+        {/* ======= Program Days Section - ISOLATO ======= */}
         <motion.div
-          className="max-w-7xl mx-auto px-4 py-16 bg-black-custom"
+          className="w-full bg-black-custom relative"
+          style={{
+            clipPath: 'inset(0)',
+            isolation: 'isolate',
+          }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          {/* Day 1 */}
-          <ProgramDay
-            date={dict.program.day1.date}
-            events={dict.program.day1.events}
-            index={0}
-          />
+          {/* Fluid Background FISSO al centro viewport ma visibile SOLO qui */}
+          <FluidBackground />
 
-          {/* Day 2 */}
-          <ProgramDay
-            date={dict.program.day2.date}
-            events={dict.program.day2.events}
-            index={1}
-          />
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
+            <ProgramDay
+              date={dict.program.day1.date}
+              events={dict.program.day1.events}
+              index={0}
+            />
 
-          {/* Day 3 */}
-          <ProgramDay
-            date={dict.program.day3.date}
-            events={dict.program.day3.events}
-            index={2}
-          />
+            <ProgramDay
+              date={dict.program.day2.date}
+              events={dict.program.day2.events}
+              index={1}
+            />
+
+            <ProgramDay
+              date={dict.program.day3.date}
+              events={dict.program.day3.events}
+              index={2}
+            />
+          </div>
         </motion.div>
-
         {/* ======= Intro Text======= */}
         <OpeningIntroAdvices dict={dict} locale={locale} />
 

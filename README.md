@@ -3,25 +3,26 @@
 ## Index
 
 1. [Fast Links Recap](#fast-links-recap)
-1. [AI involved in this Exam](#ai-involved-in-this-exam)
+1. [AI involved in this Exam](#ai-involved-in-this-examm)
 1. [Logo Generation](#logo-generation-chatgpt--dall-e)
-1. [Video Generation](#video-generation-chatgpt--z-image--nanobanana)
+1. [Prompt used for Parallax in HomePage](#prompt-used-for-parallax-in-homepage-gemini)
+1. [Video Generation](#video-generation-chatgpt--gemini)
 
 ## Fast Links Recap
 
-- Intro Presentation: [Click Here](https://claude.ai/)
-- Website hosted on Vercel: [Click Here](https://claude.ai/)
-- Event Flyer: [Click Here](https://chatgpt.com/)
+- Intro Presentation: [Click Here DA INSERIRE](https://claude.ai/)
+- Website hosted on Vercel: [Click Here](https://san-basso-festival.vercel.app/it)
+- Event Flyer: [Click Here](/public/san-basso-flyer.pdf)
 
 ## AI involved in this Exam
 
 - Coding: [Claude](https://claude.ai/)
 - Textual Content: [ChatGPT](https://chatgpt.com/)
 - Upscaling Pictures: [Nero Software](https://ai.nero.com/image-upscaler)
-- Image Generation: [Nero Software](https://ai.nero.com/image-upscaler)
-- Video Generation: [Nero Software](https://ai.nero.com/image-upscaler)
-- Voice Generation: [Nero Software](https://ai.nero.com/image-upscaler)
-- Music Generation: [Nero Software](https://ai.nero.com/image-upscaler)
+- Image Generation: [Gemini](https://gemini.google.com/)
+- Video Generation: [Gemini](https://gemini.google.com/)
+- Music Generation: [SunoAI](https://suno.com/)
+- Voice Generation: **Luca D'Aurizio - No AI**
 
 ## Logo Generation (ChatGPT / DALL-e)
 
@@ -107,7 +108,7 @@ then I used scripts to generate prompts to generates images and animate them wit
 
 [Gemini](https://gemini.google.com/)
 
-[Full video is available here on Vimeo](https://gemini.google.com/)
+[Full video is available here on Vimeo](https://vimeo.com/video/1149715315)
 
 ### General Advertise Spot Script
 
