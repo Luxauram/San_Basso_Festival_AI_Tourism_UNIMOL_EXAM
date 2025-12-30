@@ -8,26 +8,33 @@ import AccommodationsSection from '../sections/program/AccommodationsSection';
 import RestaurantsSection from '../sections/program/RestaurantsSection';
 import { SmoothScrollIntro } from '../sections/program/SmoothScrollIntro';
 import { HERO_PROGRAM_IMAGE } from '@/data';
+import OpeningIntroAdvices from '../sections/program/OpeningIntroAdvices';
 
 interface ProgramPageProps {
   dict: Dictionary;
   locale: Locale;
 }
 
-export default function ProgramPageComponent({ dict }: ProgramPageProps) {
+export default function ProgramPageComponent({
+  dict,
+  locale,
+}: ProgramPageProps) {
   return (
     <>
-      <main className="bg-black-custom">
+      <main className="bg-white-custom">
+        {/* ======= Header ======= */}
         <PageHeader
           title={dict.program.title}
           subtitle={dict.program.subtitle}
           imageUrl={HERO_PROGRAM_IMAGE}
         />
 
+        {/* ======= Parallax ======= */}
         <SmoothScrollIntro />
 
+        {/* ======= Program Days Section ======= */}
         <motion.div
-          className="max-w-7xl mx-auto px-4 py-16"
+          className="max-w-7xl mx-auto px-4 py-16 bg-black-custom"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
@@ -54,8 +61,24 @@ export default function ProgramPageComponent({ dict }: ProgramPageProps) {
           />
         </motion.div>
 
-        {/* <RestaurantsSection />
-        <AccommodationsSection /> */}
+        {/* ======= Intro Text======= */}
+        <OpeningIntroAdvices dict={dict} locale={locale} />
+
+        {/* ======= Linea ======= */}
+        <div className="my-12 space-y-4 w-full overflow-hidden bg-white-custom">
+          <div className="relative w-3/4 sm:w-2/3 md:w-1/2 lg:w-2/5 max-w-2xl h-px mx-auto bg-linear-to-r from-transparent via-black to-transparent opacity-20 " />
+        </div>
+
+        {/* ======= Restaurants ======= */}
+        <RestaurantsSection dict={dict} />
+
+        {/* ======= Linea ======= */}
+        <div className="my-12 space-y-4 w-full overflow-hidden bg-white-custom">
+          <div className="relative w-3/4 sm:w-2/3 md:w-1/2 lg:w-2/5 max-w-2xl h-px mx-auto bg-linear-to-r from-transparent via-black to-transparent opacity-20 " />
+        </div>
+
+        {/* ======= Accomodations ======= */}
+        <AccommodationsSection dict={dict} />
       </main>
     </>
   );

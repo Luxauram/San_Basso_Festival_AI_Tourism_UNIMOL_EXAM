@@ -86,7 +86,48 @@ export interface Dictionary {
     day1: ProgramDayProps;
     day2: ProgramDayProps;
     day3: ProgramDayProps;
-    cta: string;
+    opening: {
+      pretitle: string;
+      title: string;
+      description: string;
+    };
+    restaurant: {
+      title: string;
+      subtitle: string;
+      specialties: string;
+      advice: string;
+      restaurants: Array<{
+        id: number;
+        name: string;
+        cuisine: string;
+        description: string;
+        address: string;
+        phone: string;
+        website: string;
+        rating: number;
+        priceLevel: string;
+        image: string;
+        specialties: string[];
+      }>;
+    };
+    accommodation: {
+      title: string;
+      subtitle: string;
+      accomodations: Array<{
+        id: number;
+        name: string;
+        type: string;
+        description: string;
+        address: string;
+        phone: string;
+        website: string;
+        rating: number;
+        priceRange: string;
+        image: string;
+        amenities: string[];
+        distanceFromCenter: string;
+      }>;
+    };
   };
   // ======= Contacts =======
   contacts: {

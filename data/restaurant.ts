@@ -1,6 +1,8 @@
+// DA ELIMINARE
+
 import { Restaurant } from '@/types';
 
-export const restaurants: Restaurant[] = [
+export const restaurantsData: Restaurant[] = [
   {
     id: 1,
     name: 'Trattoria del Pescatore',

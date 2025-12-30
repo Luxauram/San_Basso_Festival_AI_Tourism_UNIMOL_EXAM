@@ -102,11 +102,11 @@
         {
           "time": "06.00",
           "title": "Sea Procession - San Basso",
-          "description": "The day begins at dawn with the solemn sea procession. The statue of San Basso is loaded onto the fishing boat drawn by lot the previous evening and taken to sea for the traditional blessing of the waters. A procession of boats accompanies the Patron Saint along a scenic route along the Termoli coast, while the Cathedral bells ring in celebration. The return to port is welcomed by the marching band and the faithful waiting on the dock."
+          "description": "The day begins at dawn with the solemn sea procession. The statue of San Basso is loaded onto the fishing boat drawn by lot the previous evening and taken out to sea for the traditional blessing of the waters. A procession of boats accompanies the Patron Saint on a scenic route along the Termoli coast, while the Cathedral bells ring in celebration. The return to the port is welcomed by the band and the faithful waiting on the dock."
         },
         {
           "time": "10.00",
-          "title": "Solemn Mass",
+          "title": "Solemn Holy Mass",
           "description": "Liturgical celebration in the Cathedral presided over by the Bishop. During the service, bread and fish are blessed, symbols of Termoli's maritime tradition."
         },
         {
@@ -123,27 +123,27 @@
         {
           "time": "17.00",
           "title": "Amusement Park Opening",
-          "description": "The amusement park opens on the seafront. Rides for all ages, cotton candy, roasted chestnuts and traditional illuminated stalls transform the waterfront into a village of lights and colors."
+          "description": "The amusement park opens on the waterfront. Rides for all ages, cotton candy, roasted chestnuts and traditional illuminated stalls transform the waterfront into a village of lights and colors."
         },
         {
           "time": "19.00",
           "title": "Fish Festival - Street Food",
-          "description": "Food stalls along the main street. Fried fish, panzerotti, Molise arrosticini, Termoli-style scapece and ventricina. Adriatic culinary tradition meets the flavors of the Molise hinterland. Open bars with live music and traveling DJ sets."
+          "description": "Food stands along the entire main street. Fried fish, panzerotti, Molise-style arrosticini, Termoli scapece and ventricina. Adriatic culinary tradition meets the flavors of the Molise hinterland. Open bars with live music and roaming DJ sets."
         },
         {
           "time": "21.00",
-          "title": "Live Concert - Piazza Duomo",
-          "description": "Local artists and emerging bands take the main stage. Tributes to great Italian and international bands enliven the old town until late at night."
+          "title": "Live Concert - Cathedral Square",
+          "description": "Local artists and emerging bands on the main stage. Tributes to great Italian and international bands animate the old town until late at night."
         },
         {
           "time": "23.30",
           "title": "Grand Fireworks Display",
-          "description": "From the sea, a spectacular choreography of fireworks lights up the sky and reflects on the harbor waters. Twenty minutes of pure emotion with light and color displays accompanied by soundtrack. The most anticipated moment of the festival."
+          "description": "From the sea, a spectacular choreography of fireworks lights up the sky and reflects on the harbor waters. Twenty minutes of pure emotion with light and color displays accompanied by a soundtrack. The most anticipated moment of the festival."
         },
         {
           "time": "00.30",
           "title": "DJ Set & After Party",
-          "description": "The night continues with the best DJs from the Adriatic scene. Electronic music, house and techno until dawn on the seafront."
+          "description": "The night continues with the best DJs from the Adriatic scene. Electronic music, house and techno until dawn on the waterfront."
         }
       ]
     },
@@ -154,31 +154,186 @@
         {
           "time": "11.00",
           "title": "Craft Market",
-          "description": "In the old town, the traditional market is held with ceramics, local crafts, typical products and handmade creations. Perfect opportunity to take home a piece of Termoli."
+          "description": "The traditional market is held in the old town with ceramics, local handicrafts, typical products and artisan creations. Perfect opportunity to take home a piece of Termoli."
         },
         {
           "time": "18.00",
           "title": "Beach Sports Tournaments",
-          "description": "Beach volleyball, beach soccer and improvised tournaments on the sand. Swimming competitions and diving from the pier for the bravest. Award ceremonies at sunset with gadgets and local products."
+          "description": "Beach volleyball, beach soccer and impromptu tournaments on the sand. Swimming races and diving from the pier for the bravest. Awards at sunset with gadgets and local products."
         },
         {
           "time": "21.00",
           "title": "Bonfire Preparation - Beach",
-          "description": "Along the coast, traditional bonfires are set up. Groups of friends and families gather on the sand with guitars, food and drinks to celebrate the last night of San Basso's feast."
+          "description": "Traditional bonfires are set up along the coast. Groups of friends and families gather on the sand with guitars, food and drinks to celebrate the last night of the San Basso festival."
         },
         {
           "time": "22.30",
           "title": "Traditional Bonfire Lighting",
-          "description": "At dusk, dozens of bonfires are lit simultaneously all along the coast. Ancient tradition says to jump over the flames for good luck. Live acoustic music, folk dances and traditional songs accompany the night."
+          "description": "At dusk, dozens of bonfires are lit simultaneously all along the coast. Ancient tradition says you should jump over the flames for good luck. Live acoustic music, folk dances and traditional songs accompany the night."
         },
         {
           "time": "00.00",
           "title": "Night of Bonfires - Until Dawn",
-          "description": "The party continues on the beach until dawn. The bonfires keep burning while scattered groups along the coast sing, dance and celebrate under the stars. Midnight swims for the most daring. The final farewell to the Patron Saint takes place at the first light of dawn with a collective swim in the Adriatic Sea."
+          "description": "The celebration continues on the beach until dawn. The bonfires keep burning while groups scattered along the coast sing, dance and celebrate under the stars. Midnight swims for the boldest. The final farewell to the Patron Saint happens at first light with a collective swim in the Adriatic Sea."
         }
       ]
     },
-    "cta": "See full program"
+    "opening": {
+      "pretitle": "August 3-4-5",
+      "title": "72 hours that will change your summer",
+      "description": "A unique event, a unique experience. An opportunity to experience the tradition of San Basso, to experience the dream of Termoli. A moment of pure emotion and pure colors."
+    },
+    "restaurant": {
+      "title": "Where to Eat",
+      "subtitle": "The best restaurants selected for you",
+      "specialties": "Specialties",
+      "advice": "We recommend booking in advance, especially on weekends and during high season",
+      "restaurants": [
+        {
+          "id": 1,
+          "name": "Pensione Al Pescatore",
+          "cuisine": "Fish and Seafood",
+          "description": "Traditional restaurant in the heart of the old town. Fresh fish and Termoli-style fish stew.",
+          "address": "Via Duomo, 25 - Old Town",
+          "phone": "+39 0875 123456",
+          "website": "www.trattoriapescatore.it",
+          "rating": 4.8,
+          "priceLevel": "€€€",
+          "image": "/restaurants/pensione-al-pescatore.webp",
+          "specialties": ["Termoli-style Fish Stew", "Scapece", "Raw Seafood"]
+        },
+        {
+          "id": 2,
+          "name": "Trattoria da Nonna Rosa",
+          "cuisine": "Molise Cuisine",
+          "description": "Home-style Molise cooking with local products.",
+          "address": "Corso Nazionale, 104",
+          "phone": "+39 0875 234567",
+          "rating": 4.6,
+          "priceLevel": "€€",
+          "image": "/restaurants/trattoria-da-nonna-rosa.webp",
+          "specialties": [
+            "Cavatelli with Sauce",
+            "Baked Lamb",
+            "Pallotte Cace e Ove"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Ristorante Svevia",
+          "cuisine": "Mediterranean Cuisine",
+          "description": "Elegant restaurant with sea view.",
+          "address": "Lungomare Cristoforo Colombo, 50",
+          "phone": "+39 0875 345678",
+          "website": "www.ristorantesvevia.it",
+          "rating": 4.9,
+          "priceLevel": "€€€€",
+          "image": "/restaurants/svevia.webp",
+          "specialties": ["Raw Fish", "Seafood Risotto", "Mixed Fried Seafood"]
+        },
+        {
+          "id": 4,
+          "name": "Pizzeria Il Borgo",
+          "cuisine": "Neapolitan Pizza",
+          "description": "DOC Neapolitan pizza cooked in a wood-fired oven.",
+          "address": "Via Federico II, 18 - Old Town",
+          "phone": "+39 0875 456789",
+          "rating": 4.7,
+          "priceLevel": "€",
+          "image": "/restaurants/borgo.webp",
+          "specialties": ["DOC Margherita Pizza", "Marinara", "Stuffed Calzone"]
+        }
+      ]
+    },
+    "accommodation": {
+      "title": "Where to Stay",
+      "subtitle": "The best accommodations selected for you",
+      "accomodations": [
+        {
+          "id": 1,
+          "name": "Hotel Mistral",
+          "type": "4-Star Hotel",
+          "description": "Elegant hotel on the waterfront with panoramic views of the Adriatic Sea. Modern rooms and restaurant.",
+          "address": "Lungomare C. Colombo, 50",
+          "phone": "+39 0875 123456",
+          "website": "www.hotelmistral.it",
+          "rating": 4.7,
+          "priceRange": "€90 - €150/night",
+          "image": "/accomodations/hotel-mistral.webp",
+          "amenities": ["Free WiFi", "Parking", "Breakfast", "Sea View"],
+          "distanceFromCenter": "200m from center"
+        },
+        {
+          "id": 2,
+          "name": "B&B Borgo Antico",
+          "type": "Bed & Breakfast",
+          "description": "Cozy B&B in the heart of the medieval old town. Family atmosphere and homemade breakfast.",
+          "address": "Via Duomo, 12 - Old Town",
+          "phone": "+39 0875 234567",
+          "rating": 4.9,
+          "priceRange": "€60 - €90/night",
+          "image": "/accomodations/borgo-antico.webp",
+          "amenities": ["Free WiFi", "Breakfast Included", "Air Conditioning"],
+          "distanceFromCenter": "In the historic center"
+        },
+        {
+          "id": 3,
+          "name": "Residence Le Dune",
+          "type": "Residence",
+          "description": "Modern apartments near the beach. Ideal for families, equipped kitchen and swimming pool.",
+          "address": "Via Marina, 78",
+          "phone": "+39 0875 345678",
+          "website": "www.residenceledune.com",
+          "rating": 4.5,
+          "priceRange": "€80 - €120/night",
+          "image": "/accomodations/le-dune.webp",
+          "amenities": ["Swimming Pool", "WiFi", "Parking", "Equipped Kitchen"],
+          "distanceFromCenter": "500m from center"
+        },
+        {
+          "id": 4,
+          "name": "Residenza Sveva",
+          "type": "3-Star Hotel",
+          "description": "Hotel in the city center with comfortable rooms. Excellent value for money.",
+          "address": "Corso Nazionale, 89",
+          "phone": "+39 0875 456789",
+          "website": "www.hotelsvevo.it",
+          "rating": 4.4,
+          "priceRange": "€70 - €100/night",
+          "image": "/accomodations/residenza-sveva.webp",
+          "amenities": ["Free WiFi", "Breakfast", "Air Conditioning"],
+          "distanceFromCenter": "City center"
+        },
+        {
+          "id": 5,
+          "name": "Villa Nino",
+          "type": "Holiday Home",
+          "description": "Elegant villa with private garden and direct beach access. Perfect for groups.",
+          "address": "Via Adriatica, 22",
+          "phone": "+39 0875 567890",
+          "website": "www.hotelsvevo.it",
+          "rating": 4.8,
+          "priceRange": "€150 - €250/night",
+          "image": "/accomodations/villa-nino.webp",
+          "amenities": ["Sea View", "Private Garden", "WiFi", "Parking"],
+          "distanceFromCenter": "1km from center"
+        },
+        {
+          "id": 6,
+          "name": "Il Gallo con gli Stivali",
+          "type": "Hostel",
+          "description": "Modern hostel with shared and private rooms. Young and international atmosphere.",
+          "address": "Via Porto, 45",
+          "phone": "+39 0875 678901",
+          "website": "www.hotelsvevo.it",
+          "rating": 4.2,
+          "priceRange": "€25 - €50/night",
+          "image": "/accomodations/gallo-con-stivali.webp",
+          "amenities": ["Free WiFi", "Shared Kitchen", "Common Area"],
+          "distanceFromCenter": "300m from center"
+        }
+      ]
+    }
   },
   "contacts": {
     "title": "Contacts",
