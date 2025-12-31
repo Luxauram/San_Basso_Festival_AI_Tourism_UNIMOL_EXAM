@@ -5,8 +5,9 @@ import Section2 from './parallax-sections/Section2';
 import Section3 from './parallax-sections/Section3';
 import Section4 from './parallax-sections/Section4';
 import Section5 from './parallax-sections/Section5';
+import { DictAndLocaleProps } from '@/types';
 
-export default function ParallaxScroll() {
+export default function ParallaxScroll({ dict, locale }: DictAndLocaleProps) {
   const [currentSection, setCurrentSection] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
   const [touchStart, setTouchStart] = useState(0);
@@ -167,10 +168,10 @@ export default function ParallaxScroll() {
         hasExited ? 'opacity-0 pointer-events-none' : 'opacity-100'
       }`}
     >
-      {/* Sfondo per coprire il contenuto sotto */}
+      {/* ======= Sfondo coverage ======= */}
       <div className="absolute inset-0 bg-black -z-10" />
 
-      {/* Scroll/Arrow Section - LEFT */}
+      {/* ======= Scroll/Arrow - LEFT ======= */}
       <motion.div
         className="fixed top-1/2 -translate-y-1/2 left-4 sm:left-6 md:left-8 lg:left-12 xl:left-16 z-[100] flex flex-col items-center gap-2 sm:gap-3 md:gap-4 text-white-custom text-sm sm:text-base md:text-lg lg:text-xl font-semibold tracking-[0.3em]"
         animate={{
@@ -191,7 +192,7 @@ export default function ParallaxScroll() {
         <div className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 border-l-2 sm:border-l-[3px] border-b-2 sm:border-b-[3px] border-current -rotate-45"></div>
       </motion.div>
 
-      {/* Scroll/Arrow Section - RIGHT */}
+      {/* ======= Scroll/Arrow - RIGHT ======= */}
       <motion.div
         className="fixed top-1/2 -translate-y-1/2 right-4 sm:right-6 md:right-8 lg:right-12 xl:right-16 z-[100] flex flex-col items-center gap-2 sm:gap-3 md:gap-4 text-white text-sm sm:text-base md:text-lg lg:text-xl font-semibold tracking-[0.3em]"
         animate={{
@@ -212,17 +213,17 @@ export default function ParallaxScroll() {
         <div className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 border-l-2 sm:border-l-[3px] border-b-2 sm:border-b-[3px] border-current -rotate-45"></div>
       </motion.div>
 
-      {/* Fullpage Container */}
+      {/* ======= Full Container ======= */}
       <motion.div
         animate={fullpageControls}
         initial={{ y: 0 }}
         className="isolate"
       >
-        <Section1 isActive={currentSection === 0} />
-        <Section2 isActive={currentSection === 1} />
-        <Section3 isActive={currentSection === 2} />
-        <Section4 isActive={currentSection === 3} />
-        <Section5 isActive={currentSection === 4} />
+        <Section1 dict={dict} locale={locale} isActive={currentSection === 0} />
+        <Section2 dict={dict} locale={locale} isActive={currentSection === 1} />
+        <Section3 dict={dict} locale={locale} isActive={currentSection === 2} />
+        <Section4 dict={dict} locale={locale} isActive={currentSection === 3} />
+        <Section5 dict={dict} locale={locale} isActive={currentSection === 4} />
       </motion.div>
     </div>
   );

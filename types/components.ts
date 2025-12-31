@@ -78,3 +78,17 @@ export interface LegalPageComponentProps {
   data: LegalPage;
   pageType: 'privacy' | 'terms' | 'disclaimer';
 }
+
+export interface ScrollPromptSemicircleProps {
+  text: string;
+  bgColor?: string;
+  textColor?: string;
+  icon?: ReactNode;
+  iconColor?: string;
+}
+
+export interface TimelineItem {
+  year: ReactNode;
+  title: ReactNode;
+  description: ReactNode;
+}

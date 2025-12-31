@@ -63,33 +63,84 @@
     }
   },
   "tradition": {
-    "title": "Una Tradizione Secolare",
-    "description1": "La festa di San Basso è il cuore pulsante di Termoli, una celebrazione che affonda le sue radici nel XIII secolo e che ancora oggi unisce l'intera comunità.",
-    "description2": "Ogni anno, il 3, 4 e 5 agosto, la città si trasforma in un tripudio di colori, musica e tradizione. Il Santo Patrono viene portato in processione tra le vie del borgo antico fino al mare, in un momento di profonda spiritualità e festa popolare.",
-    "cta": "Scopri la storia completa",
-    "page": {
-      "title": "La Storia di San Basso",
-      "subtitle": "Secoli di tradizione, fede e comunità",
-      "origins": {
-        "title": "Le Origini",
-        "content": "La devozione a San Basso Vescovo ha radici antichissime. Secondo la tradizione, le sue reliquie giunsero a Termoli nell'anno 1104, portate da alcuni crociati di ritorno dalla Terra Santa. Da quel momento, San Basso divenne il patrono della città e custode dei pescatori."
-      },
-      "legend": {
-        "title": "La Leggenda",
-        "content": "Si narra che durante una terribile tempesta che minacciava di distruggere le barche dei pescatori, apparve una figura luminosa che calmò le acque. I pescatori riconobbero in quella figura San Basso, che da quel giorno divenne il loro protettore. Da allora, ogni anno, il Santo viene portato in processione fino al mare per benedire le acque e proteggere chi vi naviga."
-      },
-      "procession": {
-        "title": "La Processione",
-        "content": "Il momento culminante della festa è la processione del 4 agosto. La statua di San Basso viene portata a spalla dai fedeli attraverso le strette vie del borgo antico, accompagnata dalla banda musicale e seguita da migliaia di persone. Il corteo si snoda fino al porto, dove viene impartita la benedizione del mare, momento di grande emozione e spiritualità."
-      },
-      "today": {
-        "title": "La Festa Oggi",
-        "content": "Oggi la festa di San Basso è uno degli eventi più importanti del Molise. Unisce la dimensione religiosa a quella popolare: accanto ai riti sacri si svolgono concerti, spettacoli, mercatini e degustazioni. È un momento in cui l'intera comunità si ritrova, celebrando le proprie radici e guardando al futuro con speranza."
-      },
-      "community": {
-        "title": "Una Comunità Unita",
-        "content": "La preparazione della festa coinvolge centinaia di volontari: dalla decorazione delle vie, all'organizzazione degli eventi, alla gestione logistica. È un lavoro di mesi che testimonia la forza dei legami comunitari e l'orgoglio di mantenere viva una tradizione che attraversa i secoli."
-      }
+    "title": "Tradizione",
+    "subtitle": "I riti che uniscono Termoli al suo Santo",
+    "section1": {
+      "title": "Il Sorteggio",
+      "subtitle": "Due settimane prima del 3 agosto",
+      "description": "Nell'urna riposano i biglietti con i nomi dei pescherecci. Tra molti partecipanti, solo una barca riceverà il privilegio di portare San Basso in mare."
+    },
+    "section2": {
+      "title": "L'Alba del 3 Agosto",
+      "subtitle": "Dalla Cattedrale al mare",
+      "description": "La statua di San Basso lascia il Duomo con paramenti rossi. La processione raggiunge il porto, dove un peschereccio addobbato a festa la attende. Decine di barche si preparano a seguirla."
+    },
+    "section3": {
+      "title": "La Processione a Mare",
+      "subtitle": "San Bass pe' mare",
+      "description": "Il corteo naviga tra Rio Vivo e Sant'Antonio mentre la banda suona. Una corona di fiori cade in acqua, le sirene dei pescherecci risuonano all'unisono. Il mare si ferma per San Basso."
+    },
+    "section4": {
+      "title": "La Notte e i Fuochi",
+      "subtitle": "Termoli abbraccia il suo Santo",
+      "description": "La statua riposa al Mercato Ittico. Fedeli in preghiera tutta la notte. Il 4 agosto, San Basso torna in Cattedrale. A mezzanotte, i fuochi illuminano l'Adriatico."
+    },
+    "section5": {
+      "title": "Chi era davvero San Basso?",
+      "subtitle": "'Il santo dimenticato che unì fede e coraggio'",
+      "description": "Vescovo, martire e protettore. La sua storia attraversa i secoli, portando speranza a chi cerca una guida spirituale."
+    },
+    "timeline": {
+      "title": "La Vera Storia di San Basso",
+      "subtitle": "Un viaggio attraverso i secoli, tra storia, leggenda e devozione popolare",
+      "footer": "San Basso, Patrono di Termoli - Protettore dei Marinai",
+      "items": [
+        {
+          "year": "IV-V secolo",
+          "title": "Le Origini Misteriose",
+          "description": "San Basso, Vescovo e Martire, visse presumibilmente tra il IV e il V secolo. Gli studi antropologici del 2001 rivelano un uomo robusto, di statura alta, morto tra i 40 e 45 anni. La sua vera identità resta avvolta nel mistero: Vescovo di Nizza? Di Lucera? Le fonti storiche si contraddicono, ma la devozione è incrollabile."
+        },
+        {
+          "year": "Anno 1000 circa",
+          "title": "L'Arrivo a Termoli",
+          "description": "La leggenda narra di pescatori che trovarono in mare un sarcofago di marmo contenente le sacre spoglie. Secondo la tradizione, le reliquie furono trasportate su un 'magnifico carro tirato da buoi' che, guidati dalla Provvidenza, si fermarono davanti alla Cattedrale di Termoli, rifiutando di proseguire verso la chiesa di San Pietro."
+        },
+        {
+          "year": "XII-XIII secolo",
+          "title": "La Cattedrale e il Culto",
+          "description": "Durante la costruzione della magnifica Cattedrale romanica, San Basso viene immortalato nel portale in pietra con le insegne episcopali. Il corpo del Santo fu occultato con cura nell'abside sinistra, nella 'Grotticella di S. Basso', per proteggerlo dai frequenti furti di reliquie dell'epoca. La devozione popolare cresce forte e radicata."
+        },
+        {
+          "year": "1400",
+          "title": "La Statua Lignea",
+          "description": "Viene scolpita la preziosa statua lignea quattrocentesca raffigurante San Basso con le insegne vescovili, oggi custodita in un prezioso contenitore all'interno della Cattedrale. Testimonianza tangibile di una fede tramandata di generazione in generazione."
+        },
+        {
+          "year": "1577",
+          "title": "Prima Testimonianza Scritta",
+          "description": "Il 21 febbraio, il domenicano Serafino Razzi, chiamato a Termoli per un ciclo di sermoni quaresimali, documenta per la prima volta il profondo culto praticato nella città adriatica verso San Basso. Da tempo immemorabile il Santo è venerato come Patrono principale, protettore speciale dei marinai."
+        },
+        {
+          "year": "1729",
+          "title": "La Statua d'Argento",
+          "description": "Con la somma di 5.000 ducati lasciati dal Vescovo Salvatore de Aloysio, viene acquistata una preziosa statua d'argento di San Basso che custodiva, all'altezza del petto, una reliquia del Santo. Purtroppo questa meraviglia artistica è andata perduta nel tempo."
+        },
+        {
+          "year": "1 gennaio 1761",
+          "title": "La Grande Scoperta",
+          "description": "Dopo secoli di occultamento, Monsignor Tommaso Giannelli riporta finalmente alla luce i resti mortali di San Basso. Vengono rinvenute quattro iscrizioni che confermano trattarsi di un Vescovo e Martire. Il sacro deposito viene collocato 'in luogo più decente', come richiesto da tempo dai vescovi nelle loro relazioni."
+        },
+        {
+          "year": "2001",
+          "title": "Gli Studi Scientifici",
+          "description": "La ricognizione scientifica delle reliquie offre preziose informazioni: uomo di statura alta, particolarmente robusto, deceduto tra 40-45 anni, vissuto tra IV-V secolo. Curiosamente non emergono tracce evidenti del martirio, aggiungendo un nuovo mistero alla storia millenaria del Santo."
+        },
+        {
+          "year": "Oggi",
+          "title": "La Processione a Mare",
+          "description": "Ogni anno, il suggestivo arrivo delle reliquie via mare viene rievocato con una processione marinara: pescherecci colorati trasportano i fedeli seguendo la barca con la statua del Santo Patrono. Un momento di profonda emozione che unisce fede, tradizione e identità marinara, perpetuando un legame millenario tra Termoli e il suo protettore San Basso."
+        }
+      ]
     }
   },
   "program": {

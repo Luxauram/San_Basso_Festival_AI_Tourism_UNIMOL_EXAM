@@ -67,17 +67,21 @@ export interface Dictionary {
   };
   tradition: {
     title: string;
-    description1: string;
-    description2: string;
-    cta: string;
-    page: {
+    subtitle: string;
+    section1: SectionItem;
+    section2: SectionItem;
+    section3: SectionItem;
+    section4: SectionItem;
+    section5: SectionItem;
+    timeline: {
       title: string;
       subtitle: string;
-      origins: ContentSection;
-      legend: ContentSection;
-      procession: ContentSection;
-      today: ContentSection;
-      community: ContentSection;
+      footer: string;
+      items: Array<{
+        year: string;
+        title: string;
+        description: string;
+      }>;
     };
   };
   program: {
@@ -174,6 +178,12 @@ export interface Dictionary {
       [key: string]: ContentSection;
     };
   };
+}
+
+interface SectionItem {
+  title: string;
+  subtitle: string;
+  description: string;
 }
 
 export interface LegalPage {

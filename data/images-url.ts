@@ -86,6 +86,8 @@ export const PARALLAX_CENTER_FIREWORKS_TRADITION_IMAGE =
   '/parallax-tradition/center-fireworks.png';
 export const PARALLAX_LEFT_CHURCH_TRADITION_IMAGE =
   '/parallax-tradition/left-church.png';
+export const PARALLAX_WHO_WAS_SAINT_BASSO_IMAGE =
+  '/parallax-tradition/who-was-basso.webp';
 
 // ======= Sponsor URLs =======
 export const CAPRACOTTA_SPONSOR_IMAGE =

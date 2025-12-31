@@ -63,33 +63,84 @@
     }
   },
   "tradition": {
-    "title": "A Centuries-Old Tradition",
-    "description1": "The San Basso festival is the beating heart of Termoli, a celebration rooted in the 13th century that still unites the entire community today.",
-    "description2": "Every year, on August 3rd, 4th and 5th, the city transforms into a riot of colors, music and tradition. The Patron Saint is carried in procession through the streets of the old town to the sea, in a moment of deep spirituality and popular celebration.",
-    "cta": "Discover the full story",
-    "page": {
-      "title": "The Story of San Basso",
-      "subtitle": "Centuries of tradition, faith and community",
-      "origins": {
-        "title": "The Origins",
-        "content": "Devotion to Saint Basso the Bishop has ancient roots. According to tradition, his relics arrived in Termoli in the year 1104, brought by crusaders returning from the Holy Land. From that moment, San Basso became the patron saint of the city and guardian of fishermen."
-      },
-      "legend": {
-        "title": "The Legend",
-        "content": "It is said that during a terrible storm that threatened to destroy the fishermen's boats, a luminous figure appeared and calmed the waters. The fishermen recognized San Basso in that figure, who from that day became their protector. Since then, every year, the Saint is carried in procession to the sea to bless the waters and protect those who sail them."
-      },
-      "procession": {
-        "title": "The Procession",
-        "content": "The culminating moment of the festival is the procession on August 4th. The statue of San Basso is carried on the shoulders of the faithful through the narrow streets of the old town, accompanied by the marching band and followed by thousands of people. The procession winds its way to the port, where the blessing of the sea is given, a moment of great emotion and spirituality."
-      },
-      "today": {
-        "title": "The Festival Today",
-        "content": "Today the San Basso festival is one of the most important events in Molise. It combines the religious dimension with the popular one: alongside sacred rites, concerts, shows, markets and tastings take place. It is a moment when the entire community comes together, celebrating its roots and looking to the future with hope."
-      },
-      "community": {
-        "title": "A United Community",
-        "content": "The preparation of the festival involves hundreds of volunteers: from decorating the streets, to organizing events, to logistics management. It is months of work that testifies to the strength of community bonds and the pride in keeping alive a tradition that spans the centuries."
-      }
+    "title": "Tradition",
+    "subtitle": "The rituals that unite Termoli with its Saint",
+    "section1": {
+      "title": "The Draw",
+      "subtitle": "Two weeks before August 3rd",
+      "description": "In the urn rest the tickets bearing the names of fishing boats. Among many participants, only one boat will receive the privilege of carrying San Basso out to sea."
+    },
+    "section2": {
+      "title": "The Dawn of August 3rd",
+      "subtitle": "From the Cathedral to the sea",
+      "description": "The statue of San Basso leaves the Cathedral adorned in red vestments. The procession reaches the harbor, where a festively decorated fishing boat awaits. Dozens of boats prepare to follow."
+    },
+    "section3": {
+      "title": "The Procession at Sea",
+      "subtitle": "San Bass pe' mare",
+      "description": "The cortege navigates between Rio Vivo and Sant'Antonio as the band plays. A wreath of flowers falls into the water, the sirens of the fishing boats resound in unison. The sea stands still for San Basso."
+    },
+    "section4": {
+      "title": "The Night and the Fireworks",
+      "subtitle": "Termoli embraces its Saint",
+      "description": "The statue rests at the Fish Market. Faithful in prayer throughout the night. On August 4th, San Basso returns to the Cathedral. At midnight, fireworks illuminate the Adriatic."
+    },
+    "section5": {
+      "title": "Who was San Basso really?",
+      "subtitle": "The forgotten saint who united faith and courage",
+      "description": "Bishop, martyr, and protector. His story spans the centuries, bringing hope to those seeking spiritual guidance."
+    },
+    "timeline": {
+      "title": "The True Story of San Basso",
+      "subtitle": "A journey through the centuries, between history, legend and popular devotion",
+      "footer": "Saint Basso, Patron Saint of Termoli - Protector of Sailors",
+      "items": [
+        {
+          "year": "4th-5th century",
+          "title": "The Mysterious Origins",
+          "description": "San Basso, Bishop and Martyr, presumably lived between the 4th and 5th centuries. Anthropological studies from 2001 reveal a robust man of tall stature, who died between 40 and 45 years old. His true identity remains shrouded in mystery: Bishop of Nice? Of Lucera? Historical sources contradict each other, but devotion remains unshakeable."
+        },
+        {
+          "year": "Around 1000 AD",
+          "title": "The Arrival in Termoli",
+          "description": "Legend tells of fishermen who found at sea a marble sarcophagus containing the sacred remains. According to tradition, the relics were transported on a 'magnificent cart drawn by oxen' which, guided by Providence, stopped in front of the Cathedral of Termoli, refusing to continue towards the church of San Pietro."
+        },
+        {
+          "year": "12th-13th century",
+          "title": "The Cathedral and the Cult",
+          "description": "During the construction of the magnificent Romanesque Cathedral, San Basso is immortalized in the stone portal with episcopal insignia. The Saint's body was carefully hidden in the left apse, in the 'Grotticella di S. Basso', to protect it from the frequent relic thefts of the era. Popular devotion grows strong and deep-rooted."
+        },
+        {
+          "year": "1400",
+          "title": "The Wooden Statue",
+          "description": "The precious 15th-century wooden statue depicting San Basso with episcopal insignia is carved, today kept in a precious container inside the Cathedral. A tangible testimony of a faith passed down from generation to generation."
+        },
+        {
+          "year": "1577",
+          "title": "First Written Testimony",
+          "description": "On February 21st, the Dominican Serafino Razzi, called to Termoli for a cycle of Lenten sermons, documents for the first time the profound cult practiced in the Adriatic city towards San Basso. Since time immemorial, the Saint has been venerated as the main Patron, special protector of sailors."
+        },
+        {
+          "year": "1729",
+          "title": "The Silver Statue",
+          "description": "With the sum of 5,000 ducats left by Bishop Salvatore de Aloysio, a precious silver statue of San Basso is purchased, which held, at chest height, a relic of the Saint. Unfortunately, this artistic marvel has been lost over time."
+        },
+        {
+          "year": "January 1, 1761",
+          "title": "The Great Discovery",
+          "description": "After centuries of concealment, Monsignor Tommaso Giannelli finally brings to light the mortal remains of San Basso. Four inscriptions are found confirming it to be a Bishop and Martyr. The sacred deposit is placed 'in a more decent place', as requested for some time by bishops in their reports."
+        },
+        {
+          "year": "2001",
+          "title": "Scientific Studies",
+          "description": "The scientific examination of the relics offers precious information: a man of tall stature, particularly robust, deceased between 40-45 years old, who lived between the 4th-5th century. Curiously, no clear traces of martyrdom emerge, adding a new mystery to the Saint's millenary history."
+        },
+        {
+          "year": "Today",
+          "title": "The Procession at Sea",
+          "description": "Every year, the evocative arrival of the relics by sea is reenacted with a maritime procession: colorful fishing boats carry the faithful following the boat with the statue of the Patron Saint. A moment of profound emotion that unites faith, tradition and maritime identity, perpetuating a millenary bond between Termoli and its protector San Basso."
+        }
+      ]
     }
   },
   "program": {

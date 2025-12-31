@@ -1,15 +1,7 @@
 'use client';
 
+import { ScrollPromptSemicircleProps } from '@/types';
 import { motion } from 'framer-motion';
-import { ReactNode } from 'react';
-
-interface ScrollPromptSemicircleProps {
-  text: string;
-  bgColor?: string;
-  textColor?: string;
-  icon?: ReactNode;
-  iconColor?: string;
-}
 
 export default function ScrollPromptSemicircle({
   text,

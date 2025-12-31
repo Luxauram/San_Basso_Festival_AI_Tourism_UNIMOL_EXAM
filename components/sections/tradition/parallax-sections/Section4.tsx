@@ -5,46 +5,74 @@ import {
   PARALLAX_CENTER_FIREWORKS_TRADITION_IMAGE,
   PARALLAX_RIGHT_PORT_TRADITION_IMAGE,
 } from '@/data';
+import { DictAndLocaleProps } from '@/types';
 
-export default function Section4({ isActive }: { isActive: boolean }) {
+export default function Section4({
+  isActive,
+  dict,
+  locale,
+}: { isActive: boolean } & DictAndLocaleProps) {
   return (
     <section className="h-screen w-full relative overflow-hidden isolate">
-      {/* BG Nero */}
+      {/* ======= BG Triangolare ======= */}
       <div className="absolute inset-0 z-0 bg-black" />
 
-      {/* Titolo */}
-      <motion.h1
-        className="text-white-custom text-center absolute top-[10%] left-1/2 -translate-x-1/2 z-30 m-0 text-4xl md:text-6xl lg:text-7xl font-bold"
-        initial={{ opacity: 0, y: -50 }}
-        animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }}
-        transition={{ duration: 1.5, delay: 0.8 }}
+      {/* ======= Contenitore Backdrop ======= */}
+      <motion.div
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 w-[90%] max-w-4xl"
+        initial={{ opacity: 0, y: 30 }}
+        animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+        transition={{ duration: 1.2, delay: 0.5 }}
       >
-        LA NOTTE E I FUOCHI
-      </motion.h1>
+        {/* ======= Backdrop blur ======= */}
+        <div className="bg-black/50 backdrop-blur-[2px] rounded-2xl border border-white/20 shadow-2xl p-6 sm:p-8 md:p-10 lg:p-12">
+          {/* ======= Titolo ======= */}
+          <motion.h1
+            className="text-white-custom text-center mb-3 md:mb-4"
+            style={{
+              textShadow:
+                '0 2px 20px rgba(0,0,0,0.8), 0 0 40px rgba(0,0,0,0.6)',
+            }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
+            transition={{ duration: 1, delay: 0.8 }}
+          >
+            {dict.tradition.section4.title}
+          </motion.h1>
 
-      {/* Sottotitolo */}
-      <motion.p
-        className="text-white-custom text-center absolute top-[20%] left-1/2 -translate-x-1/2 z-30 m-0 text-2xl md:text-3xl lg:text-4xl italic"
-        initial={{ opacity: 0, y: -50 }}
-        animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }}
-        transition={{ duration: 1.5, delay: 1 }}
-      >
-        &quot;Termoli abbraccia il suo Santo&quot;
-      </motion.p>
+          {/* ======= Sottotitolo ======= */}
+          <motion.p
+            className="text-white/95 text-center text-lg sm:text-xl md:text-2xl italic mb-6 md:mb-8"
+            style={{ textShadow: '0 2px 15px rgba(0,0,0,0.7)' }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
+            transition={{ duration: 1, delay: 1 }}
+          >
+            {dict.tradition.section4.subtitle}
+          </motion.p>
 
-      {/* Descrizione */}
-      <motion.p
-        className="text-white-custom text-center absolute top-[30%] left-1/2 -translate-x-1/2 z-30 m-0 px-8 max-w-4xl text-base md:text-lg lg:text-xl"
-        initial={{ opacity: 0, y: -50 }}
-        animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }}
-        transition={{ duration: 1.5, delay: 1.2 }}
-      >
-        Al rientro la statua riposa al Mercato Ittico. Fedeli in preghiera tutta
-        la notte. Il 4 agosto ritorna in Cattedrale. A mezzanotte i fuochi
-        illuminano l&apos;Adriatico. La città è di nuovo sua.
-      </motion.p>
+          {/* ======= Divisore decorativo ======= */}
+          <motion.div
+            className="w-24 h-0.5 bg-linear-to-r from-transparent via-white/70 to-transparent mx-auto mb-6 md:mb-8"
+            initial={{ scaleX: 0 }}
+            animate={isActive ? { scaleX: 1 } : { scaleX: 0 }}
+            transition={{ duration: 1, delay: 1.2 }}
+          />
 
-      {/* Img Sinistra - ENTRA DA SINISTRA */}
+          {/* ======= Descrizione ======= */}
+          <motion.p
+            className="text-white-custom text-center"
+            style={{ textShadow: '0 1px 10px rgba(0,0,0,0.7)' }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
+            transition={{ duration: 1, delay: 1.4 }}
+          >
+            {dict.tradition.section4.description}
+          </motion.p>
+        </div>
+      </motion.div>
+
+      {/* ======= Img Sinistra ======= */}
       <motion.div
         className="absolute inset-0 z-10 w-full h-full pointer-events-none"
         initial={{ x: '-100%', opacity: 0 }}
@@ -64,7 +92,7 @@ export default function Section4({ isActive }: { isActive: boolean }) {
         />
       </motion.div>
 
-      {/* Img Centro - ENTRA DALL'ALTO */}
+      {/* ======= Img Centro ======= */}
       <motion.div
         className="absolute inset-0 z-20 w-full h-full pointer-events-none"
         initial={{ y: '-100%', opacity: 0 }}
@@ -84,7 +112,7 @@ export default function Section4({ isActive }: { isActive: boolean }) {
         />
       </motion.div>
 
-      {/* Img Destra - ENTRA DA DESTRA */}
+      {/* ======= Img Destra ======= */}
       <motion.div
         className="absolute inset-0 z-10 w-full h-full pointer-events-none"
         initial={{ x: '100%', opacity: 0 }}
