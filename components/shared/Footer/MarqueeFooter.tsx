@@ -12,12 +12,13 @@ export function MarqueeFooter({ isInView }: MarqueeFooterProps) {
     'text-6xl md:text-8xl lg:text-9xl font-bold text-white/70 mx-8';
 
   return (
-    <div className="my-12 space-y-4 marquee-container">
+    <div className="my-12 space-y-4 marquee-container min-h-62.5 md:min-h-87.5 lg:min-h-112.5 laptop:min-h-100 overflow-hidden">
       {/* ======= Marquee Termoli Events ======= */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 1 } : {}}
         transition={{ delay: 0.3 }}
+        className="pointer-events-none"
       >
         <Marquee speed={80} gradient={false} direction="left">
           <span className={marqueeTextClass}>TERMOLI EVENTS</span>
@@ -39,6 +40,7 @@ export function MarqueeFooter({ isInView }: MarqueeFooterProps) {
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 1 } : {}}
         transition={{ delay: 0.7 }}
+        className="pointer-events-none"
       >
         <Marquee speed={80} gradient={false} direction="right">
           <span className={marqueeTextClass}>SAN BASSO FESTIVAL</span>

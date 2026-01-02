@@ -9,46 +9,55 @@ export default function SanBassoTimeline({ dict, locale }: DictAndLocaleProps) {
       year: dict.tradition.timeline.items[0].year,
       title: dict.tradition.timeline.items[0].title,
       description: dict.tradition.timeline.items[0].description,
+      image: '/timeline/timeline-0.webp',
     },
     {
       year: dict.tradition.timeline.items[1].year,
       title: dict.tradition.timeline.items[1].title,
       description: dict.tradition.timeline.items[1].description,
+      image: '/timeline/timeline-1.webp',
     },
     {
       year: dict.tradition.timeline.items[2].year,
       title: dict.tradition.timeline.items[2].title,
       description: dict.tradition.timeline.items[2].description,
+      image: '/timeline/timeline-2.webp',
     },
     {
       year: dict.tradition.timeline.items[3].year,
       title: dict.tradition.timeline.items[3].title,
       description: dict.tradition.timeline.items[3].description,
+      image: '/timeline/timeline-3.webp',
     },
     {
       year: dict.tradition.timeline.items[4].year,
       title: dict.tradition.timeline.items[4].title,
       description: dict.tradition.timeline.items[4].description,
+      image: '/timeline/timeline-4.webp',
     },
     {
       year: dict.tradition.timeline.items[5].year,
       title: dict.tradition.timeline.items[5].title,
       description: dict.tradition.timeline.items[5].description,
+      image: '/timeline/timeline-5.webp',
     },
     {
       year: dict.tradition.timeline.items[6].year,
       title: dict.tradition.timeline.items[6].title,
       description: dict.tradition.timeline.items[6].description,
+      image: '/timeline/timeline-6.webp',
     },
     {
       year: dict.tradition.timeline.items[7].year,
       title: dict.tradition.timeline.items[7].title,
       description: dict.tradition.timeline.items[7].description,
+      image: '/timeline/timeline-7.webp',
     },
     {
       year: dict.tradition.timeline.items[8].year,
       title: dict.tradition.timeline.items[8].title,
       description: dict.tradition.timeline.items[8].description,
+      image: '/timeline/timeline-8.webp',
     },
   ];
 
@@ -90,12 +99,12 @@ export default function SanBassoTimeline({ dict, locale }: DictAndLocaleProps) {
               >
                 <div className="relative w-full aspect-square max-w-md mx-auto">
                   <div className="absolute inset-0 bg-black-custom/5 rounded-3xl blur-2xl" />
-                  <div className="relative w-full h-full bg-gradient-to-br from-gray-50 to-white rounded-3xl shadow-2xl p-8 flex items-center justify-center border-2 border-black-custom/10">
+                  <div className="relative w-full h-full bg-gradient-to-br from-gray-50 to-white rounded-3xl shadow-2xl overflow-hidden border-2 border-black-custom/10">
                     <Image
-                      src="/logo.png"
-                      alt={`Immagine storica evento ${index + 1} - San Basso`}
+                      src={item.image}
+                      alt={`${item.title} - ${item.year}`}
                       fill
-                      className="object-contain p-8"
+                      className="object-cover"
                     />
                   </div>
                 </div>

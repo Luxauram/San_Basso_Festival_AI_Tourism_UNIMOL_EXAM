@@ -65,6 +65,8 @@ h6 {
 }
 
 /* ======= Tailwind ======= */
+@custom-variant laptop (@media (min-width: 1900px) and (max-width: 1920px) and (min-height: 700px) and (max-height: 1050px));
+
 @layer utilities {
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
@@ -140,15 +142,15 @@ p {
 }
 
 .bg-primary-custom {
-  @apply bg-[#e71a07];
+  @apply bg-[#c45042];
 }
 
 .border-primary-custom {
-  @apply border-[#e71a07];
+  @apply border-[#c45042];
 }
 
 .text-primary-custom {
-  @apply text-[#e71a07];
+  @apply text-[#c45042];
 }
 
 .bg-secondary-custom {

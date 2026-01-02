@@ -91,7 +91,7 @@ export default function Navbar({ locale, dict }: NavbarProps) {
           <MenuButton
             isOpen={isOpen}
             strokeWidth="8"
-            color="#e71a07"
+            color="#c45042"
             lineProps={{ strokeLinecap: 'round' }}
             transition={{ type: 'spring', stiffness: 260, damping: 20 }}
             width={20}
@@ -103,7 +103,7 @@ export default function Navbar({ locale, dict }: NavbarProps) {
 
       {/* ======= Menu Overlay =======  */}
       <motion.div
-        className="fixed w-screen h-screen bg-[#0f0f0f] z-140"
+        className="fixed inset-0 bg-[#0f0f0f] z-140 overflow-hidden"
         initial={{ clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' }}
         animate={
           isOpen
@@ -184,14 +184,17 @@ export default function Navbar({ locale, dict }: NavbarProps) {
           </div>
 
           {/* ======= Footer ======= */}
-          <div className="absolute bottom-0 w-full px-10 py-10 flex gap-10">
-            <div className="flex-[3]">
+          <div className="absolute bottom-0 w-full px-10 py-10">
+            <div className="flex flex-col lg:flex-row gap-6 lg:gap-10">
               {/* ======= Language Switcher ======= */}
-              <LanguageSwitcher currentLocale={locale} />
-            </div>
-            <div className="flex-[2] flex justify-between">
+              <div className="lg:flex-[3] laptop:flex-[2]">
+                <LanguageSwitcher currentLocale={locale} />
+              </div>
+
               {/* ======= Social ======= */}
-              <SocialNetworks className="justify-start" />
+              <div className="lg:flex-[2] laptop:flex-[3]">
+                <SocialNetworks className="justify-start" />
+              </div>
             </div>
           </div>
         </motion.div>

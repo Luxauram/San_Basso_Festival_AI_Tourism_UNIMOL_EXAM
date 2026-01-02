@@ -14,7 +14,7 @@ export default function HeroSection({ dict, locale }: DictAndLocaleProps) {
 
   return (
     <section className="relative w-full h-screen overflow-hidden snap-section">
-      {/* Video Background */}
+      {/* ======= Video Background ======= */}
       <div className="absolute inset-0 z-0 w-full h-full overflow-hidden">
         <iframe
           src={`${VIMEO_PLAYER_URL}?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1`}
@@ -30,12 +30,12 @@ export default function HeroSection({ dict, locale }: DictAndLocaleProps) {
         />
       </div>
 
-      {/* Overlay scuro per migliorare leggibilità */}
+      {/* ======= Overlay leggibilità ======= */}
       <div className="absolute inset-0 bg-black/50 z-1" />
 
-      {/* Hero */}
+      {/* ======= Hero ======= */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center px-4">
-        {/* Logo */}
+        {/* ======= Logo ======= */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -52,12 +52,12 @@ export default function HeroSection({ dict, locale }: DictAndLocaleProps) {
           />
         </motion.div>
 
-        {/* Bottoni */}
+        {/* ======= Bottoni ======= */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex gap-4 flex-wrap justify-center -mt-10 sm:-mt-24 md:-mt-28 lg:-mt-32 xl:-mt-36 z-10"
+          className="flex gap-4 flex-wrap justify-center -mt-10 sm:-mt-24 md:-mt-28 lg:-mt-32 xl:-mt-36 z-10 laptop:pt-10"
         >
           <PrimaryButton href={`/${locale}${contactsRoute}`}>
             {dict.home.hero.button1}

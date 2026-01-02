@@ -45,7 +45,7 @@ export default function ReviewSection({ dict, locale }: DictAndLocaleProps) {
   return (
     <section
       ref={ref}
-      className="flex items-center justify-center bg-white-custom text-black-custom overflow-hidden pt-8 pb-48"
+      className="flex items-center justify-center bg-white-custom text-black-custom overflow-hidden pt-8 pb-48 laptop:pb-64"
     >
       <div className="w-full px-4 sm:px-8 py-16">
         <motion.h2
@@ -73,7 +73,7 @@ export default function ReviewSection({ dict, locale }: DictAndLocaleProps) {
                 key={review.id}
                 className="bg-sky-600 border border-black-custom rounded-lg w-70 sm:w-75 shrink-0 relative mt-10 flex flex-col"
               >
-                {/* Avatar con bordo curved sopra */}
+                {/* ======= Avatar ======= */}
                 <div
                   className="before:content-[''] before:absolute before:inset 
                           before:border-t before:border-l before:border-r 
@@ -91,17 +91,17 @@ export default function ReviewSection({ dict, locale }: DictAndLocaleProps) {
                   />
                 </div>
 
-                {/* Stelle rating */}
+                {/* ======= Rating Stars ======= */}
                 <div className="absolute top-3 right-3 flex gap-0.5">
                   {renderStars(review.rating)}
                 </div>
 
-                {/* Testo recensione - flex-grow per occupare lo spazio disponibile */}
+                {/* ======= Recensione ======= */}
                 <div className="text-base text-black-custom font-light px-4 py-4 grow">
                   {review.text}
                 </div>
 
-                {/* Footer con nome - sempre in fondo */}
+                {/* ======= Footer ======= */}
                 <div className="w-full px-4 pb-4 text-sm border-t border-black-custom pt-3 mt-auto">
                   <div className="text-black-custom font-medium">
                     {review.name}

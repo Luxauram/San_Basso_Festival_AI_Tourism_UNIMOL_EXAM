@@ -8,11 +8,10 @@ export function HeroImage({
   title,
   subtitle,
   children,
-  height = 'h-[30vh]',
   overlayOpacity = 0.5,
-}: HeroImageProps) {
+}: Omit<HeroImageProps, 'height'>) {
   return (
-    <div className={`relative w-full ${height} overflow-hidden`}>
+    <div className="relative w-full h-[30vh] md:h-[50vh] lg:h-[40vh] laptop:h-[55vh] overflow-hidden">
       {/* ======= BG Image ======= */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"

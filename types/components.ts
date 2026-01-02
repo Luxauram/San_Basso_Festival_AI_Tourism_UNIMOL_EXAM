@@ -91,4 +91,5 @@ export interface TimelineItem {
   year: ReactNode;
   title: ReactNode;
   description: ReactNode;
+  image: string;
 }
