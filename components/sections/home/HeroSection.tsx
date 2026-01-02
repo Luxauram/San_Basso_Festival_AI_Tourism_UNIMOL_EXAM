@@ -57,7 +57,7 @@ export default function HeroSection({ dict, locale }: DictAndLocaleProps) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex gap-4 flex-wrap justify-center -mt-10 sm:-mt-24 md:-mt-28 lg:-mt-32 xl:-mt-36 z-10 laptop:pt-10"
+          className="flex gap-4 flex-wrap justify-center -mt-10 sm:-mt-24 md:-mt-28 lg:-mt-32 xl:-mt-36 z-10 laptop:pt-16"
         >
           <PrimaryButton href={`/${locale}${contactsRoute}`}>
             {dict.home.hero.button1}

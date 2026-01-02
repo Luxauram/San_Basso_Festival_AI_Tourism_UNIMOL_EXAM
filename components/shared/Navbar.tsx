@@ -96,7 +96,7 @@ export default function Navbar({ locale, dict }: NavbarProps) {
             transition={{ type: 'spring', stiffness: 260, damping: 20 }}
             width={20}
             height={28}
-            className="sm:w-[22px] sm:h-[32px] md:w-[24px] md:h-[35px]"
+            className="sm:w-5.5 sm:h-8 md:w-6 md:h-8.75"
           />
         </div>
       </nav>
@@ -123,7 +123,7 @@ export default function Navbar({ locale, dict }: NavbarProps) {
           transition={{ duration: 1.25, ease: [0.76, 0, 0.24, 1] }}
         >
           {/* ======= Menu Items ======= */}
-          <div className="w-full px-10 flex gap-10">
+          <div className="w-full px-10 flex gap-10 relative z-20">
             {/* ======= Left Image ======= */}
             <div className="hidden lg:flex flex-3 justify-center items-center">
               <div className="relative w-[45%] aspect-3/4 overflow-hidden">
@@ -153,7 +153,10 @@ export default function Navbar({ locale, dict }: NavbarProps) {
               {/* ======= Links ======= */}
               <div className="flex flex-col gap-2 mb-4">
                 {menuLinks.map((link, index) => (
-                  <div key={index} className="overflow-hidden pb-1.5">
+                  <div
+                    key={index}
+                    className="overflow-hidden pb-1.5 relative z-30"
+                  >
                     <motion.div
                       initial={{ y: '120%', opacity: 0.25 }}
                       animate={
@@ -184,15 +187,15 @@ export default function Navbar({ locale, dict }: NavbarProps) {
           </div>
 
           {/* ======= Footer ======= */}
-          <div className="absolute bottom-0 w-full px-10 py-10">
+          <div className="absolute bottom-0 w-full px-10 py-10 z-10">
             <div className="flex flex-col lg:flex-row gap-6 lg:gap-10">
               {/* ======= Language Switcher ======= */}
-              <div className="lg:flex-[3] laptop:flex-[2]">
+              <div className="flex-1 lg:flex-3 laptop:flex-2">
                 <LanguageSwitcher currentLocale={locale} />
               </div>
 
               {/* ======= Social ======= */}
-              <div className="lg:flex-[2] laptop:flex-[3]">
+              <div className="flex-1 lg:flex-2 laptop:flex-1">
                 <SocialNetworks className="justify-start" />
               </div>
             </div>

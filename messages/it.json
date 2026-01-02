@@ -438,7 +438,7 @@
   },
   "privacy": {
     "title": "Privacy Policy",
-    "subtitle": "da rivedere Privacy Policy",
+    "subtitle": "La nostra Privacy Policy",
     "lastUpdated": "Ultimo aggiornamento",
     "sections": {
       "intro": {
@@ -469,7 +469,7 @@
   },
   "terms": {
     "title": "Termini e Condizioni",
-    "subtitle": "da rivedere Termini e Condizioni",
+    "subtitle": "I nostri Termini e Condizioni",
     "lastUpdated": "Ultimo aggiornamento",
     "sections": {
       "intro": {
@@ -510,7 +510,7 @@
       "close": "Ho capito"
     },
     "title": "Disclaimer Progetto Universitario",
-    "subtitle": "da rivedere Disclaimer",
+    "subtitle": "Informazioni molto importanti su questo progetto",
     "lastUpdated": "Ultimo aggiornamento",
     "intro": "Questo sito web è stato realizzato esclusivamente a scopo didattico nell'ambito di un progetto universitario.",
     "sections": {

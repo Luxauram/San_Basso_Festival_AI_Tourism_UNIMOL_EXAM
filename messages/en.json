@@ -425,7 +425,7 @@
   },
   "privacy": {
     "title": "Privacy Policy",
-    "subtitle": "da rivedere Privacy Policy",
+    "subtitle": "Ours Privacy Policy",
     "lastUpdated": "Last updated",
     "sections": {
       "intro": {
@@ -456,7 +456,7 @@
   },
   "terms": {
     "title": "Terms and Conditions",
-    "subtitle": "da rivedere Termini e Condizioni",
+    "subtitle": "Ours Terms and Conditions",
     "lastUpdated": "Last updated",
     "sections": {
       "intro": {
@@ -497,7 +497,7 @@
       "close": "Got it"
     },
     "title": "University Project Disclaimer",
-    "subtitle": "TODO Disclaimer",
+    "subtitle": "Very important information about the project",
     "lastUpdated": "Last updated",
     "intro": "This website was created exclusively for educational purposes as part of a university project.",
     "sections": {

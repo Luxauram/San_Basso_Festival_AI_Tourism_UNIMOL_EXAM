@@ -13,17 +13,17 @@ export default function TraditionSection({ dict, locale }: DictAndLocaleProps) {
   const section2Ref = useRef(null);
   const section1InView = useInView(section1Ref, { once: true, amount: 0.3 });
   const section2InView = useInView(section2Ref, { once: true, amount: 0.3 });
-  const contactsRoute = locale === 'it' ? '/contatti' : '/contacts';
+  const traditionRoute = locale === 'it' ? '/tradizione' : '/tradition';
 
   return (
     <div className="w-full bg-white-custom">
-      {/* Sezione 1: Immagine prima su mobile, poi testo */}
+      {/* ======= Sezione 1: ======= */}
       <section
         ref={section1Ref}
         className="w-full flex items-center px-6 md:px-12 lg:px-20 py-20"
       >
         <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
-          {/* Immagine con maschera - prima su mobile */}
+          {/* ======= Immagine ======= */}
           <motion.div
             className="flex-1 w-full order-1 lg:order-2"
             initial={{ opacity: 0, x: 50 }}
@@ -31,7 +31,7 @@ export default function TraditionSection({ dict, locale }: DictAndLocaleProps) {
             transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
           >
             <motion.div
-              className="w-full h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden relative"
+              className="w-full h-100 md:h-125 lg:h-150 overflow-hidden relative"
               style={{
                 clipPath: 'polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%)',
               }}
@@ -50,7 +50,7 @@ export default function TraditionSection({ dict, locale }: DictAndLocaleProps) {
             </motion.div>
           </motion.div>
 
-          {/* Testo - secondo su mobile */}
+          {/* ======= Testo ======= */}
           <motion.div
             className="flex-1 order-2 lg:order-1"
             initial={{ opacity: 0, x: -50 }}
@@ -78,13 +78,13 @@ export default function TraditionSection({ dict, locale }: DictAndLocaleProps) {
         </div>
       </section>
 
-      {/* Sezione 2: Immagine prima su mobile, poi testo */}
+      {/* ======= Sezione 2 ======= */}
       <section
         ref={section2Ref}
         className="w-full flex items-center px-6 md:px-12 lg:px-20 py-20 bg-white-custom"
       >
         <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
-          {/* Immagine con maschera - prima su mobile */}
+          {/* ======= Immagine ======= */}
           <motion.div
             className="flex-1 w-full order-1"
             initial={{ opacity: 0, x: -50 }}
@@ -92,7 +92,7 @@ export default function TraditionSection({ dict, locale }: DictAndLocaleProps) {
             transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
           >
             <motion.div
-              className="w-full h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden relative"
+              className="w-full h-100 md:h-125 lg:h-150 overflow-hidden relative"
               style={{
                 clipPath: 'polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 15%)',
               }}
@@ -111,7 +111,7 @@ export default function TraditionSection({ dict, locale }: DictAndLocaleProps) {
             </motion.div>
           </motion.div>
 
-          {/* Testo - secondo su mobile */}
+          {/* ======= Testo ======= */}
           <motion.div
             className="flex-1 order-2"
             initial={{ opacity: 0, x: 50 }}
@@ -141,7 +141,7 @@ export default function TraditionSection({ dict, locale }: DictAndLocaleProps) {
               animate={section2InView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, ease: 'easeOut' }}
             >
-              <SecondaryButton href={`/${locale}${contactsRoute}`}>
+              <SecondaryButton href={`/${locale}${traditionRoute}`}>
                 {dict.home.tradition.cta}
               </SecondaryButton>
             </motion.div>
