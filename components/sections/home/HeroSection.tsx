@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { HERO_LOGO_IMAGE, VIMEO_CLASSIC_URL, VIMEO_PLAYER_URL } from '@/data';
 
 export default function HeroSection({ dict, locale }: DictAndLocaleProps) {
-  const contactsRoute = locale === 'it' ? '/contatti' : '/contacts';
+  const programsRoute = locale === 'it' ? '/programma' : '/programma';
 
   return (
     <section className="relative w-full h-screen overflow-hidden snap-section">
@@ -59,7 +59,7 @@ export default function HeroSection({ dict, locale }: DictAndLocaleProps) {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex gap-4 flex-wrap justify-center -mt-10 sm:-mt-24 md:-mt-28 lg:-mt-32 xl:-mt-36 z-10 laptop:pt-16"
         >
-          <PrimaryButton href={`/${locale}${contactsRoute}`}>
+          <PrimaryButton href={`/${locale}${programsRoute}`}>
             {dict.home.hero.button1}
           </PrimaryButton>
           <SecondaryButton
