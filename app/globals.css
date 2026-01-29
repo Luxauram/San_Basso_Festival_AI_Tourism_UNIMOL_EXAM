@@ -65,7 +65,7 @@ h6 {
 }
 
 /* ======= Tailwind ======= */
-@custom-variant laptop (@media (min-width: 1900px) and (max-width: 1920px) and (min-height: 700px) and (max-height: 1050px));
+@custom-variant laptop (@media (min-width: 1000px) and (max-width: 1920px) and (min-height: 700px) and (max-height: 1050px));
 
 @layer utilities {
   .scrollbar-hide::-webkit-scrollbar {

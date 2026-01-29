@@ -10,7 +10,7 @@
 
 ## Fast Links Recap
 
-- Intro Presentation: [Click Here DA INSERIRE](https://claude.ai/)
+- Intro Presentation: [Click Here DA INSERIRE](./SanBasso_presentazione.pptx)
 - Website hosted on Vercel: [Click Here](https://san-basso-festival.vercel.app/it)
 - Event Flyer: [Click Here](/public/san-basso-flyer.pdf)
 
@@ -39,39 +39,30 @@
 _(Alcuni prompt sono stati lievemente modificati per creare un'esperienza più realistica)_
 
 1. **Il Selfie del Pescatore Anziano:** Un primo piano di un anziano pescatore termolese, con la pelle segnata dal sole e un berretto sdrucito. Si sta facendo un selfie goffo (inquadratura storta) a bordo di un peschereccio strapieno di gente. Sullo sfondo, fuori fuoco, si vede la "Barca del Santo" decorata e il mare blu. L'espressione è un sorriso sdentato e felice.
-
    - ![AI Generated Img](/public/parallax-home/parallax-1.webp)
 
 2. **La Coppia di Turisti sulla Barca d'Appoggio:** Un selfie grandangolare scattato con un bastone per selfie da una giovane coppia di turisti su una delle barche che seguono il corteo. Hanno occhiali da sole, capelli al vento e sono circondati da altra gente. Sullo sfondo si vede la scia della barca e il porto di Termoli che si allontana. Luce solare diretta e forte.
-
    - ![AI Generated Img](/public/parallax-home/parallax-2.webp)
 
 3. **Il "Wefie" dell'Equipaggio:** Un selfie di gruppo ("wefie") scattato da un membro dell'equipaggio della barca che porta il Santo. Sono 4-5 uomini in magliette coordinate, sudati, che ridono. La statua del Santo è parzialmente visibile dietro di loro, magari coperta da un telo trasparente se c'è vento. L'inquadratura è stretta e caotica.
-
-   - ![AI Generated Img](/public/parallax-home/parallax-3.jpg)
+   - ![AI Generated Img](/public/parallax-home/parallax-3.webp)
 
 4. **L'Attesa al Porto (Famiglia):** Una foto scattata da una mamma che ritrae la sua famiglia (marito e due bambini piccoli con cappellini) seduti sul molo del porto, in attesa del rientro della statua. I bambini mangiano un gelato che cola. La folla è pressante intorno a loro. La luce è quella calda del tardo pomeriggio.
-
    - ![AI Generated Img](/public/parallax-home/parallax-4.webp)
 
 5. **Selfie allo Specchio nel Borgo:** Tre ragazze adolescenti del posto, vestite eleganti per la serata, si fanno un selfie allo specchio nella vetrina di un negozio nelle viuzze strette del Borgo Antico. Il riflesso mostra le luminarie della festa e la gente che passa dietro di loro.
-
    - ![AI Generated Img](/public/parallax-home/parallax-5.webp)
 
 6. **La Foto della Nonna alla Processione di Terra:** Una foto "rubata" (non un selfie) che mostra le mani di un'anziana signora che regge uno smartphone, cercando tremolante di filmare la statua di San Basso che passa in processione per le strade della città. Lo schermo del telefono è acceso e mostra la scena.
-
    - ![AI Generated Img](/public/parallax-home/parallax-6.webp)
 
 7. **Street Food e Caos:** Un ragazzo che si fa un selfie mentre addenta un panino con la porchetta o frittura di pesce, con un'espressione godereccia. È in mezzo alla calca vicino alle bancarelle. Lo sfondo è un mix sfocato di luci al neon delle bancarelle e teste di persone. Scattata con flash diretto per un look realistico "notturno".
-
    - ![AI Generated Img](/public/parallax-home/parallax-7.webp)
 
 8. **La Coppia davanti alla Cattedrale:** Una coppia di mezza età, ben vestita, si scatta un selfie posato e sorridente davanti alla facciata della Cattedrale di Termoli illuminata a festa, prima della messa solenne. L'inquadratura è dal basso verso l'alto per includere la chiesa.
-
    - ![AI Generated Img](/public/parallax-home/parallax-8.webp)
 
 9. **Selfie Romantico in Spiaggia:** Una coppia giovane seduta sulla sabbia della spiaggia a sud del porto. Il selfie è in controluce: i loro volti sono illuminati dall'esplosione colorata di un grande fuoco d'artificio nel cielo sopra il mare dietro di loro.
-
    - ![AI Generated Img](/public/parallax-home/parallax-9.webp)
 
 10. **Il Gruppo di Amici sul Molo:** Un selfie di gruppo rumoroso di 5-6 amici ventenni ammassati sul molo. Ridono, alcuni con una birra in mano. Il flash dello smartphone illumina i loro volti, mentre dietro il cielo è pieno di fumo e scintille dei fuochi.

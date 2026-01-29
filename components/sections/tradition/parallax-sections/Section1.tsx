@@ -60,7 +60,7 @@ export default function Section1Tradizione({
 
       {/* ======= Titolo Pagina ======= */}
       <motion.h1
-        className="text-white-custom text-center absolute top-[10%] sm:top-[8%] md:top-[8%] left-1/2 -translate-x-1/2 z-30 m-0 "
+        className="text-white-custom text-center absolute top-[10%] sm:top-[8%] md:top-[8%] laptop:top-[9%] left-1/2 -translate-x-1/2 z-30 m-0 "
         style={{
           textShadow: '0 2px 20px rgba(0,0,0,0.8), 0 0 40px rgba(0,0,0,0.6)',
         }}
@@ -73,7 +73,7 @@ export default function Section1Tradizione({
 
       {/* ======= Sottotitolo Pagina ======= */}
       <motion.h2
-        className="text-white/90 text-center absolute top-[17%] sm:top-[14%] md:top-[14%] left-1/2 -translate-x-1/2 z-30 m-0 italic"
+        className="text-white/90 text-center absolute top-[17%] sm:top-[14%] md:top-[14%] laptop:top-[17%] left-1/2 -translate-x-1/2 z-30 m-0 italic"
         style={{ textShadow: '0 2px 15px rgba(0,0,0,0.7)' }}
         initial={{ opacity: 0, y: -50 }}
         animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }}
@@ -84,7 +84,7 @@ export default function Section1Tradizione({
 
       {/* ======= Contenitore backdrop ======= */}
       <motion.div
-        className="absolute top-[55%] sm:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 w-[90%] max-w-4xl"
+        className="absolute top-[55%] sm:top-1/2 laptop:top-[57%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 w-[90%] max-w-4xl"
         initial={{ opacity: 0, y: 30 }}
         animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
         transition={{ duration: 1.2, delay: 0.5 }}

@@ -34,33 +34,33 @@ export const HeroParallax = ({
 
   const translateX = useSpring(
     useTransform(scrollYProgress, [0, 1], [0, 1000]),
-    springConfig
+    springConfig,
   );
   const translateXReverse = useSpring(
     useTransform(scrollYProgress, [0, 1], [0, -1000]),
-    springConfig
+    springConfig,
   );
   const rotateX = useSpring(
     useTransform(scrollYProgress, [0, 0.2], [15, 0]),
-    springConfig
+    springConfig,
   );
   const opacity = useSpring(
     useTransform(scrollYProgress, [0, 0.2], [0.2, 1]),
-    springConfig
+    springConfig,
   );
   const rotateZ = useSpring(
     useTransform(scrollYProgress, [0, 0.2], [20, 0]),
-    springConfig
+    springConfig,
   );
   const translateY = useSpring(
     useTransform(scrollYProgress, [0, 0.2], [-500, 300]),
-    springConfig
+    springConfig,
   );
 
   return (
     <div
       ref={ref}
-      className="h-[300vh] md:h-[250vh] lg:h-[200vh] laptop:h-[300vh] py-80 pb-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] bg-white-custom"
+      className="h-[300vh] md:h-[250vh] lg:h-[200vh] laptop:h-[300vh] py-80 laptop:py-20 pb-40 overflow-hidden antialiased relative flex flex-col self-auto perspective-[1000px] transform-3d bg-white-custom"
     >
       {/* ======= Header ======= */}
       <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
